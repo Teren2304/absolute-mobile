@@ -1,7 +1,11 @@
 .wn-classification-sports {
   position: relative;
-  height: calc(100vh - 105px);
+  height: 100%;
   overflow: hidden;
+
+  &--full-screen {
+    height: calc(100vh - 105px);
+  }
 
   &__header {
     @include flex($align-items: center);

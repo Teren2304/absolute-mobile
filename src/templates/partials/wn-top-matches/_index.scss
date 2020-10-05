@@ -9,6 +9,10 @@
 
   &__item {
     padding-bottom: 5px;
-    width: calc(100% - 15px);
+    width: calc(100% - 35px);
+
+    @include media-min(600) {
+      width: 340px;
+    }
   }
 }

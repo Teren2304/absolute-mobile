@@ -21,7 +21,7 @@ mixin ip-competition(set)
         .ip-competition__row
 
           .ip-competition__additional
-            p.ip-competition__period= n++ +'H 15:23'
+            p.ip-competition__period H 15:23
             .ip-competition__action
               a.ip-competition__play
                 svg(width='15' height='11' viewBox='0 0 15 11' fill='none' xmlns='http://www.w3.org/2000/svg')
@@ -95,3 +95,107 @@ mixin ip-competition(set)
               span.ip-competition__coff 2.17
           button.ip-competition__btn.ip-competition__btn--market
             span +148
+
+
+mixin ip-competition-slider(count)
+  .ip-competition&attributes(attributes)
+
+    .ip-competition__head
+      -var n = 0
+      while n < 2
+        .ip-competition__header
+          .ip-competition__flag
+            img(src="img/icon-country/ua.png", alt="")
+          .ip-competition__league England. Premier League
+          .ip-competition__favourite
+            svg(width='14' height='14' viewbox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg')
+              path(d='M7.23267 10.5978L7 10.4755L6.76733 10.5978L3.33783 12.4008L3.9928 8.58198L4.03724 8.3229L3.84901 8.13941L1.07448 5.43492L4.90878 4.87776L5.16891 4.83996L5.28525 4.60424L7 1.12978L8.71475 4.60424L8.83109 4.83996L9.09122 4.87776L12.9255 5.43492L10.151 8.13941L9.96276 8.3229L10.0072 8.58198L10.6622 12.4008L7.23267 10.5978Z' stroke='#979797')
+
+          .ip-competition__drop
+            p.ip-competition__drop-toggle Both team to score
+            .ip-competition__drop-menu
+              a.ip-competition__drop-item= n++ + 'Asian handicap (0 - 0)'
+              a.ip-competition__drop-item 3rd Goal
+              a.ip-competition__drop-item Match winner
+
+    .ip-competition__wrapper.ip-competition__wrapper--inline
+      -var n = 0
+      while n < 2
+        .ip-competition__item
+          .ip-competition__row
+
+            .ip-competition__additional
+              p.ip-competition__period= n++ + 'H 15:23'
+              .ip-competition__action
+                a.ip-competition__play
+                  svg(width='15' height='11' viewBox='0 0 15 11' fill='none' xmlns='http://www.w3.org/2000/svg')
+                    path(fill-rule='evenodd' clip-rule='evenodd' d='M2 0C0.895431 0 0 0.895431 0 2V9C0 10.1046 0.89543 11 2 11H13C14.1046 11 15 10.1046 15 9V2C15 0.895431 14.1046 0 13 0H2ZM10.1613 5.27083L5.80645 3.20833V7.33333L10.1613 5.27083Z' fill='#E5142E')
+                a.ip-competition__field
+                  svg(width='17' height='12' viewBox='0 0 17 12' fill='none' xmlns='http://www.w3.org/2000/svg')
+                    path(d='M8.5 0.5V3.5' stroke='#B5B7C6' stroke-linecap='square')
+                    path(d='M8.5 8C9.60457 8 10.5 7.10457 10.5 6C10.5 4.89543 9.60457 4 8.5 4C7.39543 4 6.5 4.89543 6.5 6C6.5 7.10457 7.39543 8 8.5 8Z' stroke='#B5B7C6')
+                    rect(x='0.5' y='0.5' width='16' height='11' stroke='#B5B7C6')
+                    rect(x='0.5' y='3.5' width='3' height='5' stroke='#B5B7C6')
+                    rect(x='13.5' y='3.5' width='3' height='5' stroke='#B5B7C6')
+                    path(d='M8.5 8.5V11.5' stroke='#B5B7C6' stroke-linecap='square')
+
+                a.ip-competition__stats
+                  svg(width='11' height='11' viewBox='0 0 11 11' fill='none' xmlns='http://www.w3.org/2000/svg')
+                    rect(width='3' height='11' fill='#B5B7C6')
+                    rect(x='4' y='4' width='3' height='7' fill='#B5B7C6')
+                    rect(x='8' y='2' width='3' height='9' fill='#B5B7C6')
+
+            .ip-competition__divider
+
+            .ip-competition__details
+              .ip-competition__block.ip-competition__block--lg
+                .ip-competition__wrap
+                  p.ip-competition__team Juventus
+                  .ip-competition__goal Goal
+                .ip-competition__wrap
+                  p.ip-competition__team Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores blanditiis consectetur delectus dolore dolorum facere facilis incidunt inventore iste iusto laboriosam nemo nesciunt optio, reiciendis rem ut voluptatem voluptatibus.
+
+              .ip-competition__block.ip-competition__block--sm
+                if(set)
+                  table
+                    tr
+                      td
+                        p.ip-competition__score 2
+                      td
+                        p.ip-competition__score 2
+                      td
+                        p.ip-competition__score 2
+                      td
+                        p.ip-competition__score 2
+                      td
+                        p.ip-competition__score 2
+                    tr
+                      td
+                        p.ip-competition__score 2
+                      td
+                        p.ip-competition__score 2
+                      td
+                        p.ip-competition__score 2
+                      td
+                        p.ip-competition__score 2
+                      td
+                        p.ip-competition__score 2
+                else
+                  .ip-competition__wrap
+                    p.ip-competition__score 2
+                  .ip-competition__wrap
+                    p.ip-competition__score 1
+
+          .ip-competition__row
+            .ip-competition__info
+              button.ip-competition__btn
+                span.ip-competition__market 1
+                span.ip-competition__coff 2.17
+              button.ip-competition__btn
+                span.ip-competition__market x
+                span.ip-competition__coff 2.17
+              button.ip-competition__btn
+                span.ip-competition__market x
+                span.ip-competition__coff 2.17
+            button.ip-competition__btn.ip-competition__btn--market
+              span +148

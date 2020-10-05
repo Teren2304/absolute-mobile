@@ -17,18 +17,13 @@
     margin: 4px 0;
   }
 
-  &__remember-stake,
   &__bonus,
   &__info {
+    @include size(100%, 60px);
     @include flex(space-between, center);
 
     position: relative;
     border-bottom: 1px solid rgba(#c2d3d4, 0.5);
-  }
-
-  &__bonus,
-  &__info {
-    @include size(100%, 60px);
   }
 
   &__advance,
@@ -45,12 +40,6 @@
 
   &__ok {
     color: $green;
-  }
-
-  &__remember-stake {
-    @include size(100%, 55px);
-
-    padding: 0 10px;
   }
 
   &__wrapper {
@@ -135,24 +124,6 @@
         &__bottom {
           display: none;
         }
-
-        //&__block {
-        //
-        //  &::after {
-        //    position: absolute;
-        //    top: 0;
-        //    right: 0;
-        //    bottom: 0;
-        //    left: 0;
-        //    z-index: 1;
-        //    background-color: rgba(#fff, 0.4);
-        //    content: '';
-        //  }
-        //}
-        //
-        //&__close {
-        //  display: none;
-        //}
       }
     }
   }
@@ -591,6 +562,64 @@
 
         &-bg {
           background-color: $blue;
+        }
+      }
+    }
+  }
+
+  &__settings {
+
+    &-header {
+      @include flex(space-between, center);
+      @include size(100%, 55px);
+
+      border-bottom: 1px solid rgba(#c2d3d4, 0.5);
+      background-color: #f6f8ff;
+      padding: 0 10px;
+    }
+
+    &-icon {
+      @include size(16px);
+
+      margin-left: 10px;
+    }
+
+    &-body {
+      display: none;
+      background-color: #f1f3f7;
+      padding: 0 10px;
+    }
+
+    &-item {
+      @include flex(space-between, center);
+      @include size(100%, 58px);
+
+      border-bottom: 1px solid rgba(#c2d3d4, 0.5);
+
+      &:last-child {
+        border-bottom: 0;
+      }
+    }
+
+    &--active {
+
+      .betslip {
+
+        &__settings {
+
+          &-icon {
+
+            svg {
+
+              path {
+                fill: $blue;
+              }
+            }
+          }
+
+          &-body {
+            display: block;
+          }
         }
       }
     }

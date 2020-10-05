@@ -1,0 +1,64 @@
+.wn-banner {
+  @include size(100%);
+
+  position: relative;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+
+  &__wrap {
+    @include flex(flex-end, flex-start, column);
+    @include size(100%);
+
+    position: relative;
+    flex-grow: 1;
+    z-index: 1;
+    padding: 24px;
+  }
+
+  &__subtitle {
+    margin-bottom: 12px;
+    color: #fff;
+    font-size: 20px;
+  }
+
+  &__title {
+    margin-bottom: 8px;
+    color: $gold;
+  }
+
+  &__text {
+    color: rgba(#fff, 0.5);
+  }
+
+  &__btn {
+    @include reset-button;
+
+    margin-top: 15px;
+    border: 1px solid $gold;
+    border-radius: 2px;
+    padding: 0 10px;
+    height: 24px;
+    color: $gold;
+    font-size: 11px;
+
+    &--active {
+      background-color: $gold;
+      color: #fff;
+    }
+  }
+
+  &--shadow {
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background: rgba(11, 29, 91, 0.6);
+    }
+  }
+}

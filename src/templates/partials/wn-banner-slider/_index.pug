@@ -1,0 +1,13 @@
+include ../wn-banner/_index
+
+mixin wn-banner-slider
+  .wn-banner-slider&attributes(attributes)
+    .wn-banner-slider__wrap
+      .wn-banner-slider__item
+        +wn-banner(style="background-image: url('/img/banners/1.png')")
+      .wn-banner-slider__item
+        +wn-banner(style="background-image: url('/img/banners/1.png')").wn-banner--shadow
+    .wn-banner-slider__dots
+      span.active
+      span
+      span

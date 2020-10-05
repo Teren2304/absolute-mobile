@@ -13,6 +13,22 @@
     overflow: hidden;
   }
 
+  &__head {
+    @include flex($align-items: center);
+
+    min-height: 40px;
+    overflow-x: auto;
+
+    .ip-competition {
+
+      &__header {
+        margin-right: 10px;
+        width: 325px;
+        padding-right: 0;
+      }
+    }
+  }
+
   &__header {
     @include size(100%, 40px);
     @include flex($align-items: center);
@@ -22,6 +38,26 @@
 
   &__wrapper {
     padding: 0 5px 1px;
+
+    &--inline {
+      @include flex($align-items: center);
+
+      padding: 0 5px 5px;
+      overflow-x: auto;
+
+      .ip-competition {
+
+        &__item {
+          margin-right: 10px;
+          margin-bottom: 0;
+          width: 325px;
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
   }
 
   &__flag {

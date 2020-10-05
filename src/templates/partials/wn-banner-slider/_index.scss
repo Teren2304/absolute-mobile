@@ -1,0 +1,43 @@
+.wn-banner-slider {
+  position: relative;
+  padding-bottom: 24px;
+
+  &__wrap {
+    @include flex($align-items: center);
+
+    padding: 10px 10px 0;
+    overflow: hidden;
+  }
+
+  &__item {
+    @include size(286px, 160px);
+
+    flex-shrink: 0;
+    margin-right: 10px;
+    border-radius: 2px;
+    overflow: hidden;
+  }
+
+  &__dots {
+    @include flex(center, center);
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 14px;
+
+    span {
+      @include size(16px, 4px);
+
+      margin: 0 5px;
+      border-radius: 2px;
+      background-color: rgba($blue, 0.5);
+
+      &.active {
+        box-shadow: 0 0 4px #a4adff;
+        background-color: $blue;
+      }
+    }
+  }
+}

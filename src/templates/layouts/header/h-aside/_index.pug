@@ -1,12 +1,22 @@
 include ../h-search/_index
 include ../h-category/_index
+include ../../../partials/wn-classification-sports/_index
 
-aside.h-aside
-  .h-aside__top
-    +h-search(true)
-    include ../h-menu/_index
-  .h-aside__center
-    each category,index in categorys
-      +h-category(category.name)(class=index === 0 && 'h-category--active')
-  .h-aside__bottom
-    include ../h-service/_index
+mixin h-aside
+  aside.h-aside&attributes(attributes)
+    .h-aside__top
+      +h-search(true)
+      include ../h-menu/_index
+    .h-aside__center
+      each category,index in categorys
+        +h-category(category.name)(class=index === 0 && 'h-category--active')
+    .h-aside__bottom
+      include ../h-service/_index
+
+
+mixin h-aside-sports
+  aside.h-aside&attributes(attributes)
+    .h-aside__center.h-aside__center--padding
+      +wn-classification-sports
+    .h-aside__bottom
+      include ../h-service/_index

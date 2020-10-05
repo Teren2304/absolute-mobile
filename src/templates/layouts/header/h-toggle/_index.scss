@@ -11,7 +11,7 @@
     @include size(100%, 2px);
 
     transition: $default-transition;
-    margin: 2px 0;
+    margin: 3px 0;
     background-color: $gold;
 
     &:nth-child(2) {
@@ -28,7 +28,7 @@
         background-color: #fff;
 
         &:nth-child(1) {
-          transform: translateY(6px) rotate(45deg);
+          transform: translateY(8px) rotate(45deg);
         }
 
         &:nth-child(2) {
@@ -36,7 +36,7 @@
         }
 
         &:nth-child(3) {
-          transform: translateY(-6px) rotate(-45deg);
+          transform: translateY(-8px) rotate(-45deg);
         }
       }
     }
