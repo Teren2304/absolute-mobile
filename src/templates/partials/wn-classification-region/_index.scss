@@ -1,0 +1,53 @@
+.wn-classification-region {
+
+  &__header {
+    @include flex(flex-start, center);
+    @include size(100%, 48px);
+
+    border-bottom: 1px solid #2f3345;
+    background-color: #1a1e30;
+    padding: 5px 10px;
+  }
+
+  &__icon {
+    @include flex(center, center);
+    @include size(10px, 6px);
+
+    margin-right: 10px;
+  }
+
+  &__body {
+    display: none;
+  }
+
+  &__text {
+    @include ellipsis;
+
+    margin-right: 10px;
+    color: #9a9b9f;
+    font-size: 15px;
+  }
+
+  &__favourite {
+    margin-right: 0;
+    margin-left: auto;
+  }
+
+  &--active {
+
+    .wn-classification-region {
+
+      &__icon {
+        transform: rotateZ(180deg);
+      }
+
+      &__body {
+        display: block;
+      }
+
+      &__text {
+        color: #fff;
+      }
+    }
+  }
+}

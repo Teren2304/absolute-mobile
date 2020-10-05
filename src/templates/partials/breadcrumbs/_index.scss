@@ -1,0 +1,68 @@
+.breadcrumbs {
+  @include size(100%, 40px);
+
+  position: relative;
+  background-color: #232737;
+  overflow: hidden;
+
+  &__wrap {
+    @include flex($align-items: center);
+
+    padding: 0 10px;
+    height: 100%;
+  }
+
+  &__back {
+    margin-right: 10px;
+    margin-left: 0;
+
+    &--active {
+
+      svg {
+
+        path {
+          stroke: #fff;
+        }
+      }
+    }
+  }
+
+  &__item {
+    @include flex($align-items: center);
+
+    position: relative;
+    margin-right: 5px;
+    padding-right: 10px;
+
+    &::after {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      color: rgba(#fff, 0.5);
+      content: '/';
+    }
+
+    &:last-child {
+
+      &::after {
+        display: none;
+      }
+
+      .breadcrumbs {
+
+        &__link {
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  &__link {
+    color: rgba(#fff, 0.5);
+
+    &--active {
+      color: #fff;
+    }
+  }
+}

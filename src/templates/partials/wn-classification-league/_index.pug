@@ -1,0 +1,9 @@
+mixin wn-classification-league(active)
+  .wn-classification-league&attributes(attributes)
+    .wn-classification-league__header
+      p.wn-classification-league__text Premier League
+      p.wn-classification-league__count 320
+      hr.wn-classification-league__hr
+      a.wn-classification-league__favourite(class=active && 'wn-classification-league__favourite--active')
+        svg(width='14' height='14' viewbox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg')
+          path(d='M7.23267 10.5978L7 10.4755L6.76733 10.5978L3.33783 12.4008L3.9928 8.58198L4.03724 8.3229L3.84901 8.13941L1.07448 5.43492L4.90878 4.87776L5.16891 4.83996L5.28525 4.60424L7 1.12978L8.71475 4.60424L8.83109 4.83996L9.09122 4.87776L12.9255 5.43492L10.151 8.13941L9.96276 8.3229L10.0072 8.58198L10.6622 12.4008L7.23267 10.5978Z' stroke='#9A9B9F')

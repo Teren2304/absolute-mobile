@@ -6,10 +6,31 @@ hasLink: false
 extends ../../../layouts/_layout
 
 include ../../../layouts/header/_index
+include ../../../partials/betslip/_index
+include ../../../partials/b-accept/_index
+include ../../../partials/ip-control-bar/_index
+include ../../../partials/ip-competition/_index
 include ../../../partials/cb-aside/_index
+include ../../../partials/ip-classification-header/_index
+include ../../../partials/breadcrumbs/_index
 
 block content
   +header-in
   .main
-    p Prematch
-    +cb-aside
+    +breadcrumbs
+    +ip-classification-header-2.ip-classification-header--soccer
+    +ip-control-bar
+    +ip-competition(true)
+    +ip-competition
+    +ip-classification-header-4.ip-classification-header--date
+    +ip-competition(true)
+    +ip-competition
+    +ip-classification-header-4.ip-classification-header--date
+    +ip-competition(true)
+    +ip-competition
+
+    +betslip
+
+  +b-accept
+
+  +cb-aside

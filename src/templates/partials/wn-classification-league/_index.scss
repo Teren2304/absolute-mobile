@@ -1,0 +1,57 @@
+.wn-classification-league {
+
+  &__header {
+    @include flex(flex-start, center);
+    @include size(100%, 48px);
+
+    border-bottom: 1px solid #2f3345;
+    background-color: #1a1e30;
+    padding: 5px 10px;
+  }
+
+  &__count {
+    margin-right: 0;
+    margin-left: auto;
+    color: $gold;
+  }
+
+  &__text {
+    @include ellipsis;
+
+    margin-right: 10px;
+    color: #9a9b9f;
+    font-size: 15px;
+  }
+
+  &__hr {
+    @include size(1px, 14px);
+
+    margin: 0 10px;
+    border: 0;
+    background-color: rgba(#9a9b9f, 0.5);
+  }
+
+  &__favourite {
+
+    &--active {
+
+      svg {
+
+        path {
+          fill: $gold;
+          stroke: $gold;
+        }
+      }
+    }
+  }
+
+  &--active {
+
+    .wn-classification-league {
+
+      &__text {
+        color: #fff;
+      }
+    }
+  }
+}

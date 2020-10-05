@@ -1,0 +1,42 @@
+.wn-classification-sports {
+  position: relative;
+  height: calc(100vh - 105px);
+  overflow: hidden;
+
+  &__header {
+    @include flex($align-items: center);
+    @include size(100%, 50px);
+
+    background-color: #232737;
+    padding: 0 10px;
+  }
+
+  &__back {
+    margin-right: 14px;
+    margin-left: 0;
+
+    &--active {
+
+      svg {
+
+        path {
+          stroke: #fff;
+        }
+      }
+    }
+  }
+
+  &__link {
+    color: #fff;
+
+    &--active {
+      color: #fff;
+    }
+  }
+
+  &__body {
+    @include overflow-y;
+
+    max-height: calc(100% - 50px);
+  }
+}
