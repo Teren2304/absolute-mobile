@@ -1,0 +1,18 @@
+.ip-header {
+  @include size(100%, 40px);
+  @include flex($align-items: center);
+
+  background-color: #1a1e30;
+  padding: 0 10px;
+
+  &__icon {
+    @include size(20px);
+
+    margin-right: 10px;
+  }
+
+  &__text {
+    color: #fff;
+    font-weight: 500;
+  }
+}

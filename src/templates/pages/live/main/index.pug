@@ -8,29 +8,30 @@ extends ../../../layouts/_layout
 include ../../../layouts/header/_index
 include ../../../partials/betslip/_index
 include ../../../partials/b-accept/_index
+include ../../../partials/ip-header/_index
 include ../../../partials/ip-classification-bar/_index
-include ../../../partials/ip-control-bar/_index
-include ../../../partials/ip-competition/_index
 include ../../../partials/cb-aside/_index
 include ../../../partials/ip-classification-header/_index
 include ../../../partials/wn-classification-bar/_index
-
+include ../../../partials/wn-top-matches/_index
 block content
   +header-in
   .main
     +ip-classification-bar
-    +ip-control-bar
-    +wn-classification-bar
-    +ip-classification-header.ip-classification-header--soccer
-    +ip-competition(true)
-    +ip-competition
+    +ip-header
+    +ip-classification-header-2.ip-classification-header--soccer
+    +wn-top-matches
     +ip-classification-header-2.ip-classification-header--basketball
-    +ip-competition(true)
-    +ip-classification-header-4.ip-classification-header--date
-    +ip-competition(true)
+    +wn-top-matches
+    +ip-classification-header-2.ip-classification-header--snooker
+    +wn-top-matches
+    +wn-classification-bar
     +ip-classification-header-3.ip-classification-header--tennis
-    +ip-competition
-    +ip-competition
+    +wn-top-matches
+    +ip-classification-header-3.ip-classification-header--baseball
+    +wn-top-matches
+    +ip-classification-header-3.ip-classification-header--ice_hockey
+    +wn-top-matches
 
     +betslip
 

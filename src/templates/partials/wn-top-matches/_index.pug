@@ -1,0 +1,9 @@
+include ../../partials/ip-competition/_index
+
+mixin wn-top-matches(set)
+  .wn-top-matches&attributes(attributes)
+    .wn-top-matches__slider
+      .wn-top-matches__item
+        +ip-competition(true)
+      .wn-top-matches__item
+        +ip-competition

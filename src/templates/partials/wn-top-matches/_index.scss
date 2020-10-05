@@ -1,0 +1,14 @@
+.wn-top-matches {
+  background-color: #f1f3f7;
+
+  &__slider {
+    @include flex($align-items: center);
+
+    overflow-x: auto;
+  }
+
+  &__item {
+    padding-bottom: 5px;
+    width: calc(100% - 15px);
+  }
+}

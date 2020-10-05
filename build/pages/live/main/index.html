@@ -608,8 +608,523 @@
             </div>
           </div>
         </div>
-        <div class="ip-control-bar">
-          <div class="ip-control-bar__wrap"><a class="ip-control-bar__link ip-control-bar__link--active" href="#">Overview</a><a class="ip-control-bar__link" href="#">Event View</a><a class="ip-control-bar__link" href="#">Schedule</a></div>
+        <div class="ip-header">
+          <div class="ip-header__icon"><svg width="100%" height="100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M7.95728 9.55786C8.7857 9.55786 9.45728 8.88629 9.45728 8.05786C9.45728 7.22943 8.7857 6.55786 7.95728 6.55786C7.12885 6.55786 6.45728 7.22943 6.45728 8.05786C6.45728 8.88629 7.12885 9.55786 7.95728 9.55786Z" fill="white"></path>
+              <path d="M11.1341 11.0631L10.7805 11.4166L11.1341 11.7702L11.4876 11.4166L11.1341 11.0631ZM11.1341 5.05268L11.4876 4.69913L11.1341 4.34558L10.7805 4.69913L11.1341 5.05268ZM10.7805 10.7095L10.4269 10.356L10.0734 10.7095L10.4269 11.0631L10.7805 10.7095ZM10.7805 5.40624L10.4269 5.05268L10.0734 5.40624L10.4269 5.75979L10.7805 5.40624ZM4.7805 5.05268L5.13405 4.69913L4.7805 4.34558L4.42695 4.69913L4.7805 5.05268ZM4.7805 11.0631L4.42695 11.4166L4.7805 11.7702L5.13405 11.4166L4.7805 11.0631ZM5.13405 5.40624L5.48761 5.75979L5.84116 5.40624L5.48761 5.05268L5.13405 5.40624ZM5.13405 10.7095L5.48761 11.0631L5.84116 10.7095L5.48761 10.356L5.13405 10.7095ZM11.4876 11.4166C13.3426 9.56165 13.3426 6.55412 11.4876 4.69913L10.7805 5.40624C12.245 6.8707 12.245 9.24507 10.7805 10.7095L11.4876 11.4166ZM10.4269 11.0631L10.7805 11.4166L11.4876 10.7095L11.1341 10.356L10.4269 11.0631ZM10.4269 5.75979C11.6961 7.02899 11.6961 9.08678 10.4269 10.356L11.1341 11.0631C12.7938 9.40336 12.7938 6.71241 11.1341 5.05268L10.4269 5.75979ZM10.7805 4.69913L10.4269 5.05268L11.1341 5.75979L11.4876 5.40624L10.7805 4.69913ZM4.42695 4.69913C2.57196 6.55412 2.57195 9.56165 4.42695 11.4166L5.13405 10.7095C3.66959 9.24507 3.66959 6.8707 5.13405 5.40624L4.42695 4.69913ZM5.48761 5.05268L5.13405 4.69913L4.42695 5.40624L4.7805 5.75979L5.48761 5.05268ZM5.48761 10.356C4.2184 9.08678 4.2184 7.02899 5.48761 5.75979L4.7805 5.05268C3.12077 6.71241 3.12077 9.40336 4.7805 11.0631L5.48761 10.356ZM5.13405 11.4166L5.48761 11.0631L4.7805 10.356L4.42695 10.7095L5.13405 11.4166Z" fill="white"></path>
+              <path d="M12.9937 13.2745L12.6843 13.5839L12.9937 13.8932L13.303 13.5839L12.9937 13.2745ZM12.9937 2.84122L13.303 2.53186L12.9937 2.2225L12.6843 2.53186L12.9937 2.84122ZM12.6401 12.921L12.3308 12.6116L12.0214 12.921L12.3308 13.2303L12.6401 12.921ZM12.6401 3.19477L12.3308 2.88541L12.0214 3.19477L12.3308 3.50413L12.6401 3.19477ZM2.92087 2.84122L3.23023 2.53186L2.92087 2.2225L2.61151 2.53186L2.92087 2.84122ZM2.92087 13.2745L2.61151 13.5839L2.92087 13.8932L3.23023 13.5839L2.92087 13.2745ZM3.27443 3.19477L3.58379 3.50413L3.89314 3.19477L3.58379 2.88541L3.27443 3.19477ZM3.27443 12.921L3.58379 13.2303L3.89314 12.921L3.58379 12.6116L3.27443 12.921ZM13.303 13.5839C16.355 10.5319 16.355 5.58379 13.303 2.53186L12.6843 3.15058C15.3945 5.8608 15.3945 10.2549 12.6843 12.9652L13.303 13.5839ZM12.3308 13.2303L12.6843 13.5839L13.303 12.9652L12.9495 12.6116L12.3308 13.2303ZM12.3308 3.50413C14.8457 6.01909 14.8457 10.0966 12.3308 12.6116L12.9495 13.2303C15.8061 10.3737 15.8061 5.74208 12.9495 2.88541L12.3308 3.50413ZM12.6843 2.53186L12.3308 2.88541L12.9495 3.50413L13.303 3.15058L12.6843 2.53186ZM2.61151 2.53186C-0.440414 5.58379 -0.440415 10.5319 2.61151 13.5839L3.23023 12.9652C0.520013 10.2549 0.520013 5.8608 3.23023 3.15058L2.61151 2.53186ZM3.58379 2.88541L3.23023 2.53186L2.61151 3.15058L2.96507 3.50413L3.58379 2.88541ZM3.58379 12.6116C1.06883 10.0966 1.06883 6.01909 3.58379 3.50413L2.96507 2.88541C0.108401 5.74208 0.108401 10.3737 2.96507 13.2303L3.58379 12.6116ZM3.23023 13.5839L3.58379 13.2303L2.96507 12.6116L2.61151 12.9652L3.23023 13.5839Z" fill="white"></path>
+            </svg></div>
+          <p class="ip-header__text">Live</p>
+        </div>
+        <div class="ip-classification-header ip-classification-header--soccer">
+          <div class="ip-classification-header__wrap">
+            <div class="ip-classification-header__sports">
+              <div class="ip-classification-header__icon"><svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M15.2435 1.25721C13.7509 -0.235779 7.61682 0.327107 3.68813 4.31622C-0.187384 8.25144 -0.717894 14.2731 0.75649 15.7478C2.20954 17.2011 8.32615 16.7358 12.3119 12.6888C16.1874 8.75355 16.7179 2.73194 15.2435 1.25721ZM14.5781 1.92278C15.1078 2.45263 15.3291 4.54508 14.5509 7.08256C14.4494 6.98094 9.93309 2.46361 9.41958 1.94995C11.9528 1.17275 14.0478 1.39242 14.5781 1.92278ZM7.56402 14.708L5.01268 12.1561L6.27229 10.8962L6.70413 11.3281C6.88791 11.5119 7.18579 11.5119 7.36954 11.3281C7.55329 11.1443 7.55329 10.8463 7.36954 10.6625L6.9377 10.2306L8 9.16805L8.43185 9.59999C8.6156 9.7838 8.91348 9.78377 9.09726 9.59999C9.28101 9.41621 9.28101 9.1182 9.09726 8.93442L8.66542 8.50248L9.72772 7.43989L10.1596 7.87183C10.3433 8.05564 10.6412 8.05561 10.825 7.87183C11.0087 7.68805 11.0087 7.39004 10.825 7.20626L10.3931 6.77432L11.6526 5.51459L14.204 8.06659C12.9628 11.1783 10.6758 13.4664 7.56402 14.708ZM8.43577 2.29702L10.9872 4.84905L9.72772 6.10879L9.29588 5.67685C9.11213 5.49307 8.81422 5.49307 8.63047 5.67685C8.44672 5.86063 8.44672 6.15864 8.63047 6.34242L9.06231 6.77435L8 7.83694L7.56816 7.40501C7.38441 7.22123 7.0865 7.22123 6.90275 7.40501C6.719 7.58879 6.719 7.88679 6.90275 8.07057L7.33459 8.50251L6.27229 9.5651L5.84044 9.13316C5.65669 8.94938 5.35878 8.94938 5.17503 9.13316C4.99128 9.31694 4.99128 9.61495 5.17503 9.79873L5.60687 10.2307L4.34727 11.4906L1.79596 8.93859C3.03486 5.83324 5.31756 3.54122 8.43577 2.29702ZM1.4219 15.0822C0.89249 14.5526 0.670718 12.4608 1.44901 9.92265L6.58021 15.0551C4.03401 15.8362 1.9468 15.6072 1.4219 15.0822Z" fill="white"></path>
+                </svg></div>
+              <p class="ip-classification-header__text ip-classification-header__text--ellipsis">Soccer</p>
+            </div>
+            <div class="ip-classification-header__drop">
+              <p class="ip-classification-header__drop-toggle">Both team to score</p>
+              <div class="ip-classification-header__drop-menu"><a class="ip-classification-header__drop-item">Asian handicap (0 - 0)</a><a class="ip-classification-header__drop-item">3rd Goal</a><a class="ip-classification-header__drop-item">Match winner</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="wn-top-matches">
+          <div class="wn-top-matches__slider">
+            <div class="wn-top-matches__item">
+              <div class="ip-competition">
+                <div class="ip-competition__header">
+                  <div class="ip-competition__flag"><img src="img/icon-country/ua.png" alt="" /></div>
+                  <div class="ip-competition__league">England. Premier League</div>
+                  <div class="ip-competition__favourite"><svg width="14" height="14" viewbox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.23267 10.5978L7 10.4755L6.76733 10.5978L3.33783 12.4008L3.9928 8.58198L4.03724 8.3229L3.84901 8.13941L1.07448 5.43492L4.90878 4.87776L5.16891 4.83996L5.28525 4.60424L7 1.12978L8.71475 4.60424L8.83109 4.83996L9.09122 4.87776L12.9255 5.43492L10.151 8.13941L9.96276 8.3229L10.0072 8.58198L10.6622 12.4008L7.23267 10.5978Z" stroke="#979797"></path>
+                    </svg></div>
+                  <div class="ip-competition__drop">
+                    <p class="ip-competition__drop-toggle">Both team to score</p>
+                    <div class="ip-competition__drop-menu"><a class="ip-competition__drop-item">Asian handicap (0 - 0)</a><a class="ip-competition__drop-item">3rd Goal</a><a class="ip-competition__drop-item">Match winner</a></div>
+                  </div>
+                </div>
+                <div class="ip-competition__wrapper">
+                  <div class="ip-competition__item">
+                    <div class="ip-competition__row">
+                      <div class="ip-competition__additional">
+                        <p class="ip-competition__period">NaNH 15:23</p>
+                        <div class="ip-competition__action"><a class="ip-competition__play"><svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M2 0C0.895431 0 0 0.895431 0 2V9C0 10.1046 0.89543 11 2 11H13C14.1046 11 15 10.1046 15 9V2C15 0.895431 14.1046 0 13 0H2ZM10.1613 5.27083L5.80645 3.20833V7.33333L10.1613 5.27083Z" fill="#E5142E"></path>
+                            </svg></a><a class="ip-competition__field"><svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M8.5 0.5V3.5" stroke="#B5B7C6" stroke-linecap="square"></path>
+                              <path d="M8.5 8C9.60457 8 10.5 7.10457 10.5 6C10.5 4.89543 9.60457 4 8.5 4C7.39543 4 6.5 4.89543 6.5 6C6.5 7.10457 7.39543 8 8.5 8Z" stroke="#B5B7C6"></path>
+                              <rect x="0.5" y="0.5" width="16" height="11" stroke="#B5B7C6"></rect>
+                              <rect x="0.5" y="3.5" width="3" height="5" stroke="#B5B7C6"></rect>
+                              <rect x="13.5" y="3.5" width="3" height="5" stroke="#B5B7C6"></rect>
+                              <path d="M8.5 8.5V11.5" stroke="#B5B7C6" stroke-linecap="square"></path>
+                            </svg></a><a class="ip-competition__stats"><svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <rect width="3" height="11" fill="#B5B7C6"></rect>
+                              <rect x="4" y="4" width="3" height="7" fill="#B5B7C6"></rect>
+                              <rect x="8" y="2" width="3" height="9" fill="#B5B7C6"></rect>
+                            </svg></a></div>
+                      </div>
+                      <div class="ip-competition__divider"></div>
+                      <div class="ip-competition__details">
+                        <div class="ip-competition__block ip-competition__block--lg">
+                          <div class="ip-competition__wrap">
+                            <p class="ip-competition__team">Juventus</p>
+                            <div class="ip-competition__goal">Goal</div>
+                          </div>
+                          <div class="ip-competition__wrap">
+                            <p class="ip-competition__team">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores blanditiis consectetur delectus dolore dolorum facere facilis incidunt inventore iste iusto laboriosam nemo nesciunt optio, reiciendis rem ut voluptatem voluptatibus.</p>
+                          </div>
+                        </div>
+                        <div class="ip-competition__block ip-competition__block--sm">
+                          <table>
+                            <tr>
+                              <td>
+                                <p class="ip-competition__score">2</p>
+                              </td>
+                              <td>
+                                <p class="ip-competition__score">2</p>
+                              </td>
+                              <td>
+                                <p class="ip-competition__score">2</p>
+                              </td>
+                              <td>
+                                <p class="ip-competition__score">2</p>
+                              </td>
+                              <td>
+                                <p class="ip-competition__score">2</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <p class="ip-competition__score">2</p>
+                              </td>
+                              <td>
+                                <p class="ip-competition__score">2</p>
+                              </td>
+                              <td>
+                                <p class="ip-competition__score">2</p>
+                              </td>
+                              <td>
+                                <p class="ip-competition__score">2</p>
+                              </td>
+                              <td>
+                                <p class="ip-competition__score">2</p>
+                              </td>
+                            </tr>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ip-competition__row">
+                      <div class="ip-competition__info"><button class="ip-competition__btn"><span class="ip-competition__market">1</span><span class="ip-competition__coff">2.17</span></button><button class="ip-competition__btn"><span class="ip-competition__market">x</span><span class="ip-competition__coff">2.17</span></button><button class="ip-competition__btn"><span class="ip-competition__market">x</span><span class="ip-competition__coff">2.17</span></button></div><button class="ip-competition__btn ip-competition__btn--market"><span>+148</span></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="wn-top-matches__item">
+              <div class="ip-competition">
+                <div class="ip-competition__header">
+                  <div class="ip-competition__flag"><img src="img/icon-country/ua.png" alt="" /></div>
+                  <div class="ip-competition__league">England. Premier League</div>
+                  <div class="ip-competition__favourite"><svg width="14" height="14" viewbox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.23267 10.5978L7 10.4755L6.76733 10.5978L3.33783 12.4008L3.9928 8.58198L4.03724 8.3229L3.84901 8.13941L1.07448 5.43492L4.90878 4.87776L5.16891 4.83996L5.28525 4.60424L7 1.12978L8.71475 4.60424L8.83109 4.83996L9.09122 4.87776L12.9255 5.43492L10.151 8.13941L9.96276 8.3229L10.0072 8.58198L10.6622 12.4008L7.23267 10.5978Z" stroke="#979797"></path>
+                    </svg></div>
+                  <div class="ip-competition__drop">
+                    <p class="ip-competition__drop-toggle">Both team to score</p>
+                    <div class="ip-competition__drop-menu"><a class="ip-competition__drop-item">Asian handicap (0 - 0)</a><a class="ip-competition__drop-item">3rd Goal</a><a class="ip-competition__drop-item">Match winner</a></div>
+                  </div>
+                </div>
+                <div class="ip-competition__wrapper">
+                  <div class="ip-competition__item">
+                    <div class="ip-competition__row">
+                      <div class="ip-competition__additional">
+                        <p class="ip-competition__period">NaNH 15:23</p>
+                        <div class="ip-competition__action"><a class="ip-competition__play"><svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M2 0C0.895431 0 0 0.895431 0 2V9C0 10.1046 0.89543 11 2 11H13C14.1046 11 15 10.1046 15 9V2C15 0.895431 14.1046 0 13 0H2ZM10.1613 5.27083L5.80645 3.20833V7.33333L10.1613 5.27083Z" fill="#E5142E"></path>
+                            </svg></a><a class="ip-competition__field"><svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M8.5 0.5V3.5" stroke="#B5B7C6" stroke-linecap="square"></path>
+                              <path d="M8.5 8C9.60457 8 10.5 7.10457 10.5 6C10.5 4.89543 9.60457 4 8.5 4C7.39543 4 6.5 4.89543 6.5 6C6.5 7.10457 7.39543 8 8.5 8Z" stroke="#B5B7C6"></path>
+                              <rect x="0.5" y="0.5" width="16" height="11" stroke="#B5B7C6"></rect>
+                              <rect x="0.5" y="3.5" width="3" height="5" stroke="#B5B7C6"></rect>
+                              <rect x="13.5" y="3.5" width="3" height="5" stroke="#B5B7C6"></rect>
+                              <path d="M8.5 8.5V11.5" stroke="#B5B7C6" stroke-linecap="square"></path>
+                            </svg></a><a class="ip-competition__stats"><svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <rect width="3" height="11" fill="#B5B7C6"></rect>
+                              <rect x="4" y="4" width="3" height="7" fill="#B5B7C6"></rect>
+                              <rect x="8" y="2" width="3" height="9" fill="#B5B7C6"></rect>
+                            </svg></a></div>
+                      </div>
+                      <div class="ip-competition__divider"></div>
+                      <div class="ip-competition__details">
+                        <div class="ip-competition__block ip-competition__block--lg">
+                          <div class="ip-competition__wrap">
+                            <p class="ip-competition__team">Juventus</p>
+                            <div class="ip-competition__goal">Goal</div>
+                          </div>
+                          <div class="ip-competition__wrap">
+                            <p class="ip-competition__team">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores blanditiis consectetur delectus dolore dolorum facere facilis incidunt inventore iste iusto laboriosam nemo nesciunt optio, reiciendis rem ut voluptatem voluptatibus.</p>
+                          </div>
+                        </div>
+                        <div class="ip-competition__block ip-competition__block--sm">
+                          <div class="ip-competition__wrap">
+                            <p class="ip-competition__score">2</p>
+                          </div>
+                          <div class="ip-competition__wrap">
+                            <p class="ip-competition__score">1</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ip-competition__row">
+                      <div class="ip-competition__info"><button class="ip-competition__btn"><span class="ip-competition__market">1</span><span class="ip-competition__coff">2.17</span></button><button class="ip-competition__btn"><span class="ip-competition__market">x</span><span class="ip-competition__coff">2.17</span></button><button class="ip-competition__btn"><span class="ip-competition__market">x</span><span class="ip-competition__coff">2.17</span></button></div><button class="ip-competition__btn ip-competition__btn--market"><span>+148</span></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ip-classification-header ip-classification-header--basketball">
+          <div class="ip-classification-header__wrap">
+            <div class="ip-classification-header__sports">
+              <div class="ip-classification-header__icon"><svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M15.2435 1.25721C13.7509 -0.235779 7.61682 0.327107 3.68813 4.31622C-0.187384 8.25144 -0.717894 14.2731 0.75649 15.7478C2.20954 17.2011 8.32615 16.7358 12.3119 12.6888C16.1874 8.75355 16.7179 2.73194 15.2435 1.25721ZM14.5781 1.92278C15.1078 2.45263 15.3291 4.54508 14.5509 7.08256C14.4494 6.98094 9.93309 2.46361 9.41958 1.94995C11.9528 1.17275 14.0478 1.39242 14.5781 1.92278ZM7.56402 14.708L5.01268 12.1561L6.27229 10.8962L6.70413 11.3281C6.88791 11.5119 7.18579 11.5119 7.36954 11.3281C7.55329 11.1443 7.55329 10.8463 7.36954 10.6625L6.9377 10.2306L8 9.16805L8.43185 9.59999C8.6156 9.7838 8.91348 9.78377 9.09726 9.59999C9.28101 9.41621 9.28101 9.1182 9.09726 8.93442L8.66542 8.50248L9.72772 7.43989L10.1596 7.87183C10.3433 8.05564 10.6412 8.05561 10.825 7.87183C11.0087 7.68805 11.0087 7.39004 10.825 7.20626L10.3931 6.77432L11.6526 5.51459L14.204 8.06659C12.9628 11.1783 10.6758 13.4664 7.56402 14.708ZM8.43577 2.29702L10.9872 4.84905L9.72772 6.10879L9.29588 5.67685C9.11213 5.49307 8.81422 5.49307 8.63047 5.67685C8.44672 5.86063 8.44672 6.15864 8.63047 6.34242L9.06231 6.77435L8 7.83694L7.56816 7.40501C7.38441 7.22123 7.0865 7.22123 6.90275 7.40501C6.719 7.58879 6.719 7.88679 6.90275 8.07057L7.33459 8.50251L6.27229 9.5651L5.84044 9.13316C5.65669 8.94938 5.35878 8.94938 5.17503 9.13316C4.99128 9.31694 4.99128 9.61495 5.17503 9.79873L5.60687 10.2307L4.34727 11.4906L1.79596 8.93859C3.03486 5.83324 5.31756 3.54122 8.43577 2.29702ZM1.4219 15.0822C0.89249 14.5526 0.670718 12.4608 1.44901 9.92265L6.58021 15.0551C4.03401 15.8362 1.9468 15.6072 1.4219 15.0822Z" fill="white"></path>
+                </svg></div>
+              <p class="ip-classification-header__text ip-classification-header__text--ellipsis">Soccer</p>
+            </div>
+            <div class="ip-classification-header__drop">
+              <p class="ip-classification-header__drop-toggle">Both team to score</p>
+              <div class="ip-classification-header__drop-menu"><a class="ip-classification-header__drop-item">Asian handicap (0 - 0)</a><a class="ip-classification-header__drop-item">3rd Goal</a><a class="ip-classification-header__drop-item">Match winner</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="wn-top-matches">
+          <div class="wn-top-matches__slider">
+            <div class="wn-top-matches__item">
+              <div class="ip-competition">
+                <div class="ip-competition__header">
+                  <div class="ip-competition__flag"><img src="img/icon-country/ua.png" alt="" /></div>
+                  <div class="ip-competition__league">England. Premier League</div>
+                  <div class="ip-competition__favourite"><svg width="14" height="14" viewbox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.23267 10.5978L7 10.4755L6.76733 10.5978L3.33783 12.4008L3.9928 8.58198L4.03724 8.3229L3.84901 8.13941L1.07448 5.43492L4.90878 4.87776L5.16891 4.83996L5.28525 4.60424L7 1.12978L8.71475 4.60424L8.83109 4.83996L9.09122 4.87776L12.9255 5.43492L10.151 8.13941L9.96276 8.3229L10.0072 8.58198L10.6622 12.4008L7.23267 10.5978Z" stroke="#979797"></path>
+                    </svg></div>
+                  <div class="ip-competition__drop">
+                    <p class="ip-competition__drop-toggle">Both team to score</p>
+                    <div class="ip-competition__drop-menu"><a class="ip-competition__drop-item">Asian handicap (0 - 0)</a><a class="ip-competition__drop-item">3rd Goal</a><a class="ip-competition__drop-item">Match winner</a></div>
+                  </div>
+                </div>
+                <div class="ip-competition__wrapper">
+                  <div class="ip-competition__item">
+                    <div class="ip-competition__row">
+                      <div class="ip-competition__additional">
+                        <p class="ip-competition__period">NaNH 15:23</p>
+                        <div class="ip-competition__action"><a class="ip-competition__play"><svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M2 0C0.895431 0 0 0.895431 0 2V9C0 10.1046 0.89543 11 2 11H13C14.1046 11 15 10.1046 15 9V2C15 0.895431 14.1046 0 13 0H2ZM10.1613 5.27083L5.80645 3.20833V7.33333L10.1613 5.27083Z" fill="#E5142E"></path>
+                            </svg></a><a class="ip-competition__field"><svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M8.5 0.5V3.5" stroke="#B5B7C6" stroke-linecap="square"></path>
+                              <path d="M8.5 8C9.60457 8 10.5 7.10457 10.5 6C10.5 4.89543 9.60457 4 8.5 4C7.39543 4 6.5 4.89543 6.5 6C6.5 7.10457 7.39543 8 8.5 8Z" stroke="#B5B7C6"></path>
+                              <rect x="0.5" y="0.5" width="16" height="11" stroke="#B5B7C6"></rect>
+                              <rect x="0.5" y="3.5" width="3" height="5" stroke="#B5B7C6"></rect>
+                              <rect x="13.5" y="3.5" width="3" height="5" stroke="#B5B7C6"></rect>
+                              <path d="M8.5 8.5V11.5" stroke="#B5B7C6" stroke-linecap="square"></path>
+                            </svg></a><a class="ip-competition__stats"><svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <rect width="3" height="11" fill="#B5B7C6"></rect>
+                              <rect x="4" y="4" width="3" height="7" fill="#B5B7C6"></rect>
+                              <rect x="8" y="2" width="3" height="9" fill="#B5B7C6"></rect>
+                            </svg></a></div>
+                      </div>
+                      <div class="ip-competition__divider"></div>
+                      <div class="ip-competition__details">
+                        <div class="ip-competition__block ip-competition__block--lg">
+                          <div class="ip-competition__wrap">
+                            <p class="ip-competition__team">Juventus</p>
+                            <div class="ip-competition__goal">Goal</div>
+                          </div>
+                          <div class="ip-competition__wrap">
+                            <p class="ip-competition__team">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores blanditiis consectetur delectus dolore dolorum facere facilis incidunt inventore iste iusto laboriosam nemo nesciunt optio, reiciendis rem ut voluptatem voluptatibus.</p>
+                          </div>
+                        </div>
+                        <div class="ip-competition__block ip-competition__block--sm">
+                          <table>
+                            <tr>
+                              <td>
+                                <p class="ip-competition__score">2</p>
+                              </td>
+                              <td>
+                                <p class="ip-competition__score">2</p>
+                              </td>
+                              <td>
+                                <p class="ip-competition__score">2</p>
+                              </td>
+                              <td>
+                                <p class="ip-competition__score">2</p>
+                              </td>
+                              <td>
+                                <p class="ip-competition__score">2</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <p class="ip-competition__score">2</p>
+                              </td>
+                              <td>
+                                <p class="ip-competition__score">2</p>
+                              </td>
+                              <td>
+                                <p class="ip-competition__score">2</p>
+                              </td>
+                              <td>
+                                <p class="ip-competition__score">2</p>
+                              </td>
+                              <td>
+                                <p class="ip-competition__score">2</p>
+                              </td>
+                            </tr>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ip-competition__row">
+                      <div class="ip-competition__info"><button class="ip-competition__btn"><span class="ip-competition__market">1</span><span class="ip-competition__coff">2.17</span></button><button class="ip-competition__btn"><span class="ip-competition__market">x</span><span class="ip-competition__coff">2.17</span></button><button class="ip-competition__btn"><span class="ip-competition__market">x</span><span class="ip-competition__coff">2.17</span></button></div><button class="ip-competition__btn ip-competition__btn--market"><span>+148</span></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="wn-top-matches__item">
+              <div class="ip-competition">
+                <div class="ip-competition__header">
+                  <div class="ip-competition__flag"><img src="img/icon-country/ua.png" alt="" /></div>
+                  <div class="ip-competition__league">England. Premier League</div>
+                  <div class="ip-competition__favourite"><svg width="14" height="14" viewbox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.23267 10.5978L7 10.4755L6.76733 10.5978L3.33783 12.4008L3.9928 8.58198L4.03724 8.3229L3.84901 8.13941L1.07448 5.43492L4.90878 4.87776L5.16891 4.83996L5.28525 4.60424L7 1.12978L8.71475 4.60424L8.83109 4.83996L9.09122 4.87776L12.9255 5.43492L10.151 8.13941L9.96276 8.3229L10.0072 8.58198L10.6622 12.4008L7.23267 10.5978Z" stroke="#979797"></path>
+                    </svg></div>
+                  <div class="ip-competition__drop">
+                    <p class="ip-competition__drop-toggle">Both team to score</p>
+                    <div class="ip-competition__drop-menu"><a class="ip-competition__drop-item">Asian handicap (0 - 0)</a><a class="ip-competition__drop-item">3rd Goal</a><a class="ip-competition__drop-item">Match winner</a></div>
+                  </div>
+                </div>
+                <div class="ip-competition__wrapper">
+                  <div class="ip-competition__item">
+                    <div class="ip-competition__row">
+                      <div class="ip-competition__additional">
+                        <p class="ip-competition__period">NaNH 15:23</p>
+                        <div class="ip-competition__action"><a class="ip-competition__play"><svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M2 0C0.895431 0 0 0.895431 0 2V9C0 10.1046 0.89543 11 2 11H13C14.1046 11 15 10.1046 15 9V2C15 0.895431 14.1046 0 13 0H2ZM10.1613 5.27083L5.80645 3.20833V7.33333L10.1613 5.27083Z" fill="#E5142E"></path>
+                            </svg></a><a class="ip-competition__field"><svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M8.5 0.5V3.5" stroke="#B5B7C6" stroke-linecap="square"></path>
+                              <path d="M8.5 8C9.60457 8 10.5 7.10457 10.5 6C10.5 4.89543 9.60457 4 8.5 4C7.39543 4 6.5 4.89543 6.5 6C6.5 7.10457 7.39543 8 8.5 8Z" stroke="#B5B7C6"></path>
+                              <rect x="0.5" y="0.5" width="16" height="11" stroke="#B5B7C6"></rect>
+                              <rect x="0.5" y="3.5" width="3" height="5" stroke="#B5B7C6"></rect>
+                              <rect x="13.5" y="3.5" width="3" height="5" stroke="#B5B7C6"></rect>
+                              <path d="M8.5 8.5V11.5" stroke="#B5B7C6" stroke-linecap="square"></path>
+                            </svg></a><a class="ip-competition__stats"><svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <rect width="3" height="11" fill="#B5B7C6"></rect>
+                              <rect x="4" y="4" width="3" height="7" fill="#B5B7C6"></rect>
+                              <rect x="8" y="2" width="3" height="9" fill="#B5B7C6"></rect>
+                            </svg></a></div>
+                      </div>
+                      <div class="ip-competition__divider"></div>
+                      <div class="ip-competition__details">
+                        <div class="ip-competition__block ip-competition__block--lg">
+                          <div class="ip-competition__wrap">
+                            <p class="ip-competition__team">Juventus</p>
+                            <div class="ip-competition__goal">Goal</div>
+                          </div>
+                          <div class="ip-competition__wrap">
+                            <p class="ip-competition__team">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores blanditiis consectetur delectus dolore dolorum facere facilis incidunt inventore iste iusto laboriosam nemo nesciunt optio, reiciendis rem ut voluptatem voluptatibus.</p>
+                          </div>
+                        </div>
+                        <div class="ip-competition__block ip-competition__block--sm">
+                          <div class="ip-competition__wrap">
+                            <p class="ip-competition__score">2</p>
+                          </div>
+                          <div class="ip-competition__wrap">
+                            <p class="ip-competition__score">1</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ip-competition__row">
+                      <div class="ip-competition__info"><button class="ip-competition__btn"><span class="ip-competition__market">1</span><span class="ip-competition__coff">2.17</span></button><button class="ip-competition__btn"><span class="ip-competition__market">x</span><span class="ip-competition__coff">2.17</span></button><button class="ip-competition__btn"><span class="ip-competition__market">x</span><span class="ip-competition__coff">2.17</span></button></div><button class="ip-competition__btn ip-competition__btn--market"><span>+148</span></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ip-classification-header ip-classification-header--snooker">
+          <div class="ip-classification-header__wrap">
+            <div class="ip-classification-header__sports">
+              <div class="ip-classification-header__icon"><svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M15.2435 1.25721C13.7509 -0.235779 7.61682 0.327107 3.68813 4.31622C-0.187384 8.25144 -0.717894 14.2731 0.75649 15.7478C2.20954 17.2011 8.32615 16.7358 12.3119 12.6888C16.1874 8.75355 16.7179 2.73194 15.2435 1.25721ZM14.5781 1.92278C15.1078 2.45263 15.3291 4.54508 14.5509 7.08256C14.4494 6.98094 9.93309 2.46361 9.41958 1.94995C11.9528 1.17275 14.0478 1.39242 14.5781 1.92278ZM7.56402 14.708L5.01268 12.1561L6.27229 10.8962L6.70413 11.3281C6.88791 11.5119 7.18579 11.5119 7.36954 11.3281C7.55329 11.1443 7.55329 10.8463 7.36954 10.6625L6.9377 10.2306L8 9.16805L8.43185 9.59999C8.6156 9.7838 8.91348 9.78377 9.09726 9.59999C9.28101 9.41621 9.28101 9.1182 9.09726 8.93442L8.66542 8.50248L9.72772 7.43989L10.1596 7.87183C10.3433 8.05564 10.6412 8.05561 10.825 7.87183C11.0087 7.68805 11.0087 7.39004 10.825 7.20626L10.3931 6.77432L11.6526 5.51459L14.204 8.06659C12.9628 11.1783 10.6758 13.4664 7.56402 14.708ZM8.43577 2.29702L10.9872 4.84905L9.72772 6.10879L9.29588 5.67685C9.11213 5.49307 8.81422 5.49307 8.63047 5.67685C8.44672 5.86063 8.44672 6.15864 8.63047 6.34242L9.06231 6.77435L8 7.83694L7.56816 7.40501C7.38441 7.22123 7.0865 7.22123 6.90275 7.40501C6.719 7.58879 6.719 7.88679 6.90275 8.07057L7.33459 8.50251L6.27229 9.5651L5.84044 9.13316C5.65669 8.94938 5.35878 8.94938 5.17503 9.13316C4.99128 9.31694 4.99128 9.61495 5.17503 9.79873L5.60687 10.2307L4.34727 11.4906L1.79596 8.93859C3.03486 5.83324 5.31756 3.54122 8.43577 2.29702ZM1.4219 15.0822C0.89249 14.5526 0.670718 12.4608 1.44901 9.92265L6.58021 15.0551C4.03401 15.8362 1.9468 15.6072 1.4219 15.0822Z" fill="white"></path>
+                </svg></div>
+              <p class="ip-classification-header__text ip-classification-header__text--ellipsis">Soccer</p>
+            </div>
+            <div class="ip-classification-header__drop">
+              <p class="ip-classification-header__drop-toggle">Both team to score</p>
+              <div class="ip-classification-header__drop-menu"><a class="ip-classification-header__drop-item">Asian handicap (0 - 0)</a><a class="ip-classification-header__drop-item">3rd Goal</a><a class="ip-classification-header__drop-item">Match winner</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="wn-top-matches">
+          <div class="wn-top-matches__slider">
+            <div class="wn-top-matches__item">
+              <div class="ip-competition">
+                <div class="ip-competition__header">
+                  <div class="ip-competition__flag"><img src="img/icon-country/ua.png" alt="" /></div>
+                  <div class="ip-competition__league">England. Premier League</div>
+                  <div class="ip-competition__favourite"><svg width="14" height="14" viewbox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.23267 10.5978L7 10.4755L6.76733 10.5978L3.33783 12.4008L3.9928 8.58198L4.03724 8.3229L3.84901 8.13941L1.07448 5.43492L4.90878 4.87776L5.16891 4.83996L5.28525 4.60424L7 1.12978L8.71475 4.60424L8.83109 4.83996L9.09122 4.87776L12.9255 5.43492L10.151 8.13941L9.96276 8.3229L10.0072 8.58198L10.6622 12.4008L7.23267 10.5978Z" stroke="#979797"></path>
+                    </svg></div>
+                  <div class="ip-competition__drop">
+                    <p class="ip-competition__drop-toggle">Both team to score</p>
+                    <div class="ip-competition__drop-menu"><a class="ip-competition__drop-item">Asian handicap (0 - 0)</a><a class="ip-competition__drop-item">3rd Goal</a><a class="ip-competition__drop-item">Match winner</a></div>
+                  </div>
+                </div>
+                <div class="ip-competition__wrapper">
+                  <div class="ip-competition__item">
+                    <div class="ip-competition__row">
+                      <div class="ip-competition__additional">
+                        <p class="ip-competition__period">NaNH 15:23</p>
+                        <div class="ip-competition__action"><a class="ip-competition__play"><svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M2 0C0.895431 0 0 0.895431 0 2V9C0 10.1046 0.89543 11 2 11H13C14.1046 11 15 10.1046 15 9V2C15 0.895431 14.1046 0 13 0H2ZM10.1613 5.27083L5.80645 3.20833V7.33333L10.1613 5.27083Z" fill="#E5142E"></path>
+                            </svg></a><a class="ip-competition__field"><svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M8.5 0.5V3.5" stroke="#B5B7C6" stroke-linecap="square"></path>
+                              <path d="M8.5 8C9.60457 8 10.5 7.10457 10.5 6C10.5 4.89543 9.60457 4 8.5 4C7.39543 4 6.5 4.89543 6.5 6C6.5 7.10457 7.39543 8 8.5 8Z" stroke="#B5B7C6"></path>
+                              <rect x="0.5" y="0.5" width="16" height="11" stroke="#B5B7C6"></rect>
+                              <rect x="0.5" y="3.5" width="3" height="5" stroke="#B5B7C6"></rect>
+                              <rect x="13.5" y="3.5" width="3" height="5" stroke="#B5B7C6"></rect>
+                              <path d="M8.5 8.5V11.5" stroke="#B5B7C6" stroke-linecap="square"></path>
+                            </svg></a><a class="ip-competition__stats"><svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <rect width="3" height="11" fill="#B5B7C6"></rect>
+                              <rect x="4" y="4" width="3" height="7" fill="#B5B7C6"></rect>
+                              <rect x="8" y="2" width="3" height="9" fill="#B5B7C6"></rect>
+                            </svg></a></div>
+                      </div>
+                      <div class="ip-competition__divider"></div>
+                      <div class="ip-competition__details">
+                        <div class="ip-competition__block ip-competition__block--lg">
+                          <div class="ip-competition__wrap">
+                            <p class="ip-competition__team">Juventus</p>
+                            <div class="ip-competition__goal">Goal</div>
+                          </div>
+                          <div class="ip-competition__wrap">
+                            <p class="ip-competition__team">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores blanditiis consectetur delectus dolore dolorum facere facilis incidunt inventore iste iusto laboriosam nemo nesciunt optio, reiciendis rem ut voluptatem voluptatibus.</p>
+                          </div>
+                        </div>
+                        <div class="ip-competition__block ip-competition__block--sm">
+                          <table>
+                            <tr>
+                              <td>
+                                <p class="ip-competition__score">2</p>
+                              </td>
+                              <td>
+                                <p class="ip-competition__score">2</p>
+                              </td>
+                              <td>
+                                <p class="ip-competition__score">2</p>
+                              </td>
+                              <td>
+                                <p class="ip-competition__score">2</p>
+                              </td>
+                              <td>
+                                <p class="ip-competition__score">2</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <p class="ip-competition__score">2</p>
+                              </td>
+                              <td>
+                                <p class="ip-competition__score">2</p>
+                              </td>
+                              <td>
+                                <p class="ip-competition__score">2</p>
+                              </td>
+                              <td>
+                                <p class="ip-competition__score">2</p>
+                              </td>
+                              <td>
+                                <p class="ip-competition__score">2</p>
+                              </td>
+                            </tr>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ip-competition__row">
+                      <div class="ip-competition__info"><button class="ip-competition__btn"><span class="ip-competition__market">1</span><span class="ip-competition__coff">2.17</span></button><button class="ip-competition__btn"><span class="ip-competition__market">x</span><span class="ip-competition__coff">2.17</span></button><button class="ip-competition__btn"><span class="ip-competition__market">x</span><span class="ip-competition__coff">2.17</span></button></div><button class="ip-competition__btn ip-competition__btn--market"><span>+148</span></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="wn-top-matches__item">
+              <div class="ip-competition">
+                <div class="ip-competition__header">
+                  <div class="ip-competition__flag"><img src="img/icon-country/ua.png" alt="" /></div>
+                  <div class="ip-competition__league">England. Premier League</div>
+                  <div class="ip-competition__favourite"><svg width="14" height="14" viewbox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.23267 10.5978L7 10.4755L6.76733 10.5978L3.33783 12.4008L3.9928 8.58198L4.03724 8.3229L3.84901 8.13941L1.07448 5.43492L4.90878 4.87776L5.16891 4.83996L5.28525 4.60424L7 1.12978L8.71475 4.60424L8.83109 4.83996L9.09122 4.87776L12.9255 5.43492L10.151 8.13941L9.96276 8.3229L10.0072 8.58198L10.6622 12.4008L7.23267 10.5978Z" stroke="#979797"></path>
+                    </svg></div>
+                  <div class="ip-competition__drop">
+                    <p class="ip-competition__drop-toggle">Both team to score</p>
+                    <div class="ip-competition__drop-menu"><a class="ip-competition__drop-item">Asian handicap (0 - 0)</a><a class="ip-competition__drop-item">3rd Goal</a><a class="ip-competition__drop-item">Match winner</a></div>
+                  </div>
+                </div>
+                <div class="ip-competition__wrapper">
+                  <div class="ip-competition__item">
+                    <div class="ip-competition__row">
+                      <div class="ip-competition__additional">
+                        <p class="ip-competition__period">NaNH 15:23</p>
+                        <div class="ip-competition__action"><a class="ip-competition__play"><svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M2 0C0.895431 0 0 0.895431 0 2V9C0 10.1046 0.89543 11 2 11H13C14.1046 11 15 10.1046 15 9V2C15 0.895431 14.1046 0 13 0H2ZM10.1613 5.27083L5.80645 3.20833V7.33333L10.1613 5.27083Z" fill="#E5142E"></path>
+                            </svg></a><a class="ip-competition__field"><svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M8.5 0.5V3.5" stroke="#B5B7C6" stroke-linecap="square"></path>
+                              <path d="M8.5 8C9.60457 8 10.5 7.10457 10.5 6C10.5 4.89543 9.60457 4 8.5 4C7.39543 4 6.5 4.89543 6.5 6C6.5 7.10457 7.39543 8 8.5 8Z" stroke="#B5B7C6"></path>
+                              <rect x="0.5" y="0.5" width="16" height="11" stroke="#B5B7C6"></rect>
+                              <rect x="0.5" y="3.5" width="3" height="5" stroke="#B5B7C6"></rect>
+                              <rect x="13.5" y="3.5" width="3" height="5" stroke="#B5B7C6"></rect>
+                              <path d="M8.5 8.5V11.5" stroke="#B5B7C6" stroke-linecap="square"></path>
+                            </svg></a><a class="ip-competition__stats"><svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <rect width="3" height="11" fill="#B5B7C6"></rect>
+                              <rect x="4" y="4" width="3" height="7" fill="#B5B7C6"></rect>
+                              <rect x="8" y="2" width="3" height="9" fill="#B5B7C6"></rect>
+                            </svg></a></div>
+                      </div>
+                      <div class="ip-competition__divider"></div>
+                      <div class="ip-competition__details">
+                        <div class="ip-competition__block ip-competition__block--lg">
+                          <div class="ip-competition__wrap">
+                            <p class="ip-competition__team">Juventus</p>
+                            <div class="ip-competition__goal">Goal</div>
+                          </div>
+                          <div class="ip-competition__wrap">
+                            <p class="ip-competition__team">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores blanditiis consectetur delectus dolore dolorum facere facilis incidunt inventore iste iusto laboriosam nemo nesciunt optio, reiciendis rem ut voluptatem voluptatibus.</p>
+                          </div>
+                        </div>
+                        <div class="ip-competition__block ip-competition__block--sm">
+                          <div class="ip-competition__wrap">
+                            <p class="ip-competition__score">2</p>
+                          </div>
+                          <div class="ip-competition__wrap">
+                            <p class="ip-competition__score">1</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ip-competition__row">
+                      <div class="ip-competition__info"><button class="ip-competition__btn"><span class="ip-competition__market">1</span><span class="ip-competition__coff">2.17</span></button><button class="ip-competition__btn"><span class="ip-competition__market">x</span><span class="ip-competition__coff">2.17</span></button><button class="ip-competition__btn"><span class="ip-competition__market">x</span><span class="ip-competition__coff">2.17</span></button></div><button class="ip-competition__btn ip-competition__btn--market"><span>+148</span></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="wn-classification-bar">
           <div class="wn-classification-bar__header">
@@ -894,674 +1409,6 @@
             </div>
           </div>
         </div>
-        <div class="ip-classification-header ip-classification-header--soccer">
-          <div class="ip-classification-header__wrap">
-            <div class="ip-classification-header__sports">
-              <div class="ip-classification-header__icon"><svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M15.2435 1.25721C13.7509 -0.235779 7.61682 0.327107 3.68813 4.31622C-0.187384 8.25144 -0.717894 14.2731 0.75649 15.7478C2.20954 17.2011 8.32615 16.7358 12.3119 12.6888C16.1874 8.75355 16.7179 2.73194 15.2435 1.25721ZM14.5781 1.92278C15.1078 2.45263 15.3291 4.54508 14.5509 7.08256C14.4494 6.98094 9.93309 2.46361 9.41958 1.94995C11.9528 1.17275 14.0478 1.39242 14.5781 1.92278ZM7.56402 14.708L5.01268 12.1561L6.27229 10.8962L6.70413 11.3281C6.88791 11.5119 7.18579 11.5119 7.36954 11.3281C7.55329 11.1443 7.55329 10.8463 7.36954 10.6625L6.9377 10.2306L8 9.16805L8.43185 9.59999C8.6156 9.7838 8.91348 9.78377 9.09726 9.59999C9.28101 9.41621 9.28101 9.1182 9.09726 8.93442L8.66542 8.50248L9.72772 7.43989L10.1596 7.87183C10.3433 8.05564 10.6412 8.05561 10.825 7.87183C11.0087 7.68805 11.0087 7.39004 10.825 7.20626L10.3931 6.77432L11.6526 5.51459L14.204 8.06659C12.9628 11.1783 10.6758 13.4664 7.56402 14.708ZM8.43577 2.29702L10.9872 4.84905L9.72772 6.10879L9.29588 5.67685C9.11213 5.49307 8.81422 5.49307 8.63047 5.67685C8.44672 5.86063 8.44672 6.15864 8.63047 6.34242L9.06231 6.77435L8 7.83694L7.56816 7.40501C7.38441 7.22123 7.0865 7.22123 6.90275 7.40501C6.719 7.58879 6.719 7.88679 6.90275 8.07057L7.33459 8.50251L6.27229 9.5651L5.84044 9.13316C5.65669 8.94938 5.35878 8.94938 5.17503 9.13316C4.99128 9.31694 4.99128 9.61495 5.17503 9.79873L5.60687 10.2307L4.34727 11.4906L1.79596 8.93859C3.03486 5.83324 5.31756 3.54122 8.43577 2.29702ZM1.4219 15.0822C0.89249 14.5526 0.670718 12.4608 1.44901 9.92265L6.58021 15.0551C4.03401 15.8362 1.9468 15.6072 1.4219 15.0822Z" fill="white"></path>
-                </svg></div>
-              <p class="ip-classification-header__text ip-classification-header__text--ellipsis">Soccer</p>
-            </div>
-            <div class="ip-classification-header__league ip-classification-header__league--active">
-              <div class="ip-classification-header__icon"><svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.06068 16.5764C8.48183 17.1841 7.54432 17.1917 6.95665 16.5925C5.69646 15.3076 3.5935 12.9325 2.23889 10.1773C0.856363 7.36532 0.260543 4.17197 0.0200931 2.40567C-0.0868885 1.6198 0.427559 0.908217 1.20489 0.75077C2.7352 0.440809 5.37568 0 8.01617 0C10.6387 0 13.2612 0.434828 14.796 0.744422C15.5876 0.904084 16.1043 1.63634 15.9793 2.43409C15.7019 4.20474 15.0521 7.37627 13.6749 10.1773C12.3242 12.9246 10.2869 15.289 9.06068 16.5764ZM5.77408 10.7919L8.01617 9.59318L10.2583 10.7919L9.83006 8.25294L11.6439 6.45483L9.13722 6.0844L8.01617 3.77437L6.89513 6.0844L4.3884 6.45483L6.20228 8.25294L5.77408 10.7919Z" fill="white"></path>
-                </svg></div>
-              <p class="ip-classification-header__text ip-classification-header__text--12 ip-classification-header__text--ellipsis">Select Leagues</p>
-            </div>
-            <div class="ip-classification-header__streaming"><label class="ip-classification-header__text ip-classification-header__text--alpha-white ip-classification-header__text--ellipsis" for="streaming">Live Streaming</label><label class="ip-classification-header__toggle"><input class="ip-classification-header__toggle-input" type="checkbox" id="streaming" /><span class="ip-classification-header__toggle-swipe"></span><span class="ip-classification-header__toggle-bg"></span></label></div>
-          </div>
-          <div class="ip-classification-header__dropdown ip-classification-header__dropdown--active">
-            <div class="ip-classification-header__search">
-              <div class="h-search">
-                <div class="h-search__form">
-                  <div class="h-search__icon"><svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd" d="M6.69194 1.68474C9.41901 1.68474 11.6376 3.82665 11.6376 6.45952C11.6376 9.09239 9.41901 11.2343 6.69194 11.2343C3.96487 11.2343 1.74632 9.09239 1.74632 6.45952C1.74632 3.82665 3.96487 1.68474 6.69194 1.68474ZM15.7567 14.5735L11.8125 10.6129C12.8266 9.44901 13.3823 7.98455 13.3823 6.45999C13.3823 2.89801 10.3806 0 6.69113 0C3.0017 0 0 2.89801 0 6.45999C0 10.022 3.0017 12.92 6.69113 12.92C8.07619 12.92 9.39609 12.5167 10.5246 11.751L14.4988 15.7416C14.6649 15.9082 14.8883 16 15.1278 16C15.3544 16 15.5694 15.9166 15.7326 15.7649C16.0794 15.4428 16.0904 14.9085 15.7567 14.5735Z" fill="white"></path>
-                    </svg></div><input class="h-search__field" type="text" placeholder="Search" />
-                  <div class="h-search__reset"><svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <g opacity="0.5">
-                        <rect x="0.220337" y="9.04303" width="12.7666" height="1.06389" transform="rotate(-45 0.220337 9.04303)" fill="white"></rect>
-                        <rect x="0.752197" width="12.7666" height="1.06389" transform="rotate(45 0.752197 0)" fill="white"></rect>
-                      </g>
-                    </svg></div>
-                </div>
-              </div>
-              <div class="ip-classification-header__item"><input class="ip-classification-header__checkbox" type="checkbox" id="select-all" /><label class="ip-classification-header__label" for="select-all">Select All</label></div>
-            </div>
-            <div class="ip-classification-header__list">
-              <div class="ip-classification-header__item"><input class="ip-classification-header__checkbox" type="checkbox" id="select-all" /><label class="ip-classification-header__label" for="select-all">Premier League</label></div>
-              <div class="ip-classification-header__item"><input class="ip-classification-header__checkbox" type="checkbox" id="select-all" /><label class="ip-classification-header__label" for="select-all">Major League Soccer</label></div>
-              <div class="ip-classification-header__item"><input class="ip-classification-header__checkbox" type="checkbox" id="select-all" /><label class="ip-classification-header__label" for="select-all">Serie A</label></div>
-              <div class="ip-classification-header__item"><input class="ip-classification-header__checkbox" type="checkbox" id="select-all" /><label class="ip-classification-header__label" for="select-all">English Carabao Cup</label></div>
-              <div class="ip-classification-header__item"><input class="ip-classification-header__checkbox" type="checkbox" id="select-all" /><label class="ip-classification-header__label" for="select-all">French Ligue 1</label></div>
-              <div class="ip-classification-header__item"><input class="ip-classification-header__checkbox" type="checkbox" id="select-all" /><label class="ip-classification-header__label" for="select-all">CONCACAF Nations League</label></div>
-              <div class="ip-classification-header__item"><input class="ip-classification-header__checkbox" type="checkbox" id="select-all" /><label class="ip-classification-header__label" for="select-all">International</label></div>
-              <div class="ip-classification-header__item"><input class="ip-classification-header__checkbox" type="checkbox" id="select-all" /><label class="ip-classification-header__label" for="select-all">Premier League</label></div>
-              <div class="ip-classification-header__item"><input class="ip-classification-header__checkbox" type="checkbox" id="select-all" /><label class="ip-classification-header__label" for="select-all">Major League Soccer</label></div>
-              <div class="ip-classification-header__item"><input class="ip-classification-header__checkbox" type="checkbox" id="select-all" /><label class="ip-classification-header__label" for="select-all">Serie A</label></div>
-              <div class="ip-classification-header__item"><input class="ip-classification-header__checkbox" type="checkbox" id="select-all" /><label class="ip-classification-header__label" for="select-all">English Carabao Cup</label></div>
-              <div class="ip-classification-header__item"><input class="ip-classification-header__checkbox" type="checkbox" id="select-all" /><label class="ip-classification-header__label" for="select-all">French Ligue 1</label></div>
-              <div class="ip-classification-header__item"><input class="ip-classification-header__checkbox" type="checkbox" id="select-all" /><label class="ip-classification-header__label" for="select-all">CONCACAF Nations League</label></div>
-              <div class="ip-classification-header__item"><input class="ip-classification-header__checkbox" type="checkbox" id="select-all" /><label class="ip-classification-header__label" for="select-all">International Friendly</label></div>
-              <div class="ip-classification-header__item"><input class="ip-classification-header__checkbox" type="checkbox" id="select-all" /><label class="ip-classification-header__label" for="select-all">French Ligue 1</label></div>
-              <div class="ip-classification-header__item"><input class="ip-classification-header__checkbox" type="checkbox" id="select-all" /><label class="ip-classification-header__label" for="select-all">CONCACAF Nations League</label></div>
-              <div class="ip-classification-header__item"><input class="ip-classification-header__checkbox" type="checkbox" id="select-all" /><label class="ip-classification-header__label" for="select-all">International Friendly</label></div>
-            </div>
-            <div class="ip-classification-header__options"><button class="ip-classification-header__btn ip-classification-header__btn--reset"><span>Cancel</span></button><button class="ip-classification-header__btn ip-classification-header__btn--ok"><span>Ok</span></button></div>
-          </div>
-        </div>
-        <div class="ip-competition">
-          <div class="ip-competition__header">
-            <div class="ip-competition__flag"><img src="img/icon-country/ua.png" alt="" /></div>
-            <div class="ip-competition__league">England. Premier League</div>
-            <div class="ip-competition__favourite"><svg width="14" height="14" viewbox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M7.23267 10.5978L7 10.4755L6.76733 10.5978L3.33783 12.4008L3.9928 8.58198L4.03724 8.3229L3.84901 8.13941L1.07448 5.43492L4.90878 4.87776L5.16891 4.83996L5.28525 4.60424L7 1.12978L8.71475 4.60424L8.83109 4.83996L9.09122 4.87776L12.9255 5.43492L10.151 8.13941L9.96276 8.3229L10.0072 8.58198L10.6622 12.4008L7.23267 10.5978Z" stroke="#979797"></path>
-              </svg></div>
-            <div class="ip-competition__drop">
-              <p class="ip-competition__drop-toggle">Both team to score</p>
-              <div class="ip-competition__drop-menu"><a class="ip-competition__drop-item">Asian handicap (0 - 0)</a><a class="ip-competition__drop-item">3rd Goal</a><a class="ip-competition__drop-item">Match winner</a></div>
-            </div>
-          </div>
-          <div class="ip-competition__wrapper">
-            <div class="ip-competition__item">
-              <div class="ip-competition__row">
-                <div class="ip-competition__additional">
-                  <p class="ip-competition__period">0H 15:23</p>
-                  <div class="ip-competition__action"><a class="ip-competition__play"><svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2 0C0.895431 0 0 0.895431 0 2V9C0 10.1046 0.89543 11 2 11H13C14.1046 11 15 10.1046 15 9V2C15 0.895431 14.1046 0 13 0H2ZM10.1613 5.27083L5.80645 3.20833V7.33333L10.1613 5.27083Z" fill="#E5142E"></path>
-                      </svg></a><a class="ip-competition__field"><svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M8.5 0.5V3.5" stroke="#B5B7C6" stroke-linecap="square"></path>
-                        <path d="M8.5 8C9.60457 8 10.5 7.10457 10.5 6C10.5 4.89543 9.60457 4 8.5 4C7.39543 4 6.5 4.89543 6.5 6C6.5 7.10457 7.39543 8 8.5 8Z" stroke="#B5B7C6"></path>
-                        <rect x="0.5" y="0.5" width="16" height="11" stroke="#B5B7C6"></rect>
-                        <rect x="0.5" y="3.5" width="3" height="5" stroke="#B5B7C6"></rect>
-                        <rect x="13.5" y="3.5" width="3" height="5" stroke="#B5B7C6"></rect>
-                        <path d="M8.5 8.5V11.5" stroke="#B5B7C6" stroke-linecap="square"></path>
-                      </svg></a><a class="ip-competition__stats"><svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="3" height="11" fill="#B5B7C6"></rect>
-                        <rect x="4" y="4" width="3" height="7" fill="#B5B7C6"></rect>
-                        <rect x="8" y="2" width="3" height="9" fill="#B5B7C6"></rect>
-                      </svg></a></div>
-                </div>
-                <div class="ip-competition__divider"></div>
-                <div class="ip-competition__details">
-                  <div class="ip-competition__block ip-competition__block--lg">
-                    <div class="ip-competition__wrap">
-                      <p class="ip-competition__team">Juventus</p>
-                      <div class="ip-competition__goal">Goal</div>
-                    </div>
-                    <div class="ip-competition__wrap">
-                      <p class="ip-competition__team">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores blanditiis consectetur delectus dolore dolorum facere facilis incidunt inventore iste iusto laboriosam nemo nesciunt optio, reiciendis rem ut voluptatem voluptatibus.</p>
-                    </div>
-                  </div>
-                  <div class="ip-competition__block ip-competition__block--sm">
-                    <table>
-                      <tr>
-                        <td>
-                          <p class="ip-competition__score">2</p>
-                        </td>
-                        <td>
-                          <p class="ip-competition__score">2</p>
-                        </td>
-                        <td>
-                          <p class="ip-competition__score">2</p>
-                        </td>
-                        <td>
-                          <p class="ip-competition__score">2</p>
-                        </td>
-                        <td>
-                          <p class="ip-competition__score">2</p>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <p class="ip-competition__score">2</p>
-                        </td>
-                        <td>
-                          <p class="ip-competition__score">2</p>
-                        </td>
-                        <td>
-                          <p class="ip-competition__score">2</p>
-                        </td>
-                        <td>
-                          <p class="ip-competition__score">2</p>
-                        </td>
-                        <td>
-                          <p class="ip-competition__score">2</p>
-                        </td>
-                      </tr>
-                    </table>
-                  </div>
-                </div>
-              </div>
-              <div class="ip-competition__row">
-                <div class="ip-competition__info"><button class="ip-competition__btn"><span class="ip-competition__market">1</span><span class="ip-competition__coff">2.17</span></button><button class="ip-competition__btn"><span class="ip-competition__market">x</span><span class="ip-competition__coff">2.17</span></button><button class="ip-competition__btn"><span class="ip-competition__market">x</span><span class="ip-competition__coff">2.17</span></button></div><button class="ip-competition__btn ip-competition__btn--market"><span>+148</span></button>
-              </div>
-            </div>
-            <div class="ip-competition__item">
-              <div class="ip-competition__row">
-                <div class="ip-competition__additional">
-                  <p class="ip-competition__period">1H 15:23</p>
-                  <div class="ip-competition__action"><a class="ip-competition__play"><svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2 0C0.895431 0 0 0.895431 0 2V9C0 10.1046 0.89543 11 2 11H13C14.1046 11 15 10.1046 15 9V2C15 0.895431 14.1046 0 13 0H2ZM10.1613 5.27083L5.80645 3.20833V7.33333L10.1613 5.27083Z" fill="#E5142E"></path>
-                      </svg></a><a class="ip-competition__field"><svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M8.5 0.5V3.5" stroke="#B5B7C6" stroke-linecap="square"></path>
-                        <path d="M8.5 8C9.60457 8 10.5 7.10457 10.5 6C10.5 4.89543 9.60457 4 8.5 4C7.39543 4 6.5 4.89543 6.5 6C6.5 7.10457 7.39543 8 8.5 8Z" stroke="#B5B7C6"></path>
-                        <rect x="0.5" y="0.5" width="16" height="11" stroke="#B5B7C6"></rect>
-                        <rect x="0.5" y="3.5" width="3" height="5" stroke="#B5B7C6"></rect>
-                        <rect x="13.5" y="3.5" width="3" height="5" stroke="#B5B7C6"></rect>
-                        <path d="M8.5 8.5V11.5" stroke="#B5B7C6" stroke-linecap="square"></path>
-                      </svg></a><a class="ip-competition__stats"><svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="3" height="11" fill="#B5B7C6"></rect>
-                        <rect x="4" y="4" width="3" height="7" fill="#B5B7C6"></rect>
-                        <rect x="8" y="2" width="3" height="9" fill="#B5B7C6"></rect>
-                      </svg></a></div>
-                </div>
-                <div class="ip-competition__divider"></div>
-                <div class="ip-competition__details">
-                  <div class="ip-competition__block ip-competition__block--lg">
-                    <div class="ip-competition__wrap">
-                      <p class="ip-competition__team">Juventus</p>
-                      <div class="ip-competition__goal">Goal</div>
-                    </div>
-                    <div class="ip-competition__wrap">
-                      <p class="ip-competition__team">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores blanditiis consectetur delectus dolore dolorum facere facilis incidunt inventore iste iusto laboriosam nemo nesciunt optio, reiciendis rem ut voluptatem voluptatibus.</p>
-                    </div>
-                  </div>
-                  <div class="ip-competition__block ip-competition__block--sm">
-                    <table>
-                      <tr>
-                        <td>
-                          <p class="ip-competition__score">2</p>
-                        </td>
-                        <td>
-                          <p class="ip-competition__score">2</p>
-                        </td>
-                        <td>
-                          <p class="ip-competition__score">2</p>
-                        </td>
-                        <td>
-                          <p class="ip-competition__score">2</p>
-                        </td>
-                        <td>
-                          <p class="ip-competition__score">2</p>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <p class="ip-competition__score">2</p>
-                        </td>
-                        <td>
-                          <p class="ip-competition__score">2</p>
-                        </td>
-                        <td>
-                          <p class="ip-competition__score">2</p>
-                        </td>
-                        <td>
-                          <p class="ip-competition__score">2</p>
-                        </td>
-                        <td>
-                          <p class="ip-competition__score">2</p>
-                        </td>
-                      </tr>
-                    </table>
-                  </div>
-                </div>
-              </div>
-              <div class="ip-competition__row">
-                <div class="ip-competition__info"><button class="ip-competition__btn"><span class="ip-competition__market">1</span><span class="ip-competition__coff">2.17</span></button><button class="ip-competition__btn"><span class="ip-competition__market">x</span><span class="ip-competition__coff">2.17</span></button><button class="ip-competition__btn"><span class="ip-competition__market">x</span><span class="ip-competition__coff">2.17</span></button></div><button class="ip-competition__btn ip-competition__btn--market"><span>+148</span></button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="ip-competition">
-          <div class="ip-competition__header">
-            <div class="ip-competition__flag"><img src="img/icon-country/ua.png" alt="" /></div>
-            <div class="ip-competition__league">England. Premier League</div>
-            <div class="ip-competition__favourite"><svg width="14" height="14" viewbox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M7.23267 10.5978L7 10.4755L6.76733 10.5978L3.33783 12.4008L3.9928 8.58198L4.03724 8.3229L3.84901 8.13941L1.07448 5.43492L4.90878 4.87776L5.16891 4.83996L5.28525 4.60424L7 1.12978L8.71475 4.60424L8.83109 4.83996L9.09122 4.87776L12.9255 5.43492L10.151 8.13941L9.96276 8.3229L10.0072 8.58198L10.6622 12.4008L7.23267 10.5978Z" stroke="#979797"></path>
-              </svg></div>
-            <div class="ip-competition__drop">
-              <p class="ip-competition__drop-toggle">Both team to score</p>
-              <div class="ip-competition__drop-menu"><a class="ip-competition__drop-item">Asian handicap (0 - 0)</a><a class="ip-competition__drop-item">3rd Goal</a><a class="ip-competition__drop-item">Match winner</a></div>
-            </div>
-          </div>
-          <div class="ip-competition__wrapper">
-            <div class="ip-competition__item">
-              <div class="ip-competition__row">
-                <div class="ip-competition__additional">
-                  <p class="ip-competition__period">0H 15:23</p>
-                  <div class="ip-competition__action"><a class="ip-competition__play"><svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2 0C0.895431 0 0 0.895431 0 2V9C0 10.1046 0.89543 11 2 11H13C14.1046 11 15 10.1046 15 9V2C15 0.895431 14.1046 0 13 0H2ZM10.1613 5.27083L5.80645 3.20833V7.33333L10.1613 5.27083Z" fill="#E5142E"></path>
-                      </svg></a><a class="ip-competition__field"><svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M8.5 0.5V3.5" stroke="#B5B7C6" stroke-linecap="square"></path>
-                        <path d="M8.5 8C9.60457 8 10.5 7.10457 10.5 6C10.5 4.89543 9.60457 4 8.5 4C7.39543 4 6.5 4.89543 6.5 6C6.5 7.10457 7.39543 8 8.5 8Z" stroke="#B5B7C6"></path>
-                        <rect x="0.5" y="0.5" width="16" height="11" stroke="#B5B7C6"></rect>
-                        <rect x="0.5" y="3.5" width="3" height="5" stroke="#B5B7C6"></rect>
-                        <rect x="13.5" y="3.5" width="3" height="5" stroke="#B5B7C6"></rect>
-                        <path d="M8.5 8.5V11.5" stroke="#B5B7C6" stroke-linecap="square"></path>
-                      </svg></a><a class="ip-competition__stats"><svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="3" height="11" fill="#B5B7C6"></rect>
-                        <rect x="4" y="4" width="3" height="7" fill="#B5B7C6"></rect>
-                        <rect x="8" y="2" width="3" height="9" fill="#B5B7C6"></rect>
-                      </svg></a></div>
-                </div>
-                <div class="ip-competition__divider"></div>
-                <div class="ip-competition__details">
-                  <div class="ip-competition__block ip-competition__block--lg">
-                    <div class="ip-competition__wrap">
-                      <p class="ip-competition__team">Juventus</p>
-                      <div class="ip-competition__goal">Goal</div>
-                    </div>
-                    <div class="ip-competition__wrap">
-                      <p class="ip-competition__team">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores blanditiis consectetur delectus dolore dolorum facere facilis incidunt inventore iste iusto laboriosam nemo nesciunt optio, reiciendis rem ut voluptatem voluptatibus.</p>
-                    </div>
-                  </div>
-                  <div class="ip-competition__block ip-competition__block--sm">
-                    <div class="ip-competition__wrap">
-                      <p class="ip-competition__score">2</p>
-                    </div>
-                    <div class="ip-competition__wrap">
-                      <p class="ip-competition__score">1</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="ip-competition__row">
-                <div class="ip-competition__info"><button class="ip-competition__btn"><span class="ip-competition__market">1</span><span class="ip-competition__coff">2.17</span></button><button class="ip-competition__btn"><span class="ip-competition__market">x</span><span class="ip-competition__coff">2.17</span></button><button class="ip-competition__btn"><span class="ip-competition__market">x</span><span class="ip-competition__coff">2.17</span></button></div><button class="ip-competition__btn ip-competition__btn--market"><span>+148</span></button>
-              </div>
-            </div>
-            <div class="ip-competition__item">
-              <div class="ip-competition__row">
-                <div class="ip-competition__additional">
-                  <p class="ip-competition__period">1H 15:23</p>
-                  <div class="ip-competition__action"><a class="ip-competition__play"><svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2 0C0.895431 0 0 0.895431 0 2V9C0 10.1046 0.89543 11 2 11H13C14.1046 11 15 10.1046 15 9V2C15 0.895431 14.1046 0 13 0H2ZM10.1613 5.27083L5.80645 3.20833V7.33333L10.1613 5.27083Z" fill="#E5142E"></path>
-                      </svg></a><a class="ip-competition__field"><svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M8.5 0.5V3.5" stroke="#B5B7C6" stroke-linecap="square"></path>
-                        <path d="M8.5 8C9.60457 8 10.5 7.10457 10.5 6C10.5 4.89543 9.60457 4 8.5 4C7.39543 4 6.5 4.89543 6.5 6C6.5 7.10457 7.39543 8 8.5 8Z" stroke="#B5B7C6"></path>
-                        <rect x="0.5" y="0.5" width="16" height="11" stroke="#B5B7C6"></rect>
-                        <rect x="0.5" y="3.5" width="3" height="5" stroke="#B5B7C6"></rect>
-                        <rect x="13.5" y="3.5" width="3" height="5" stroke="#B5B7C6"></rect>
-                        <path d="M8.5 8.5V11.5" stroke="#B5B7C6" stroke-linecap="square"></path>
-                      </svg></a><a class="ip-competition__stats"><svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="3" height="11" fill="#B5B7C6"></rect>
-                        <rect x="4" y="4" width="3" height="7" fill="#B5B7C6"></rect>
-                        <rect x="8" y="2" width="3" height="9" fill="#B5B7C6"></rect>
-                      </svg></a></div>
-                </div>
-                <div class="ip-competition__divider"></div>
-                <div class="ip-competition__details">
-                  <div class="ip-competition__block ip-competition__block--lg">
-                    <div class="ip-competition__wrap">
-                      <p class="ip-competition__team">Juventus</p>
-                      <div class="ip-competition__goal">Goal</div>
-                    </div>
-                    <div class="ip-competition__wrap">
-                      <p class="ip-competition__team">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores blanditiis consectetur delectus dolore dolorum facere facilis incidunt inventore iste iusto laboriosam nemo nesciunt optio, reiciendis rem ut voluptatem voluptatibus.</p>
-                    </div>
-                  </div>
-                  <div class="ip-competition__block ip-competition__block--sm">
-                    <div class="ip-competition__wrap">
-                      <p class="ip-competition__score">2</p>
-                    </div>
-                    <div class="ip-competition__wrap">
-                      <p class="ip-competition__score">1</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="ip-competition__row">
-                <div class="ip-competition__info"><button class="ip-competition__btn"><span class="ip-competition__market">1</span><span class="ip-competition__coff">2.17</span></button><button class="ip-competition__btn"><span class="ip-competition__market">x</span><span class="ip-competition__coff">2.17</span></button><button class="ip-competition__btn"><span class="ip-competition__market">x</span><span class="ip-competition__coff">2.17</span></button></div><button class="ip-competition__btn ip-competition__btn--market"><span>+148</span></button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="ip-classification-header ip-classification-header--basketball">
-          <div class="ip-classification-header__wrap">
-            <div class="ip-classification-header__sports">
-              <div class="ip-classification-header__icon"><svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M15.2435 1.25721C13.7509 -0.235779 7.61682 0.327107 3.68813 4.31622C-0.187384 8.25144 -0.717894 14.2731 0.75649 15.7478C2.20954 17.2011 8.32615 16.7358 12.3119 12.6888C16.1874 8.75355 16.7179 2.73194 15.2435 1.25721ZM14.5781 1.92278C15.1078 2.45263 15.3291 4.54508 14.5509 7.08256C14.4494 6.98094 9.93309 2.46361 9.41958 1.94995C11.9528 1.17275 14.0478 1.39242 14.5781 1.92278ZM7.56402 14.708L5.01268 12.1561L6.27229 10.8962L6.70413 11.3281C6.88791 11.5119 7.18579 11.5119 7.36954 11.3281C7.55329 11.1443 7.55329 10.8463 7.36954 10.6625L6.9377 10.2306L8 9.16805L8.43185 9.59999C8.6156 9.7838 8.91348 9.78377 9.09726 9.59999C9.28101 9.41621 9.28101 9.1182 9.09726 8.93442L8.66542 8.50248L9.72772 7.43989L10.1596 7.87183C10.3433 8.05564 10.6412 8.05561 10.825 7.87183C11.0087 7.68805 11.0087 7.39004 10.825 7.20626L10.3931 6.77432L11.6526 5.51459L14.204 8.06659C12.9628 11.1783 10.6758 13.4664 7.56402 14.708ZM8.43577 2.29702L10.9872 4.84905L9.72772 6.10879L9.29588 5.67685C9.11213 5.49307 8.81422 5.49307 8.63047 5.67685C8.44672 5.86063 8.44672 6.15864 8.63047 6.34242L9.06231 6.77435L8 7.83694L7.56816 7.40501C7.38441 7.22123 7.0865 7.22123 6.90275 7.40501C6.719 7.58879 6.719 7.88679 6.90275 8.07057L7.33459 8.50251L6.27229 9.5651L5.84044 9.13316C5.65669 8.94938 5.35878 8.94938 5.17503 9.13316C4.99128 9.31694 4.99128 9.61495 5.17503 9.79873L5.60687 10.2307L4.34727 11.4906L1.79596 8.93859C3.03486 5.83324 5.31756 3.54122 8.43577 2.29702ZM1.4219 15.0822C0.89249 14.5526 0.670718 12.4608 1.44901 9.92265L6.58021 15.0551C4.03401 15.8362 1.9468 15.6072 1.4219 15.0822Z" fill="white"></path>
-                </svg></div>
-              <p class="ip-classification-header__text ip-classification-header__text--ellipsis">Soccer</p>
-            </div>
-            <div class="ip-classification-header__drop">
-              <p class="ip-classification-header__drop-toggle">Both team to score</p>
-              <div class="ip-classification-header__drop-menu"><a class="ip-classification-header__drop-item">Asian handicap (0 - 0)</a><a class="ip-classification-header__drop-item">3rd Goal</a><a class="ip-classification-header__drop-item">Match winner</a></div>
-            </div>
-          </div>
-        </div>
-        <div class="ip-competition">
-          <div class="ip-competition__header">
-            <div class="ip-competition__flag"><img src="img/icon-country/ua.png" alt="" /></div>
-            <div class="ip-competition__league">England. Premier League</div>
-            <div class="ip-competition__favourite"><svg width="14" height="14" viewbox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M7.23267 10.5978L7 10.4755L6.76733 10.5978L3.33783 12.4008L3.9928 8.58198L4.03724 8.3229L3.84901 8.13941L1.07448 5.43492L4.90878 4.87776L5.16891 4.83996L5.28525 4.60424L7 1.12978L8.71475 4.60424L8.83109 4.83996L9.09122 4.87776L12.9255 5.43492L10.151 8.13941L9.96276 8.3229L10.0072 8.58198L10.6622 12.4008L7.23267 10.5978Z" stroke="#979797"></path>
-              </svg></div>
-            <div class="ip-competition__drop">
-              <p class="ip-competition__drop-toggle">Both team to score</p>
-              <div class="ip-competition__drop-menu"><a class="ip-competition__drop-item">Asian handicap (0 - 0)</a><a class="ip-competition__drop-item">3rd Goal</a><a class="ip-competition__drop-item">Match winner</a></div>
-            </div>
-          </div>
-          <div class="ip-competition__wrapper">
-            <div class="ip-competition__item">
-              <div class="ip-competition__row">
-                <div class="ip-competition__additional">
-                  <p class="ip-competition__period">0H 15:23</p>
-                  <div class="ip-competition__action"><a class="ip-competition__play"><svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2 0C0.895431 0 0 0.895431 0 2V9C0 10.1046 0.89543 11 2 11H13C14.1046 11 15 10.1046 15 9V2C15 0.895431 14.1046 0 13 0H2ZM10.1613 5.27083L5.80645 3.20833V7.33333L10.1613 5.27083Z" fill="#E5142E"></path>
-                      </svg></a><a class="ip-competition__field"><svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M8.5 0.5V3.5" stroke="#B5B7C6" stroke-linecap="square"></path>
-                        <path d="M8.5 8C9.60457 8 10.5 7.10457 10.5 6C10.5 4.89543 9.60457 4 8.5 4C7.39543 4 6.5 4.89543 6.5 6C6.5 7.10457 7.39543 8 8.5 8Z" stroke="#B5B7C6"></path>
-                        <rect x="0.5" y="0.5" width="16" height="11" stroke="#B5B7C6"></rect>
-                        <rect x="0.5" y="3.5" width="3" height="5" stroke="#B5B7C6"></rect>
-                        <rect x="13.5" y="3.5" width="3" height="5" stroke="#B5B7C6"></rect>
-                        <path d="M8.5 8.5V11.5" stroke="#B5B7C6" stroke-linecap="square"></path>
-                      </svg></a><a class="ip-competition__stats"><svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="3" height="11" fill="#B5B7C6"></rect>
-                        <rect x="4" y="4" width="3" height="7" fill="#B5B7C6"></rect>
-                        <rect x="8" y="2" width="3" height="9" fill="#B5B7C6"></rect>
-                      </svg></a></div>
-                </div>
-                <div class="ip-competition__divider"></div>
-                <div class="ip-competition__details">
-                  <div class="ip-competition__block ip-competition__block--lg">
-                    <div class="ip-competition__wrap">
-                      <p class="ip-competition__team">Juventus</p>
-                      <div class="ip-competition__goal">Goal</div>
-                    </div>
-                    <div class="ip-competition__wrap">
-                      <p class="ip-competition__team">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores blanditiis consectetur delectus dolore dolorum facere facilis incidunt inventore iste iusto laboriosam nemo nesciunt optio, reiciendis rem ut voluptatem voluptatibus.</p>
-                    </div>
-                  </div>
-                  <div class="ip-competition__block ip-competition__block--sm">
-                    <table>
-                      <tr>
-                        <td>
-                          <p class="ip-competition__score">2</p>
-                        </td>
-                        <td>
-                          <p class="ip-competition__score">2</p>
-                        </td>
-                        <td>
-                          <p class="ip-competition__score">2</p>
-                        </td>
-                        <td>
-                          <p class="ip-competition__score">2</p>
-                        </td>
-                        <td>
-                          <p class="ip-competition__score">2</p>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <p class="ip-competition__score">2</p>
-                        </td>
-                        <td>
-                          <p class="ip-competition__score">2</p>
-                        </td>
-                        <td>
-                          <p class="ip-competition__score">2</p>
-                        </td>
-                        <td>
-                          <p class="ip-competition__score">2</p>
-                        </td>
-                        <td>
-                          <p class="ip-competition__score">2</p>
-                        </td>
-                      </tr>
-                    </table>
-                  </div>
-                </div>
-              </div>
-              <div class="ip-competition__row">
-                <div class="ip-competition__info"><button class="ip-competition__btn"><span class="ip-competition__market">1</span><span class="ip-competition__coff">2.17</span></button><button class="ip-competition__btn"><span class="ip-competition__market">x</span><span class="ip-competition__coff">2.17</span></button><button class="ip-competition__btn"><span class="ip-competition__market">x</span><span class="ip-competition__coff">2.17</span></button></div><button class="ip-competition__btn ip-competition__btn--market"><span>+148</span></button>
-              </div>
-            </div>
-            <div class="ip-competition__item">
-              <div class="ip-competition__row">
-                <div class="ip-competition__additional">
-                  <p class="ip-competition__period">1H 15:23</p>
-                  <div class="ip-competition__action"><a class="ip-competition__play"><svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2 0C0.895431 0 0 0.895431 0 2V9C0 10.1046 0.89543 11 2 11H13C14.1046 11 15 10.1046 15 9V2C15 0.895431 14.1046 0 13 0H2ZM10.1613 5.27083L5.80645 3.20833V7.33333L10.1613 5.27083Z" fill="#E5142E"></path>
-                      </svg></a><a class="ip-competition__field"><svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M8.5 0.5V3.5" stroke="#B5B7C6" stroke-linecap="square"></path>
-                        <path d="M8.5 8C9.60457 8 10.5 7.10457 10.5 6C10.5 4.89543 9.60457 4 8.5 4C7.39543 4 6.5 4.89543 6.5 6C6.5 7.10457 7.39543 8 8.5 8Z" stroke="#B5B7C6"></path>
-                        <rect x="0.5" y="0.5" width="16" height="11" stroke="#B5B7C6"></rect>
-                        <rect x="0.5" y="3.5" width="3" height="5" stroke="#B5B7C6"></rect>
-                        <rect x="13.5" y="3.5" width="3" height="5" stroke="#B5B7C6"></rect>
-                        <path d="M8.5 8.5V11.5" stroke="#B5B7C6" stroke-linecap="square"></path>
-                      </svg></a><a class="ip-competition__stats"><svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="3" height="11" fill="#B5B7C6"></rect>
-                        <rect x="4" y="4" width="3" height="7" fill="#B5B7C6"></rect>
-                        <rect x="8" y="2" width="3" height="9" fill="#B5B7C6"></rect>
-                      </svg></a></div>
-                </div>
-                <div class="ip-competition__divider"></div>
-                <div class="ip-competition__details">
-                  <div class="ip-competition__block ip-competition__block--lg">
-                    <div class="ip-competition__wrap">
-                      <p class="ip-competition__team">Juventus</p>
-                      <div class="ip-competition__goal">Goal</div>
-                    </div>
-                    <div class="ip-competition__wrap">
-                      <p class="ip-competition__team">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores blanditiis consectetur delectus dolore dolorum facere facilis incidunt inventore iste iusto laboriosam nemo nesciunt optio, reiciendis rem ut voluptatem voluptatibus.</p>
-                    </div>
-                  </div>
-                  <div class="ip-competition__block ip-competition__block--sm">
-                    <table>
-                      <tr>
-                        <td>
-                          <p class="ip-competition__score">2</p>
-                        </td>
-                        <td>
-                          <p class="ip-competition__score">2</p>
-                        </td>
-                        <td>
-                          <p class="ip-competition__score">2</p>
-                        </td>
-                        <td>
-                          <p class="ip-competition__score">2</p>
-                        </td>
-                        <td>
-                          <p class="ip-competition__score">2</p>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <p class="ip-competition__score">2</p>
-                        </td>
-                        <td>
-                          <p class="ip-competition__score">2</p>
-                        </td>
-                        <td>
-                          <p class="ip-competition__score">2</p>
-                        </td>
-                        <td>
-                          <p class="ip-competition__score">2</p>
-                        </td>
-                        <td>
-                          <p class="ip-competition__score">2</p>
-                        </td>
-                      </tr>
-                    </table>
-                  </div>
-                </div>
-              </div>
-              <div class="ip-competition__row">
-                <div class="ip-competition__info"><button class="ip-competition__btn"><span class="ip-competition__market">1</span><span class="ip-competition__coff">2.17</span></button><button class="ip-competition__btn"><span class="ip-competition__market">x</span><span class="ip-competition__coff">2.17</span></button><button class="ip-competition__btn"><span class="ip-competition__market">x</span><span class="ip-competition__coff">2.17</span></button></div><button class="ip-competition__btn ip-competition__btn--market"><span>+148</span></button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="ip-classification-header ip-classification-header--date">
-          <div class="ip-classification-header__wrap">
-            <div class="ip-classification-header__sports">
-              <p class="ip-classification-header__text ip-classification-header__text--11 ip-classification-header__text--ellipsis">Sat. 14 Dec</p>
-            </div>
-          </div>
-        </div>
-        <div class="ip-competition">
-          <div class="ip-competition__header">
-            <div class="ip-competition__flag"><img src="img/icon-country/ua.png" alt="" /></div>
-            <div class="ip-competition__league">England. Premier League</div>
-            <div class="ip-competition__favourite"><svg width="14" height="14" viewbox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M7.23267 10.5978L7 10.4755L6.76733 10.5978L3.33783 12.4008L3.9928 8.58198L4.03724 8.3229L3.84901 8.13941L1.07448 5.43492L4.90878 4.87776L5.16891 4.83996L5.28525 4.60424L7 1.12978L8.71475 4.60424L8.83109 4.83996L9.09122 4.87776L12.9255 5.43492L10.151 8.13941L9.96276 8.3229L10.0072 8.58198L10.6622 12.4008L7.23267 10.5978Z" stroke="#979797"></path>
-              </svg></div>
-            <div class="ip-competition__drop">
-              <p class="ip-competition__drop-toggle">Both team to score</p>
-              <div class="ip-competition__drop-menu"><a class="ip-competition__drop-item">Asian handicap (0 - 0)</a><a class="ip-competition__drop-item">3rd Goal</a><a class="ip-competition__drop-item">Match winner</a></div>
-            </div>
-          </div>
-          <div class="ip-competition__wrapper">
-            <div class="ip-competition__item">
-              <div class="ip-competition__row">
-                <div class="ip-competition__additional">
-                  <p class="ip-competition__period">0H 15:23</p>
-                  <div class="ip-competition__action"><a class="ip-competition__play"><svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2 0C0.895431 0 0 0.895431 0 2V9C0 10.1046 0.89543 11 2 11H13C14.1046 11 15 10.1046 15 9V2C15 0.895431 14.1046 0 13 0H2ZM10.1613 5.27083L5.80645 3.20833V7.33333L10.1613 5.27083Z" fill="#E5142E"></path>
-                      </svg></a><a class="ip-competition__field"><svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M8.5 0.5V3.5" stroke="#B5B7C6" stroke-linecap="square"></path>
-                        <path d="M8.5 8C9.60457 8 10.5 7.10457 10.5 6C10.5 4.89543 9.60457 4 8.5 4C7.39543 4 6.5 4.89543 6.5 6C6.5 7.10457 7.39543 8 8.5 8Z" stroke="#B5B7C6"></path>
-                        <rect x="0.5" y="0.5" width="16" height="11" stroke="#B5B7C6"></rect>
-                        <rect x="0.5" y="3.5" width="3" height="5" stroke="#B5B7C6"></rect>
-                        <rect x="13.5" y="3.5" width="3" height="5" stroke="#B5B7C6"></rect>
-                        <path d="M8.5 8.5V11.5" stroke="#B5B7C6" stroke-linecap="square"></path>
-                      </svg></a><a class="ip-competition__stats"><svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="3" height="11" fill="#B5B7C6"></rect>
-                        <rect x="4" y="4" width="3" height="7" fill="#B5B7C6"></rect>
-                        <rect x="8" y="2" width="3" height="9" fill="#B5B7C6"></rect>
-                      </svg></a></div>
-                </div>
-                <div class="ip-competition__divider"></div>
-                <div class="ip-competition__details">
-                  <div class="ip-competition__block ip-competition__block--lg">
-                    <div class="ip-competition__wrap">
-                      <p class="ip-competition__team">Juventus</p>
-                      <div class="ip-competition__goal">Goal</div>
-                    </div>
-                    <div class="ip-competition__wrap">
-                      <p class="ip-competition__team">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores blanditiis consectetur delectus dolore dolorum facere facilis incidunt inventore iste iusto laboriosam nemo nesciunt optio, reiciendis rem ut voluptatem voluptatibus.</p>
-                    </div>
-                  </div>
-                  <div class="ip-competition__block ip-competition__block--sm">
-                    <table>
-                      <tr>
-                        <td>
-                          <p class="ip-competition__score">2</p>
-                        </td>
-                        <td>
-                          <p class="ip-competition__score">2</p>
-                        </td>
-                        <td>
-                          <p class="ip-competition__score">2</p>
-                        </td>
-                        <td>
-                          <p class="ip-competition__score">2</p>
-                        </td>
-                        <td>
-                          <p class="ip-competition__score">2</p>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <p class="ip-competition__score">2</p>
-                        </td>
-                        <td>
-                          <p class="ip-competition__score">2</p>
-                        </td>
-                        <td>
-                          <p class="ip-competition__score">2</p>
-                        </td>
-                        <td>
-                          <p class="ip-competition__score">2</p>
-                        </td>
-                        <td>
-                          <p class="ip-competition__score">2</p>
-                        </td>
-                      </tr>
-                    </table>
-                  </div>
-                </div>
-              </div>
-              <div class="ip-competition__row">
-                <div class="ip-competition__info"><button class="ip-competition__btn"><span class="ip-competition__market">1</span><span class="ip-competition__coff">2.17</span></button><button class="ip-competition__btn"><span class="ip-competition__market">x</span><span class="ip-competition__coff">2.17</span></button><button class="ip-competition__btn"><span class="ip-competition__market">x</span><span class="ip-competition__coff">2.17</span></button></div><button class="ip-competition__btn ip-competition__btn--market"><span>+148</span></button>
-              </div>
-            </div>
-            <div class="ip-competition__item">
-              <div class="ip-competition__row">
-                <div class="ip-competition__additional">
-                  <p class="ip-competition__period">1H 15:23</p>
-                  <div class="ip-competition__action"><a class="ip-competition__play"><svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2 0C0.895431 0 0 0.895431 0 2V9C0 10.1046 0.89543 11 2 11H13C14.1046 11 15 10.1046 15 9V2C15 0.895431 14.1046 0 13 0H2ZM10.1613 5.27083L5.80645 3.20833V7.33333L10.1613 5.27083Z" fill="#E5142E"></path>
-                      </svg></a><a class="ip-competition__field"><svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M8.5 0.5V3.5" stroke="#B5B7C6" stroke-linecap="square"></path>
-                        <path d="M8.5 8C9.60457 8 10.5 7.10457 10.5 6C10.5 4.89543 9.60457 4 8.5 4C7.39543 4 6.5 4.89543 6.5 6C6.5 7.10457 7.39543 8 8.5 8Z" stroke="#B5B7C6"></path>
-                        <rect x="0.5" y="0.5" width="16" height="11" stroke="#B5B7C6"></rect>
-                        <rect x="0.5" y="3.5" width="3" height="5" stroke="#B5B7C6"></rect>
-                        <rect x="13.5" y="3.5" width="3" height="5" stroke="#B5B7C6"></rect>
-                        <path d="M8.5 8.5V11.5" stroke="#B5B7C6" stroke-linecap="square"></path>
-                      </svg></a><a class="ip-competition__stats"><svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="3" height="11" fill="#B5B7C6"></rect>
-                        <rect x="4" y="4" width="3" height="7" fill="#B5B7C6"></rect>
-                        <rect x="8" y="2" width="3" height="9" fill="#B5B7C6"></rect>
-                      </svg></a></div>
-                </div>
-                <div class="ip-competition__divider"></div>
-                <div class="ip-competition__details">
-                  <div class="ip-competition__block ip-competition__block--lg">
-                    <div class="ip-competition__wrap">
-                      <p class="ip-competition__team">Juventus</p>
-                      <div class="ip-competition__goal">Goal</div>
-                    </div>
-                    <div class="ip-competition__wrap">
-                      <p class="ip-competition__team">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores blanditiis consectetur delectus dolore dolorum facere facilis incidunt inventore iste iusto laboriosam nemo nesciunt optio, reiciendis rem ut voluptatem voluptatibus.</p>
-                    </div>
-                  </div>
-                  <div class="ip-competition__block ip-competition__block--sm">
-                    <table>
-                      <tr>
-                        <td>
-                          <p class="ip-competition__score">2</p>
-                        </td>
-                        <td>
-                          <p class="ip-competition__score">2</p>
-                        </td>
-                        <td>
-                          <p class="ip-competition__score">2</p>
-                        </td>
-                        <td>
-                          <p class="ip-competition__score">2</p>
-                        </td>
-                        <td>
-                          <p class="ip-competition__score">2</p>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <p class="ip-competition__score">2</p>
-                        </td>
-                        <td>
-                          <p class="ip-competition__score">2</p>
-                        </td>
-                        <td>
-                          <p class="ip-competition__score">2</p>
-                        </td>
-                        <td>
-                          <p class="ip-competition__score">2</p>
-                        </td>
-                        <td>
-                          <p class="ip-competition__score">2</p>
-                        </td>
-                      </tr>
-                    </table>
-                  </div>
-                </div>
-              </div>
-              <div class="ip-competition__row">
-                <div class="ip-competition__info"><button class="ip-competition__btn"><span class="ip-competition__market">1</span><span class="ip-competition__coff">2.17</span></button><button class="ip-competition__btn"><span class="ip-competition__market">x</span><span class="ip-competition__coff">2.17</span></button><button class="ip-competition__btn"><span class="ip-competition__market">x</span><span class="ip-competition__coff">2.17</span></button></div><button class="ip-competition__btn ip-competition__btn--market"><span>+148</span></button>
-              </div>
-            </div>
-          </div>
-        </div>
         <div class="ip-classification-header ip-classification-header--tennis">
           <div class="ip-classification-header__wrap">
             <div class="ip-classification-header__sports">
@@ -1573,208 +1420,492 @@
             <p class="ip-classification-header__text">123</p>
           </div>
         </div>
-        <div class="ip-competition">
-          <div class="ip-competition__header">
-            <div class="ip-competition__flag"><img src="img/icon-country/ua.png" alt="" /></div>
-            <div class="ip-competition__league">England. Premier League</div>
-            <div class="ip-competition__favourite"><svg width="14" height="14" viewbox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M7.23267 10.5978L7 10.4755L6.76733 10.5978L3.33783 12.4008L3.9928 8.58198L4.03724 8.3229L3.84901 8.13941L1.07448 5.43492L4.90878 4.87776L5.16891 4.83996L5.28525 4.60424L7 1.12978L8.71475 4.60424L8.83109 4.83996L9.09122 4.87776L12.9255 5.43492L10.151 8.13941L9.96276 8.3229L10.0072 8.58198L10.6622 12.4008L7.23267 10.5978Z" stroke="#979797"></path>
-              </svg></div>
-            <div class="ip-competition__drop">
-              <p class="ip-competition__drop-toggle">Both team to score</p>
-              <div class="ip-competition__drop-menu"><a class="ip-competition__drop-item">Asian handicap (0 - 0)</a><a class="ip-competition__drop-item">3rd Goal</a><a class="ip-competition__drop-item">Match winner</a></div>
+        <div class="wn-top-matches">
+          <div class="wn-top-matches__slider">
+            <div class="wn-top-matches__item">
+              <div class="ip-competition">
+                <div class="ip-competition__header">
+                  <div class="ip-competition__flag"><img src="img/icon-country/ua.png" alt="" /></div>
+                  <div class="ip-competition__league">England. Premier League</div>
+                  <div class="ip-competition__favourite"><svg width="14" height="14" viewbox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.23267 10.5978L7 10.4755L6.76733 10.5978L3.33783 12.4008L3.9928 8.58198L4.03724 8.3229L3.84901 8.13941L1.07448 5.43492L4.90878 4.87776L5.16891 4.83996L5.28525 4.60424L7 1.12978L8.71475 4.60424L8.83109 4.83996L9.09122 4.87776L12.9255 5.43492L10.151 8.13941L9.96276 8.3229L10.0072 8.58198L10.6622 12.4008L7.23267 10.5978Z" stroke="#979797"></path>
+                    </svg></div>
+                  <div class="ip-competition__drop">
+                    <p class="ip-competition__drop-toggle">Both team to score</p>
+                    <div class="ip-competition__drop-menu"><a class="ip-competition__drop-item">Asian handicap (0 - 0)</a><a class="ip-competition__drop-item">3rd Goal</a><a class="ip-competition__drop-item">Match winner</a></div>
+                  </div>
+                </div>
+                <div class="ip-competition__wrapper">
+                  <div class="ip-competition__item">
+                    <div class="ip-competition__row">
+                      <div class="ip-competition__additional">
+                        <p class="ip-competition__period">NaNH 15:23</p>
+                        <div class="ip-competition__action"><a class="ip-competition__play"><svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M2 0C0.895431 0 0 0.895431 0 2V9C0 10.1046 0.89543 11 2 11H13C14.1046 11 15 10.1046 15 9V2C15 0.895431 14.1046 0 13 0H2ZM10.1613 5.27083L5.80645 3.20833V7.33333L10.1613 5.27083Z" fill="#E5142E"></path>
+                            </svg></a><a class="ip-competition__field"><svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M8.5 0.5V3.5" stroke="#B5B7C6" stroke-linecap="square"></path>
+                              <path d="M8.5 8C9.60457 8 10.5 7.10457 10.5 6C10.5 4.89543 9.60457 4 8.5 4C7.39543 4 6.5 4.89543 6.5 6C6.5 7.10457 7.39543 8 8.5 8Z" stroke="#B5B7C6"></path>
+                              <rect x="0.5" y="0.5" width="16" height="11" stroke="#B5B7C6"></rect>
+                              <rect x="0.5" y="3.5" width="3" height="5" stroke="#B5B7C6"></rect>
+                              <rect x="13.5" y="3.5" width="3" height="5" stroke="#B5B7C6"></rect>
+                              <path d="M8.5 8.5V11.5" stroke="#B5B7C6" stroke-linecap="square"></path>
+                            </svg></a><a class="ip-competition__stats"><svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <rect width="3" height="11" fill="#B5B7C6"></rect>
+                              <rect x="4" y="4" width="3" height="7" fill="#B5B7C6"></rect>
+                              <rect x="8" y="2" width="3" height="9" fill="#B5B7C6"></rect>
+                            </svg></a></div>
+                      </div>
+                      <div class="ip-competition__divider"></div>
+                      <div class="ip-competition__details">
+                        <div class="ip-competition__block ip-competition__block--lg">
+                          <div class="ip-competition__wrap">
+                            <p class="ip-competition__team">Juventus</p>
+                            <div class="ip-competition__goal">Goal</div>
+                          </div>
+                          <div class="ip-competition__wrap">
+                            <p class="ip-competition__team">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores blanditiis consectetur delectus dolore dolorum facere facilis incidunt inventore iste iusto laboriosam nemo nesciunt optio, reiciendis rem ut voluptatem voluptatibus.</p>
+                          </div>
+                        </div>
+                        <div class="ip-competition__block ip-competition__block--sm">
+                          <table>
+                            <tr>
+                              <td>
+                                <p class="ip-competition__score">2</p>
+                              </td>
+                              <td>
+                                <p class="ip-competition__score">2</p>
+                              </td>
+                              <td>
+                                <p class="ip-competition__score">2</p>
+                              </td>
+                              <td>
+                                <p class="ip-competition__score">2</p>
+                              </td>
+                              <td>
+                                <p class="ip-competition__score">2</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <p class="ip-competition__score">2</p>
+                              </td>
+                              <td>
+                                <p class="ip-competition__score">2</p>
+                              </td>
+                              <td>
+                                <p class="ip-competition__score">2</p>
+                              </td>
+                              <td>
+                                <p class="ip-competition__score">2</p>
+                              </td>
+                              <td>
+                                <p class="ip-competition__score">2</p>
+                              </td>
+                            </tr>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ip-competition__row">
+                      <div class="ip-competition__info"><button class="ip-competition__btn"><span class="ip-competition__market">1</span><span class="ip-competition__coff">2.17</span></button><button class="ip-competition__btn"><span class="ip-competition__market">x</span><span class="ip-competition__coff">2.17</span></button><button class="ip-competition__btn"><span class="ip-competition__market">x</span><span class="ip-competition__coff">2.17</span></button></div><button class="ip-competition__btn ip-competition__btn--market"><span>+148</span></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="ip-competition__wrapper">
-            <div class="ip-competition__item">
-              <div class="ip-competition__row">
-                <div class="ip-competition__additional">
-                  <p class="ip-competition__period">0H 15:23</p>
-                  <div class="ip-competition__action"><a class="ip-competition__play"><svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2 0C0.895431 0 0 0.895431 0 2V9C0 10.1046 0.89543 11 2 11H13C14.1046 11 15 10.1046 15 9V2C15 0.895431 14.1046 0 13 0H2ZM10.1613 5.27083L5.80645 3.20833V7.33333L10.1613 5.27083Z" fill="#E5142E"></path>
-                      </svg></a><a class="ip-competition__field"><svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M8.5 0.5V3.5" stroke="#B5B7C6" stroke-linecap="square"></path>
-                        <path d="M8.5 8C9.60457 8 10.5 7.10457 10.5 6C10.5 4.89543 9.60457 4 8.5 4C7.39543 4 6.5 4.89543 6.5 6C6.5 7.10457 7.39543 8 8.5 8Z" stroke="#B5B7C6"></path>
-                        <rect x="0.5" y="0.5" width="16" height="11" stroke="#B5B7C6"></rect>
-                        <rect x="0.5" y="3.5" width="3" height="5" stroke="#B5B7C6"></rect>
-                        <rect x="13.5" y="3.5" width="3" height="5" stroke="#B5B7C6"></rect>
-                        <path d="M8.5 8.5V11.5" stroke="#B5B7C6" stroke-linecap="square"></path>
-                      </svg></a><a class="ip-competition__stats"><svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="3" height="11" fill="#B5B7C6"></rect>
-                        <rect x="4" y="4" width="3" height="7" fill="#B5B7C6"></rect>
-                        <rect x="8" y="2" width="3" height="9" fill="#B5B7C6"></rect>
-                      </svg></a></div>
-                </div>
-                <div class="ip-competition__divider"></div>
-                <div class="ip-competition__details">
-                  <div class="ip-competition__block ip-competition__block--lg">
-                    <div class="ip-competition__wrap">
-                      <p class="ip-competition__team">Juventus</p>
-                      <div class="ip-competition__goal">Goal</div>
-                    </div>
-                    <div class="ip-competition__wrap">
-                      <p class="ip-competition__team">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores blanditiis consectetur delectus dolore dolorum facere facilis incidunt inventore iste iusto laboriosam nemo nesciunt optio, reiciendis rem ut voluptatem voluptatibus.</p>
-                    </div>
-                  </div>
-                  <div class="ip-competition__block ip-competition__block--sm">
-                    <div class="ip-competition__wrap">
-                      <p class="ip-competition__score">2</p>
-                    </div>
-                    <div class="ip-competition__wrap">
-                      <p class="ip-competition__score">1</p>
-                    </div>
+            <div class="wn-top-matches__item">
+              <div class="ip-competition">
+                <div class="ip-competition__header">
+                  <div class="ip-competition__flag"><img src="img/icon-country/ua.png" alt="" /></div>
+                  <div class="ip-competition__league">England. Premier League</div>
+                  <div class="ip-competition__favourite"><svg width="14" height="14" viewbox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.23267 10.5978L7 10.4755L6.76733 10.5978L3.33783 12.4008L3.9928 8.58198L4.03724 8.3229L3.84901 8.13941L1.07448 5.43492L4.90878 4.87776L5.16891 4.83996L5.28525 4.60424L7 1.12978L8.71475 4.60424L8.83109 4.83996L9.09122 4.87776L12.9255 5.43492L10.151 8.13941L9.96276 8.3229L10.0072 8.58198L10.6622 12.4008L7.23267 10.5978Z" stroke="#979797"></path>
+                    </svg></div>
+                  <div class="ip-competition__drop">
+                    <p class="ip-competition__drop-toggle">Both team to score</p>
+                    <div class="ip-competition__drop-menu"><a class="ip-competition__drop-item">Asian handicap (0 - 0)</a><a class="ip-competition__drop-item">3rd Goal</a><a class="ip-competition__drop-item">Match winner</a></div>
                   </div>
                 </div>
-              </div>
-              <div class="ip-competition__row">
-                <div class="ip-competition__info"><button class="ip-competition__btn"><span class="ip-competition__market">1</span><span class="ip-competition__coff">2.17</span></button><button class="ip-competition__btn"><span class="ip-competition__market">x</span><span class="ip-competition__coff">2.17</span></button><button class="ip-competition__btn"><span class="ip-competition__market">x</span><span class="ip-competition__coff">2.17</span></button></div><button class="ip-competition__btn ip-competition__btn--market"><span>+148</span></button>
-              </div>
-            </div>
-            <div class="ip-competition__item">
-              <div class="ip-competition__row">
-                <div class="ip-competition__additional">
-                  <p class="ip-competition__period">1H 15:23</p>
-                  <div class="ip-competition__action"><a class="ip-competition__play"><svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2 0C0.895431 0 0 0.895431 0 2V9C0 10.1046 0.89543 11 2 11H13C14.1046 11 15 10.1046 15 9V2C15 0.895431 14.1046 0 13 0H2ZM10.1613 5.27083L5.80645 3.20833V7.33333L10.1613 5.27083Z" fill="#E5142E"></path>
-                      </svg></a><a class="ip-competition__field"><svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M8.5 0.5V3.5" stroke="#B5B7C6" stroke-linecap="square"></path>
-                        <path d="M8.5 8C9.60457 8 10.5 7.10457 10.5 6C10.5 4.89543 9.60457 4 8.5 4C7.39543 4 6.5 4.89543 6.5 6C6.5 7.10457 7.39543 8 8.5 8Z" stroke="#B5B7C6"></path>
-                        <rect x="0.5" y="0.5" width="16" height="11" stroke="#B5B7C6"></rect>
-                        <rect x="0.5" y="3.5" width="3" height="5" stroke="#B5B7C6"></rect>
-                        <rect x="13.5" y="3.5" width="3" height="5" stroke="#B5B7C6"></rect>
-                        <path d="M8.5 8.5V11.5" stroke="#B5B7C6" stroke-linecap="square"></path>
-                      </svg></a><a class="ip-competition__stats"><svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="3" height="11" fill="#B5B7C6"></rect>
-                        <rect x="4" y="4" width="3" height="7" fill="#B5B7C6"></rect>
-                        <rect x="8" y="2" width="3" height="9" fill="#B5B7C6"></rect>
-                      </svg></a></div>
-                </div>
-                <div class="ip-competition__divider"></div>
-                <div class="ip-competition__details">
-                  <div class="ip-competition__block ip-competition__block--lg">
-                    <div class="ip-competition__wrap">
-                      <p class="ip-competition__team">Juventus</p>
-                      <div class="ip-competition__goal">Goal</div>
+                <div class="ip-competition__wrapper">
+                  <div class="ip-competition__item">
+                    <div class="ip-competition__row">
+                      <div class="ip-competition__additional">
+                        <p class="ip-competition__period">NaNH 15:23</p>
+                        <div class="ip-competition__action"><a class="ip-competition__play"><svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M2 0C0.895431 0 0 0.895431 0 2V9C0 10.1046 0.89543 11 2 11H13C14.1046 11 15 10.1046 15 9V2C15 0.895431 14.1046 0 13 0H2ZM10.1613 5.27083L5.80645 3.20833V7.33333L10.1613 5.27083Z" fill="#E5142E"></path>
+                            </svg></a><a class="ip-competition__field"><svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M8.5 0.5V3.5" stroke="#B5B7C6" stroke-linecap="square"></path>
+                              <path d="M8.5 8C9.60457 8 10.5 7.10457 10.5 6C10.5 4.89543 9.60457 4 8.5 4C7.39543 4 6.5 4.89543 6.5 6C6.5 7.10457 7.39543 8 8.5 8Z" stroke="#B5B7C6"></path>
+                              <rect x="0.5" y="0.5" width="16" height="11" stroke="#B5B7C6"></rect>
+                              <rect x="0.5" y="3.5" width="3" height="5" stroke="#B5B7C6"></rect>
+                              <rect x="13.5" y="3.5" width="3" height="5" stroke="#B5B7C6"></rect>
+                              <path d="M8.5 8.5V11.5" stroke="#B5B7C6" stroke-linecap="square"></path>
+                            </svg></a><a class="ip-competition__stats"><svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <rect width="3" height="11" fill="#B5B7C6"></rect>
+                              <rect x="4" y="4" width="3" height="7" fill="#B5B7C6"></rect>
+                              <rect x="8" y="2" width="3" height="9" fill="#B5B7C6"></rect>
+                            </svg></a></div>
+                      </div>
+                      <div class="ip-competition__divider"></div>
+                      <div class="ip-competition__details">
+                        <div class="ip-competition__block ip-competition__block--lg">
+                          <div class="ip-competition__wrap">
+                            <p class="ip-competition__team">Juventus</p>
+                            <div class="ip-competition__goal">Goal</div>
+                          </div>
+                          <div class="ip-competition__wrap">
+                            <p class="ip-competition__team">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores blanditiis consectetur delectus dolore dolorum facere facilis incidunt inventore iste iusto laboriosam nemo nesciunt optio, reiciendis rem ut voluptatem voluptatibus.</p>
+                          </div>
+                        </div>
+                        <div class="ip-competition__block ip-competition__block--sm">
+                          <div class="ip-competition__wrap">
+                            <p class="ip-competition__score">2</p>
+                          </div>
+                          <div class="ip-competition__wrap">
+                            <p class="ip-competition__score">1</p>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <div class="ip-competition__wrap">
-                      <p class="ip-competition__team">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores blanditiis consectetur delectus dolore dolorum facere facilis incidunt inventore iste iusto laboriosam nemo nesciunt optio, reiciendis rem ut voluptatem voluptatibus.</p>
-                    </div>
-                  </div>
-                  <div class="ip-competition__block ip-competition__block--sm">
-                    <div class="ip-competition__wrap">
-                      <p class="ip-competition__score">2</p>
-                    </div>
-                    <div class="ip-competition__wrap">
-                      <p class="ip-competition__score">1</p>
+                    <div class="ip-competition__row">
+                      <div class="ip-competition__info"><button class="ip-competition__btn"><span class="ip-competition__market">1</span><span class="ip-competition__coff">2.17</span></button><button class="ip-competition__btn"><span class="ip-competition__market">x</span><span class="ip-competition__coff">2.17</span></button><button class="ip-competition__btn"><span class="ip-competition__market">x</span><span class="ip-competition__coff">2.17</span></button></div><button class="ip-competition__btn ip-competition__btn--market"><span>+148</span></button>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="ip-competition__row">
-                <div class="ip-competition__info"><button class="ip-competition__btn"><span class="ip-competition__market">1</span><span class="ip-competition__coff">2.17</span></button><button class="ip-competition__btn"><span class="ip-competition__market">x</span><span class="ip-competition__coff">2.17</span></button><button class="ip-competition__btn"><span class="ip-competition__market">x</span><span class="ip-competition__coff">2.17</span></button></div><button class="ip-competition__btn ip-competition__btn--market"><span>+148</span></button>
               </div>
             </div>
           </div>
         </div>
-        <div class="ip-competition">
-          <div class="ip-competition__header">
-            <div class="ip-competition__flag"><img src="img/icon-country/ua.png" alt="" /></div>
-            <div class="ip-competition__league">England. Premier League</div>
-            <div class="ip-competition__favourite"><svg width="14" height="14" viewbox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M7.23267 10.5978L7 10.4755L6.76733 10.5978L3.33783 12.4008L3.9928 8.58198L4.03724 8.3229L3.84901 8.13941L1.07448 5.43492L4.90878 4.87776L5.16891 4.83996L5.28525 4.60424L7 1.12978L8.71475 4.60424L8.83109 4.83996L9.09122 4.87776L12.9255 5.43492L10.151 8.13941L9.96276 8.3229L10.0072 8.58198L10.6622 12.4008L7.23267 10.5978Z" stroke="#979797"></path>
-              </svg></div>
-            <div class="ip-competition__drop">
-              <p class="ip-competition__drop-toggle">Both team to score</p>
-              <div class="ip-competition__drop-menu"><a class="ip-competition__drop-item">Asian handicap (0 - 0)</a><a class="ip-competition__drop-item">3rd Goal</a><a class="ip-competition__drop-item">Match winner</a></div>
+        <div class="ip-classification-header ip-classification-header--baseball">
+          <div class="ip-classification-header__wrap">
+            <div class="ip-classification-header__sports">
+              <div class="ip-classification-header__icon"><svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M15.2435 1.25721C13.7509 -0.235779 7.61682 0.327107 3.68813 4.31622C-0.187384 8.25144 -0.717894 14.2731 0.75649 15.7478C2.20954 17.2011 8.32615 16.7358 12.3119 12.6888C16.1874 8.75355 16.7179 2.73194 15.2435 1.25721ZM14.5781 1.92278C15.1078 2.45263 15.3291 4.54508 14.5509 7.08256C14.4494 6.98094 9.93309 2.46361 9.41958 1.94995C11.9528 1.17275 14.0478 1.39242 14.5781 1.92278ZM7.56402 14.708L5.01268 12.1561L6.27229 10.8962L6.70413 11.3281C6.88791 11.5119 7.18579 11.5119 7.36954 11.3281C7.55329 11.1443 7.55329 10.8463 7.36954 10.6625L6.9377 10.2306L8 9.16805L8.43185 9.59999C8.6156 9.7838 8.91348 9.78377 9.09726 9.59999C9.28101 9.41621 9.28101 9.1182 9.09726 8.93442L8.66542 8.50248L9.72772 7.43989L10.1596 7.87183C10.3433 8.05564 10.6412 8.05561 10.825 7.87183C11.0087 7.68805 11.0087 7.39004 10.825 7.20626L10.3931 6.77432L11.6526 5.51459L14.204 8.06659C12.9628 11.1783 10.6758 13.4664 7.56402 14.708ZM8.43577 2.29702L10.9872 4.84905L9.72772 6.10879L9.29588 5.67685C9.11213 5.49307 8.81422 5.49307 8.63047 5.67685C8.44672 5.86063 8.44672 6.15864 8.63047 6.34242L9.06231 6.77435L8 7.83694L7.56816 7.40501C7.38441 7.22123 7.0865 7.22123 6.90275 7.40501C6.719 7.58879 6.719 7.88679 6.90275 8.07057L7.33459 8.50251L6.27229 9.5651L5.84044 9.13316C5.65669 8.94938 5.35878 8.94938 5.17503 9.13316C4.99128 9.31694 4.99128 9.61495 5.17503 9.79873L5.60687 10.2307L4.34727 11.4906L1.79596 8.93859C3.03486 5.83324 5.31756 3.54122 8.43577 2.29702ZM1.4219 15.0822C0.89249 14.5526 0.670718 12.4608 1.44901 9.92265L6.58021 15.0551C4.03401 15.8362 1.9468 15.6072 1.4219 15.0822Z" fill="white"></path>
+                </svg></div>
+              <p class="ip-classification-header__text ip-classification-header__text--ellipsis">Soccer</p>
+            </div>
+            <p class="ip-classification-header__text">123</p>
+          </div>
+        </div>
+        <div class="wn-top-matches">
+          <div class="wn-top-matches__slider">
+            <div class="wn-top-matches__item">
+              <div class="ip-competition">
+                <div class="ip-competition__header">
+                  <div class="ip-competition__flag"><img src="img/icon-country/ua.png" alt="" /></div>
+                  <div class="ip-competition__league">England. Premier League</div>
+                  <div class="ip-competition__favourite"><svg width="14" height="14" viewbox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.23267 10.5978L7 10.4755L6.76733 10.5978L3.33783 12.4008L3.9928 8.58198L4.03724 8.3229L3.84901 8.13941L1.07448 5.43492L4.90878 4.87776L5.16891 4.83996L5.28525 4.60424L7 1.12978L8.71475 4.60424L8.83109 4.83996L9.09122 4.87776L12.9255 5.43492L10.151 8.13941L9.96276 8.3229L10.0072 8.58198L10.6622 12.4008L7.23267 10.5978Z" stroke="#979797"></path>
+                    </svg></div>
+                  <div class="ip-competition__drop">
+                    <p class="ip-competition__drop-toggle">Both team to score</p>
+                    <div class="ip-competition__drop-menu"><a class="ip-competition__drop-item">Asian handicap (0 - 0)</a><a class="ip-competition__drop-item">3rd Goal</a><a class="ip-competition__drop-item">Match winner</a></div>
+                  </div>
+                </div>
+                <div class="ip-competition__wrapper">
+                  <div class="ip-competition__item">
+                    <div class="ip-competition__row">
+                      <div class="ip-competition__additional">
+                        <p class="ip-competition__period">NaNH 15:23</p>
+                        <div class="ip-competition__action"><a class="ip-competition__play"><svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M2 0C0.895431 0 0 0.895431 0 2V9C0 10.1046 0.89543 11 2 11H13C14.1046 11 15 10.1046 15 9V2C15 0.895431 14.1046 0 13 0H2ZM10.1613 5.27083L5.80645 3.20833V7.33333L10.1613 5.27083Z" fill="#E5142E"></path>
+                            </svg></a><a class="ip-competition__field"><svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M8.5 0.5V3.5" stroke="#B5B7C6" stroke-linecap="square"></path>
+                              <path d="M8.5 8C9.60457 8 10.5 7.10457 10.5 6C10.5 4.89543 9.60457 4 8.5 4C7.39543 4 6.5 4.89543 6.5 6C6.5 7.10457 7.39543 8 8.5 8Z" stroke="#B5B7C6"></path>
+                              <rect x="0.5" y="0.5" width="16" height="11" stroke="#B5B7C6"></rect>
+                              <rect x="0.5" y="3.5" width="3" height="5" stroke="#B5B7C6"></rect>
+                              <rect x="13.5" y="3.5" width="3" height="5" stroke="#B5B7C6"></rect>
+                              <path d="M8.5 8.5V11.5" stroke="#B5B7C6" stroke-linecap="square"></path>
+                            </svg></a><a class="ip-competition__stats"><svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <rect width="3" height="11" fill="#B5B7C6"></rect>
+                              <rect x="4" y="4" width="3" height="7" fill="#B5B7C6"></rect>
+                              <rect x="8" y="2" width="3" height="9" fill="#B5B7C6"></rect>
+                            </svg></a></div>
+                      </div>
+                      <div class="ip-competition__divider"></div>
+                      <div class="ip-competition__details">
+                        <div class="ip-competition__block ip-competition__block--lg">
+                          <div class="ip-competition__wrap">
+                            <p class="ip-competition__team">Juventus</p>
+                            <div class="ip-competition__goal">Goal</div>
+                          </div>
+                          <div class="ip-competition__wrap">
+                            <p class="ip-competition__team">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores blanditiis consectetur delectus dolore dolorum facere facilis incidunt inventore iste iusto laboriosam nemo nesciunt optio, reiciendis rem ut voluptatem voluptatibus.</p>
+                          </div>
+                        </div>
+                        <div class="ip-competition__block ip-competition__block--sm">
+                          <table>
+                            <tr>
+                              <td>
+                                <p class="ip-competition__score">2</p>
+                              </td>
+                              <td>
+                                <p class="ip-competition__score">2</p>
+                              </td>
+                              <td>
+                                <p class="ip-competition__score">2</p>
+                              </td>
+                              <td>
+                                <p class="ip-competition__score">2</p>
+                              </td>
+                              <td>
+                                <p class="ip-competition__score">2</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <p class="ip-competition__score">2</p>
+                              </td>
+                              <td>
+                                <p class="ip-competition__score">2</p>
+                              </td>
+                              <td>
+                                <p class="ip-competition__score">2</p>
+                              </td>
+                              <td>
+                                <p class="ip-competition__score">2</p>
+                              </td>
+                              <td>
+                                <p class="ip-competition__score">2</p>
+                              </td>
+                            </tr>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ip-competition__row">
+                      <div class="ip-competition__info"><button class="ip-competition__btn"><span class="ip-competition__market">1</span><span class="ip-competition__coff">2.17</span></button><button class="ip-competition__btn"><span class="ip-competition__market">x</span><span class="ip-competition__coff">2.17</span></button><button class="ip-competition__btn"><span class="ip-competition__market">x</span><span class="ip-competition__coff">2.17</span></button></div><button class="ip-competition__btn ip-competition__btn--market"><span>+148</span></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="wn-top-matches__item">
+              <div class="ip-competition">
+                <div class="ip-competition__header">
+                  <div class="ip-competition__flag"><img src="img/icon-country/ua.png" alt="" /></div>
+                  <div class="ip-competition__league">England. Premier League</div>
+                  <div class="ip-competition__favourite"><svg width="14" height="14" viewbox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.23267 10.5978L7 10.4755L6.76733 10.5978L3.33783 12.4008L3.9928 8.58198L4.03724 8.3229L3.84901 8.13941L1.07448 5.43492L4.90878 4.87776L5.16891 4.83996L5.28525 4.60424L7 1.12978L8.71475 4.60424L8.83109 4.83996L9.09122 4.87776L12.9255 5.43492L10.151 8.13941L9.96276 8.3229L10.0072 8.58198L10.6622 12.4008L7.23267 10.5978Z" stroke="#979797"></path>
+                    </svg></div>
+                  <div class="ip-competition__drop">
+                    <p class="ip-competition__drop-toggle">Both team to score</p>
+                    <div class="ip-competition__drop-menu"><a class="ip-competition__drop-item">Asian handicap (0 - 0)</a><a class="ip-competition__drop-item">3rd Goal</a><a class="ip-competition__drop-item">Match winner</a></div>
+                  </div>
+                </div>
+                <div class="ip-competition__wrapper">
+                  <div class="ip-competition__item">
+                    <div class="ip-competition__row">
+                      <div class="ip-competition__additional">
+                        <p class="ip-competition__period">NaNH 15:23</p>
+                        <div class="ip-competition__action"><a class="ip-competition__play"><svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M2 0C0.895431 0 0 0.895431 0 2V9C0 10.1046 0.89543 11 2 11H13C14.1046 11 15 10.1046 15 9V2C15 0.895431 14.1046 0 13 0H2ZM10.1613 5.27083L5.80645 3.20833V7.33333L10.1613 5.27083Z" fill="#E5142E"></path>
+                            </svg></a><a class="ip-competition__field"><svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M8.5 0.5V3.5" stroke="#B5B7C6" stroke-linecap="square"></path>
+                              <path d="M8.5 8C9.60457 8 10.5 7.10457 10.5 6C10.5 4.89543 9.60457 4 8.5 4C7.39543 4 6.5 4.89543 6.5 6C6.5 7.10457 7.39543 8 8.5 8Z" stroke="#B5B7C6"></path>
+                              <rect x="0.5" y="0.5" width="16" height="11" stroke="#B5B7C6"></rect>
+                              <rect x="0.5" y="3.5" width="3" height="5" stroke="#B5B7C6"></rect>
+                              <rect x="13.5" y="3.5" width="3" height="5" stroke="#B5B7C6"></rect>
+                              <path d="M8.5 8.5V11.5" stroke="#B5B7C6" stroke-linecap="square"></path>
+                            </svg></a><a class="ip-competition__stats"><svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <rect width="3" height="11" fill="#B5B7C6"></rect>
+                              <rect x="4" y="4" width="3" height="7" fill="#B5B7C6"></rect>
+                              <rect x="8" y="2" width="3" height="9" fill="#B5B7C6"></rect>
+                            </svg></a></div>
+                      </div>
+                      <div class="ip-competition__divider"></div>
+                      <div class="ip-competition__details">
+                        <div class="ip-competition__block ip-competition__block--lg">
+                          <div class="ip-competition__wrap">
+                            <p class="ip-competition__team">Juventus</p>
+                            <div class="ip-competition__goal">Goal</div>
+                          </div>
+                          <div class="ip-competition__wrap">
+                            <p class="ip-competition__team">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores blanditiis consectetur delectus dolore dolorum facere facilis incidunt inventore iste iusto laboriosam nemo nesciunt optio, reiciendis rem ut voluptatem voluptatibus.</p>
+                          </div>
+                        </div>
+                        <div class="ip-competition__block ip-competition__block--sm">
+                          <div class="ip-competition__wrap">
+                            <p class="ip-competition__score">2</p>
+                          </div>
+                          <div class="ip-competition__wrap">
+                            <p class="ip-competition__score">1</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ip-competition__row">
+                      <div class="ip-competition__info"><button class="ip-competition__btn"><span class="ip-competition__market">1</span><span class="ip-competition__coff">2.17</span></button><button class="ip-competition__btn"><span class="ip-competition__market">x</span><span class="ip-competition__coff">2.17</span></button><button class="ip-competition__btn"><span class="ip-competition__market">x</span><span class="ip-competition__coff">2.17</span></button></div><button class="ip-competition__btn ip-competition__btn--market"><span>+148</span></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="ip-competition__wrapper">
-            <div class="ip-competition__item">
-              <div class="ip-competition__row">
-                <div class="ip-competition__additional">
-                  <p class="ip-competition__period">0H 15:23</p>
-                  <div class="ip-competition__action"><a class="ip-competition__play"><svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2 0C0.895431 0 0 0.895431 0 2V9C0 10.1046 0.89543 11 2 11H13C14.1046 11 15 10.1046 15 9V2C15 0.895431 14.1046 0 13 0H2ZM10.1613 5.27083L5.80645 3.20833V7.33333L10.1613 5.27083Z" fill="#E5142E"></path>
-                      </svg></a><a class="ip-competition__field"><svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M8.5 0.5V3.5" stroke="#B5B7C6" stroke-linecap="square"></path>
-                        <path d="M8.5 8C9.60457 8 10.5 7.10457 10.5 6C10.5 4.89543 9.60457 4 8.5 4C7.39543 4 6.5 4.89543 6.5 6C6.5 7.10457 7.39543 8 8.5 8Z" stroke="#B5B7C6"></path>
-                        <rect x="0.5" y="0.5" width="16" height="11" stroke="#B5B7C6"></rect>
-                        <rect x="0.5" y="3.5" width="3" height="5" stroke="#B5B7C6"></rect>
-                        <rect x="13.5" y="3.5" width="3" height="5" stroke="#B5B7C6"></rect>
-                        <path d="M8.5 8.5V11.5" stroke="#B5B7C6" stroke-linecap="square"></path>
-                      </svg></a><a class="ip-competition__stats"><svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="3" height="11" fill="#B5B7C6"></rect>
-                        <rect x="4" y="4" width="3" height="7" fill="#B5B7C6"></rect>
-                        <rect x="8" y="2" width="3" height="9" fill="#B5B7C6"></rect>
-                      </svg></a></div>
-                </div>
-                <div class="ip-competition__divider"></div>
-                <div class="ip-competition__details">
-                  <div class="ip-competition__block ip-competition__block--lg">
-                    <div class="ip-competition__wrap">
-                      <p class="ip-competition__team">Juventus</p>
-                      <div class="ip-competition__goal">Goal</div>
-                    </div>
-                    <div class="ip-competition__wrap">
-                      <p class="ip-competition__team">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores blanditiis consectetur delectus dolore dolorum facere facilis incidunt inventore iste iusto laboriosam nemo nesciunt optio, reiciendis rem ut voluptatem voluptatibus.</p>
-                    </div>
-                  </div>
-                  <div class="ip-competition__block ip-competition__block--sm">
-                    <div class="ip-competition__wrap">
-                      <p class="ip-competition__score">2</p>
-                    </div>
-                    <div class="ip-competition__wrap">
-                      <p class="ip-competition__score">1</p>
-                    </div>
+        </div>
+        <div class="ip-classification-header ip-classification-header--ice_hockey">
+          <div class="ip-classification-header__wrap">
+            <div class="ip-classification-header__sports">
+              <div class="ip-classification-header__icon"><svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M15.2435 1.25721C13.7509 -0.235779 7.61682 0.327107 3.68813 4.31622C-0.187384 8.25144 -0.717894 14.2731 0.75649 15.7478C2.20954 17.2011 8.32615 16.7358 12.3119 12.6888C16.1874 8.75355 16.7179 2.73194 15.2435 1.25721ZM14.5781 1.92278C15.1078 2.45263 15.3291 4.54508 14.5509 7.08256C14.4494 6.98094 9.93309 2.46361 9.41958 1.94995C11.9528 1.17275 14.0478 1.39242 14.5781 1.92278ZM7.56402 14.708L5.01268 12.1561L6.27229 10.8962L6.70413 11.3281C6.88791 11.5119 7.18579 11.5119 7.36954 11.3281C7.55329 11.1443 7.55329 10.8463 7.36954 10.6625L6.9377 10.2306L8 9.16805L8.43185 9.59999C8.6156 9.7838 8.91348 9.78377 9.09726 9.59999C9.28101 9.41621 9.28101 9.1182 9.09726 8.93442L8.66542 8.50248L9.72772 7.43989L10.1596 7.87183C10.3433 8.05564 10.6412 8.05561 10.825 7.87183C11.0087 7.68805 11.0087 7.39004 10.825 7.20626L10.3931 6.77432L11.6526 5.51459L14.204 8.06659C12.9628 11.1783 10.6758 13.4664 7.56402 14.708ZM8.43577 2.29702L10.9872 4.84905L9.72772 6.10879L9.29588 5.67685C9.11213 5.49307 8.81422 5.49307 8.63047 5.67685C8.44672 5.86063 8.44672 6.15864 8.63047 6.34242L9.06231 6.77435L8 7.83694L7.56816 7.40501C7.38441 7.22123 7.0865 7.22123 6.90275 7.40501C6.719 7.58879 6.719 7.88679 6.90275 8.07057L7.33459 8.50251L6.27229 9.5651L5.84044 9.13316C5.65669 8.94938 5.35878 8.94938 5.17503 9.13316C4.99128 9.31694 4.99128 9.61495 5.17503 9.79873L5.60687 10.2307L4.34727 11.4906L1.79596 8.93859C3.03486 5.83324 5.31756 3.54122 8.43577 2.29702ZM1.4219 15.0822C0.89249 14.5526 0.670718 12.4608 1.44901 9.92265L6.58021 15.0551C4.03401 15.8362 1.9468 15.6072 1.4219 15.0822Z" fill="white"></path>
+                </svg></div>
+              <p class="ip-classification-header__text ip-classification-header__text--ellipsis">Soccer</p>
+            </div>
+            <p class="ip-classification-header__text">123</p>
+          </div>
+        </div>
+        <div class="wn-top-matches">
+          <div class="wn-top-matches__slider">
+            <div class="wn-top-matches__item">
+              <div class="ip-competition">
+                <div class="ip-competition__header">
+                  <div class="ip-competition__flag"><img src="img/icon-country/ua.png" alt="" /></div>
+                  <div class="ip-competition__league">England. Premier League</div>
+                  <div class="ip-competition__favourite"><svg width="14" height="14" viewbox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.23267 10.5978L7 10.4755L6.76733 10.5978L3.33783 12.4008L3.9928 8.58198L4.03724 8.3229L3.84901 8.13941L1.07448 5.43492L4.90878 4.87776L5.16891 4.83996L5.28525 4.60424L7 1.12978L8.71475 4.60424L8.83109 4.83996L9.09122 4.87776L12.9255 5.43492L10.151 8.13941L9.96276 8.3229L10.0072 8.58198L10.6622 12.4008L7.23267 10.5978Z" stroke="#979797"></path>
+                    </svg></div>
+                  <div class="ip-competition__drop">
+                    <p class="ip-competition__drop-toggle">Both team to score</p>
+                    <div class="ip-competition__drop-menu"><a class="ip-competition__drop-item">Asian handicap (0 - 0)</a><a class="ip-competition__drop-item">3rd Goal</a><a class="ip-competition__drop-item">Match winner</a></div>
                   </div>
                 </div>
-              </div>
-              <div class="ip-competition__row">
-                <div class="ip-competition__info"><button class="ip-competition__btn"><span class="ip-competition__market">1</span><span class="ip-competition__coff">2.17</span></button><button class="ip-competition__btn"><span class="ip-competition__market">x</span><span class="ip-competition__coff">2.17</span></button><button class="ip-competition__btn"><span class="ip-competition__market">x</span><span class="ip-competition__coff">2.17</span></button></div><button class="ip-competition__btn ip-competition__btn--market"><span>+148</span></button>
+                <div class="ip-competition__wrapper">
+                  <div class="ip-competition__item">
+                    <div class="ip-competition__row">
+                      <div class="ip-competition__additional">
+                        <p class="ip-competition__period">NaNH 15:23</p>
+                        <div class="ip-competition__action"><a class="ip-competition__play"><svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M2 0C0.895431 0 0 0.895431 0 2V9C0 10.1046 0.89543 11 2 11H13C14.1046 11 15 10.1046 15 9V2C15 0.895431 14.1046 0 13 0H2ZM10.1613 5.27083L5.80645 3.20833V7.33333L10.1613 5.27083Z" fill="#E5142E"></path>
+                            </svg></a><a class="ip-competition__field"><svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M8.5 0.5V3.5" stroke="#B5B7C6" stroke-linecap="square"></path>
+                              <path d="M8.5 8C9.60457 8 10.5 7.10457 10.5 6C10.5 4.89543 9.60457 4 8.5 4C7.39543 4 6.5 4.89543 6.5 6C6.5 7.10457 7.39543 8 8.5 8Z" stroke="#B5B7C6"></path>
+                              <rect x="0.5" y="0.5" width="16" height="11" stroke="#B5B7C6"></rect>
+                              <rect x="0.5" y="3.5" width="3" height="5" stroke="#B5B7C6"></rect>
+                              <rect x="13.5" y="3.5" width="3" height="5" stroke="#B5B7C6"></rect>
+                              <path d="M8.5 8.5V11.5" stroke="#B5B7C6" stroke-linecap="square"></path>
+                            </svg></a><a class="ip-competition__stats"><svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <rect width="3" height="11" fill="#B5B7C6"></rect>
+                              <rect x="4" y="4" width="3" height="7" fill="#B5B7C6"></rect>
+                              <rect x="8" y="2" width="3" height="9" fill="#B5B7C6"></rect>
+                            </svg></a></div>
+                      </div>
+                      <div class="ip-competition__divider"></div>
+                      <div class="ip-competition__details">
+                        <div class="ip-competition__block ip-competition__block--lg">
+                          <div class="ip-competition__wrap">
+                            <p class="ip-competition__team">Juventus</p>
+                            <div class="ip-competition__goal">Goal</div>
+                          </div>
+                          <div class="ip-competition__wrap">
+                            <p class="ip-competition__team">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores blanditiis consectetur delectus dolore dolorum facere facilis incidunt inventore iste iusto laboriosam nemo nesciunt optio, reiciendis rem ut voluptatem voluptatibus.</p>
+                          </div>
+                        </div>
+                        <div class="ip-competition__block ip-competition__block--sm">
+                          <table>
+                            <tr>
+                              <td>
+                                <p class="ip-competition__score">2</p>
+                              </td>
+                              <td>
+                                <p class="ip-competition__score">2</p>
+                              </td>
+                              <td>
+                                <p class="ip-competition__score">2</p>
+                              </td>
+                              <td>
+                                <p class="ip-competition__score">2</p>
+                              </td>
+                              <td>
+                                <p class="ip-competition__score">2</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <p class="ip-competition__score">2</p>
+                              </td>
+                              <td>
+                                <p class="ip-competition__score">2</p>
+                              </td>
+                              <td>
+                                <p class="ip-competition__score">2</p>
+                              </td>
+                              <td>
+                                <p class="ip-competition__score">2</p>
+                              </td>
+                              <td>
+                                <p class="ip-competition__score">2</p>
+                              </td>
+                            </tr>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ip-competition__row">
+                      <div class="ip-competition__info"><button class="ip-competition__btn"><span class="ip-competition__market">1</span><span class="ip-competition__coff">2.17</span></button><button class="ip-competition__btn"><span class="ip-competition__market">x</span><span class="ip-competition__coff">2.17</span></button><button class="ip-competition__btn"><span class="ip-competition__market">x</span><span class="ip-competition__coff">2.17</span></button></div><button class="ip-competition__btn ip-competition__btn--market"><span>+148</span></button>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="ip-competition__item">
-              <div class="ip-competition__row">
-                <div class="ip-competition__additional">
-                  <p class="ip-competition__period">1H 15:23</p>
-                  <div class="ip-competition__action"><a class="ip-competition__play"><svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2 0C0.895431 0 0 0.895431 0 2V9C0 10.1046 0.89543 11 2 11H13C14.1046 11 15 10.1046 15 9V2C15 0.895431 14.1046 0 13 0H2ZM10.1613 5.27083L5.80645 3.20833V7.33333L10.1613 5.27083Z" fill="#E5142E"></path>
-                      </svg></a><a class="ip-competition__field"><svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M8.5 0.5V3.5" stroke="#B5B7C6" stroke-linecap="square"></path>
-                        <path d="M8.5 8C9.60457 8 10.5 7.10457 10.5 6C10.5 4.89543 9.60457 4 8.5 4C7.39543 4 6.5 4.89543 6.5 6C6.5 7.10457 7.39543 8 8.5 8Z" stroke="#B5B7C6"></path>
-                        <rect x="0.5" y="0.5" width="16" height="11" stroke="#B5B7C6"></rect>
-                        <rect x="0.5" y="3.5" width="3" height="5" stroke="#B5B7C6"></rect>
-                        <rect x="13.5" y="3.5" width="3" height="5" stroke="#B5B7C6"></rect>
-                        <path d="M8.5 8.5V11.5" stroke="#B5B7C6" stroke-linecap="square"></path>
-                      </svg></a><a class="ip-competition__stats"><svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="3" height="11" fill="#B5B7C6"></rect>
-                        <rect x="4" y="4" width="3" height="7" fill="#B5B7C6"></rect>
-                        <rect x="8" y="2" width="3" height="9" fill="#B5B7C6"></rect>
-                      </svg></a></div>
-                </div>
-                <div class="ip-competition__divider"></div>
-                <div class="ip-competition__details">
-                  <div class="ip-competition__block ip-competition__block--lg">
-                    <div class="ip-competition__wrap">
-                      <p class="ip-competition__team">Juventus</p>
-                      <div class="ip-competition__goal">Goal</div>
-                    </div>
-                    <div class="ip-competition__wrap">
-                      <p class="ip-competition__team">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores blanditiis consectetur delectus dolore dolorum facere facilis incidunt inventore iste iusto laboriosam nemo nesciunt optio, reiciendis rem ut voluptatem voluptatibus.</p>
-                    </div>
-                  </div>
-                  <div class="ip-competition__block ip-competition__block--sm">
-                    <div class="ip-competition__wrap">
-                      <p class="ip-competition__score">2</p>
-                    </div>
-                    <div class="ip-competition__wrap">
-                      <p class="ip-competition__score">1</p>
-                    </div>
+            <div class="wn-top-matches__item">
+              <div class="ip-competition">
+                <div class="ip-competition__header">
+                  <div class="ip-competition__flag"><img src="img/icon-country/ua.png" alt="" /></div>
+                  <div class="ip-competition__league">England. Premier League</div>
+                  <div class="ip-competition__favourite"><svg width="14" height="14" viewbox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.23267 10.5978L7 10.4755L6.76733 10.5978L3.33783 12.4008L3.9928 8.58198L4.03724 8.3229L3.84901 8.13941L1.07448 5.43492L4.90878 4.87776L5.16891 4.83996L5.28525 4.60424L7 1.12978L8.71475 4.60424L8.83109 4.83996L9.09122 4.87776L12.9255 5.43492L10.151 8.13941L9.96276 8.3229L10.0072 8.58198L10.6622 12.4008L7.23267 10.5978Z" stroke="#979797"></path>
+                    </svg></div>
+                  <div class="ip-competition__drop">
+                    <p class="ip-competition__drop-toggle">Both team to score</p>
+                    <div class="ip-competition__drop-menu"><a class="ip-competition__drop-item">Asian handicap (0 - 0)</a><a class="ip-competition__drop-item">3rd Goal</a><a class="ip-competition__drop-item">Match winner</a></div>
                   </div>
                 </div>
-              </div>
-              <div class="ip-competition__row">
-                <div class="ip-competition__info"><button class="ip-competition__btn"><span class="ip-competition__market">1</span><span class="ip-competition__coff">2.17</span></button><button class="ip-competition__btn"><span class="ip-competition__market">x</span><span class="ip-competition__coff">2.17</span></button><button class="ip-competition__btn"><span class="ip-competition__market">x</span><span class="ip-competition__coff">2.17</span></button></div><button class="ip-competition__btn ip-competition__btn--market"><span>+148</span></button>
+                <div class="ip-competition__wrapper">
+                  <div class="ip-competition__item">
+                    <div class="ip-competition__row">
+                      <div class="ip-competition__additional">
+                        <p class="ip-competition__period">NaNH 15:23</p>
+                        <div class="ip-competition__action"><a class="ip-competition__play"><svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M2 0C0.895431 0 0 0.895431 0 2V9C0 10.1046 0.89543 11 2 11H13C14.1046 11 15 10.1046 15 9V2C15 0.895431 14.1046 0 13 0H2ZM10.1613 5.27083L5.80645 3.20833V7.33333L10.1613 5.27083Z" fill="#E5142E"></path>
+                            </svg></a><a class="ip-competition__field"><svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M8.5 0.5V3.5" stroke="#B5B7C6" stroke-linecap="square"></path>
+                              <path d="M8.5 8C9.60457 8 10.5 7.10457 10.5 6C10.5 4.89543 9.60457 4 8.5 4C7.39543 4 6.5 4.89543 6.5 6C6.5 7.10457 7.39543 8 8.5 8Z" stroke="#B5B7C6"></path>
+                              <rect x="0.5" y="0.5" width="16" height="11" stroke="#B5B7C6"></rect>
+                              <rect x="0.5" y="3.5" width="3" height="5" stroke="#B5B7C6"></rect>
+                              <rect x="13.5" y="3.5" width="3" height="5" stroke="#B5B7C6"></rect>
+                              <path d="M8.5 8.5V11.5" stroke="#B5B7C6" stroke-linecap="square"></path>
+                            </svg></a><a class="ip-competition__stats"><svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <rect width="3" height="11" fill="#B5B7C6"></rect>
+                              <rect x="4" y="4" width="3" height="7" fill="#B5B7C6"></rect>
+                              <rect x="8" y="2" width="3" height="9" fill="#B5B7C6"></rect>
+                            </svg></a></div>
+                      </div>
+                      <div class="ip-competition__divider"></div>
+                      <div class="ip-competition__details">
+                        <div class="ip-competition__block ip-competition__block--lg">
+                          <div class="ip-competition__wrap">
+                            <p class="ip-competition__team">Juventus</p>
+                            <div class="ip-competition__goal">Goal</div>
+                          </div>
+                          <div class="ip-competition__wrap">
+                            <p class="ip-competition__team">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores blanditiis consectetur delectus dolore dolorum facere facilis incidunt inventore iste iusto laboriosam nemo nesciunt optio, reiciendis rem ut voluptatem voluptatibus.</p>
+                          </div>
+                        </div>
+                        <div class="ip-competition__block ip-competition__block--sm">
+                          <div class="ip-competition__wrap">
+                            <p class="ip-competition__score">2</p>
+                          </div>
+                          <div class="ip-competition__wrap">
+                            <p class="ip-competition__score">1</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ip-competition__row">
+                      <div class="ip-competition__info"><button class="ip-competition__btn"><span class="ip-competition__market">1</span><span class="ip-competition__coff">2.17</span></button><button class="ip-competition__btn"><span class="ip-competition__market">x</span><span class="ip-competition__coff">2.17</span></button><button class="ip-competition__btn"><span class="ip-competition__market">x</span><span class="ip-competition__coff">2.17</span></button></div><button class="ip-competition__btn ip-competition__btn--market"><span>+148</span></button>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

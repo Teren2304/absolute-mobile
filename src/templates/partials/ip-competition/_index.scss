@@ -7,6 +7,12 @@
     @include ellipsis;
   }
 
+  &__slider {
+    @include flex(flex-start, center);
+
+    overflow: hidden;
+  }
+
   &__header {
     @include size(100%, 40px);
     @include flex($align-items: center);

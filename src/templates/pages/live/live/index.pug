@@ -1,0 +1,36 @@
+---
+title: Title
+lang: en
+hasLink: false
+---
+extends ../../../layouts/_layout
+
+include ../../../layouts/header/_index
+include ../../../partials/betslip/_index
+include ../../../partials/b-accept/_index
+include ../../../partials/ip-control-bar/_index
+include ../../../partials/ip-competition/_index
+include ../../../partials/cb-aside/_index
+include ../../../partials/ip-classification-header/_index
+include ../../../partials/ip-classification-bar/_index
+
+block content
+  +header-in
+  .main
+    +ip-classification-bar
+    +ip-classification-header-3.ip-classification-header--soccer
+    +ip-control-bar
+    +ip-competition(true)
+    +ip-competition
+    +ip-classification-header-4.ip-classification-header--date
+    +ip-competition(true)
+    +ip-competition
+    +ip-classification-header-4.ip-classification-header--date
+    +ip-competition(true)
+    +ip-competition
+
+    +betslip
+
+  +b-accept
+
+  +cb-aside

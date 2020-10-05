@@ -17,83 +17,81 @@ mixin ip-competition(set)
           a.ip-competition__drop-item Match winner
 
     .ip-competition__wrapper
-      - var n = 0
-      while n < 2
-        .ip-competition__item
-          .ip-competition__row
+      .ip-competition__item
+        .ip-competition__row
 
-            .ip-competition__additional
-              p.ip-competition__period= n++ +'H 15:23'
-              .ip-competition__action
-                a.ip-competition__play
-                  svg(width='15' height='11' viewBox='0 0 15 11' fill='none' xmlns='http://www.w3.org/2000/svg')
-                    path(fill-rule='evenodd' clip-rule='evenodd' d='M2 0C0.895431 0 0 0.895431 0 2V9C0 10.1046 0.89543 11 2 11H13C14.1046 11 15 10.1046 15 9V2C15 0.895431 14.1046 0 13 0H2ZM10.1613 5.27083L5.80645 3.20833V7.33333L10.1613 5.27083Z' fill='#E5142E')
-                a.ip-competition__field
-                  svg(width='17' height='12' viewBox='0 0 17 12' fill='none' xmlns='http://www.w3.org/2000/svg')
-                    path(d='M8.5 0.5V3.5' stroke='#B5B7C6' stroke-linecap='square')
-                    path(d='M8.5 8C9.60457 8 10.5 7.10457 10.5 6C10.5 4.89543 9.60457 4 8.5 4C7.39543 4 6.5 4.89543 6.5 6C6.5 7.10457 7.39543 8 8.5 8Z' stroke='#B5B7C6')
-                    rect(x='0.5' y='0.5' width='16' height='11' stroke='#B5B7C6')
-                    rect(x='0.5' y='3.5' width='3' height='5' stroke='#B5B7C6')
-                    rect(x='13.5' y='3.5' width='3' height='5' stroke='#B5B7C6')
-                    path(d='M8.5 8.5V11.5' stroke='#B5B7C6' stroke-linecap='square')
+          .ip-competition__additional
+            p.ip-competition__period= n++ +'H 15:23'
+            .ip-competition__action
+              a.ip-competition__play
+                svg(width='15' height='11' viewBox='0 0 15 11' fill='none' xmlns='http://www.w3.org/2000/svg')
+                  path(fill-rule='evenodd' clip-rule='evenodd' d='M2 0C0.895431 0 0 0.895431 0 2V9C0 10.1046 0.89543 11 2 11H13C14.1046 11 15 10.1046 15 9V2C15 0.895431 14.1046 0 13 0H2ZM10.1613 5.27083L5.80645 3.20833V7.33333L10.1613 5.27083Z' fill='#E5142E')
+              a.ip-competition__field
+                svg(width='17' height='12' viewBox='0 0 17 12' fill='none' xmlns='http://www.w3.org/2000/svg')
+                  path(d='M8.5 0.5V3.5' stroke='#B5B7C6' stroke-linecap='square')
+                  path(d='M8.5 8C9.60457 8 10.5 7.10457 10.5 6C10.5 4.89543 9.60457 4 8.5 4C7.39543 4 6.5 4.89543 6.5 6C6.5 7.10457 7.39543 8 8.5 8Z' stroke='#B5B7C6')
+                  rect(x='0.5' y='0.5' width='16' height='11' stroke='#B5B7C6')
+                  rect(x='0.5' y='3.5' width='3' height='5' stroke='#B5B7C6')
+                  rect(x='13.5' y='3.5' width='3' height='5' stroke='#B5B7C6')
+                  path(d='M8.5 8.5V11.5' stroke='#B5B7C6' stroke-linecap='square')
 
-                a.ip-competition__stats
-                  svg(width='11' height='11' viewBox='0 0 11 11' fill='none' xmlns='http://www.w3.org/2000/svg')
-                    rect(width='3' height='11' fill='#B5B7C6')
-                    rect(x='4' y='4' width='3' height='7' fill='#B5B7C6')
-                    rect(x='8' y='2' width='3' height='9' fill='#B5B7C6')
+              a.ip-competition__stats
+                svg(width='11' height='11' viewBox='0 0 11 11' fill='none' xmlns='http://www.w3.org/2000/svg')
+                  rect(width='3' height='11' fill='#B5B7C6')
+                  rect(x='4' y='4' width='3' height='7' fill='#B5B7C6')
+                  rect(x='8' y='2' width='3' height='9' fill='#B5B7C6')
 
-            .ip-competition__divider
+          .ip-competition__divider
 
-            .ip-competition__details
-              .ip-competition__block.ip-competition__block--lg
+          .ip-competition__details
+            .ip-competition__block.ip-competition__block--lg
+              .ip-competition__wrap
+                p.ip-competition__team Juventus
+                .ip-competition__goal Goal
+              .ip-competition__wrap
+                p.ip-competition__team Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores blanditiis consectetur delectus dolore dolorum facere facilis incidunt inventore iste iusto laboriosam nemo nesciunt optio, reiciendis rem ut voluptatem voluptatibus.
+
+            .ip-competition__block.ip-competition__block--sm
+              if(set)
+                table
+                  tr
+                    td
+                      p.ip-competition__score 2
+                    td
+                      p.ip-competition__score 2
+                    td
+                      p.ip-competition__score 2
+                    td
+                      p.ip-competition__score 2
+                    td
+                      p.ip-competition__score 2
+                  tr
+                    td
+                      p.ip-competition__score 2
+                    td
+                      p.ip-competition__score 2
+                    td
+                      p.ip-competition__score 2
+                    td
+                      p.ip-competition__score 2
+                    td
+                      p.ip-competition__score 2
+              else
                 .ip-competition__wrap
-                  p.ip-competition__team Juventus
-                  .ip-competition__goal Goal
+                  p.ip-competition__score 2
                 .ip-competition__wrap
-                  p.ip-competition__team Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores blanditiis consectetur delectus dolore dolorum facere facilis incidunt inventore iste iusto laboriosam nemo nesciunt optio, reiciendis rem ut voluptatem voluptatibus.
+                  p.ip-competition__score 1
 
-              .ip-competition__block.ip-competition__block--sm
-                if(set)
-                  table
-                    tr
-                      td
-                        p.ip-competition__score 2
-                      td
-                        p.ip-competition__score 2
-                      td
-                        p.ip-competition__score 2
-                      td
-                        p.ip-competition__score 2
-                      td
-                        p.ip-competition__score 2
-                    tr
-                      td
-                        p.ip-competition__score 2
-                      td
-                        p.ip-competition__score 2
-                      td
-                        p.ip-competition__score 2
-                      td
-                        p.ip-competition__score 2
-                      td
-                        p.ip-competition__score 2
-                else
-                  .ip-competition__wrap
-                    p.ip-competition__score 2
-                  .ip-competition__wrap
-                    p.ip-competition__score 1
-
-          .ip-competition__row
-            .ip-competition__info
-              button.ip-competition__btn
-                span.ip-competition__market 1
-                span.ip-competition__coff 2.17
-              button.ip-competition__btn
-                span.ip-competition__market x
-                span.ip-competition__coff 2.17
-              button.ip-competition__btn
-                span.ip-competition__market x
-                span.ip-competition__coff 2.17
-            button.ip-competition__btn.ip-competition__btn--market
-              span +148
+        .ip-competition__row
+          .ip-competition__info
+            button.ip-competition__btn
+              span.ip-competition__market 1
+              span.ip-competition__coff 2.17
+            button.ip-competition__btn
+              span.ip-competition__market x
+              span.ip-competition__coff 2.17
+            button.ip-competition__btn
+              span.ip-competition__market x
+              span.ip-competition__coff 2.17
+          button.ip-competition__btn.ip-competition__btn--market
+            span +148
