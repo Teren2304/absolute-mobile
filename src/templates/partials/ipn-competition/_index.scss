@@ -1,0 +1,68 @@
+.ipn-competition {
+  width: 100%;
+
+  table {
+    flex-shrink: 0;
+
+    td {
+      padding: 0 2px;
+    }
+  }
+
+  &__time,
+  &__teams,
+  &__score {
+    height: 100%;
+  }
+
+  &__league {
+    @include size(100%, 28px);
+    @include flex($align-items: center);
+
+    background-color: #333545;
+    padding: 0 10px;
+  }
+
+  &__text {
+    margin: 2px 0;
+    color: rgba(#fff, 0.5);
+
+    &--white {
+      color: #fff;
+    }
+
+    &--ellipsis {
+      @include ellipsis;
+    }
+  }
+
+  &__match {
+    @include size(100%, 58px);
+    @include flex($align-items: center);
+
+    border-bottom: 1px solid #333545;
+    background-color: #232737;
+    padding: 10px;
+
+    &--active {
+      border-bottom: 1px solid #444858;
+      background-color: #444858;
+    }
+  }
+
+  &__time {
+    margin-right: 5px;
+    width: 15%;
+  }
+
+  &__teams {
+    flex-grow: 1;
+    margin-right: 10px;
+    overflow: hidden;
+  }
+
+  &__score {
+    min-width: 15%;
+    text-align: right;
+  }
+}

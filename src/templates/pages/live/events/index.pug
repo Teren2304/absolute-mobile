@@ -9,11 +9,17 @@ include ../../../layouts/header/_index
 include ../../../partials/b-accept/_index
 include ../../../partials/betslip/_index
 include ../../../partials/cb-aside/_index
+include ../../../partials/ipn-event/_index
+include ../../../partials/ipe-team-composition/_index
 
 block content
   +header-in
   .main
-    p Events
+    //.ipn-event--active
+    +ipn-event
+    //.ipe-team-composition--active
+    +ipe-team-composition.ipe-team-composition--active
+
     +betslip
-    +b-accept.b-accept--active
+    +b-accept
     +cb-aside

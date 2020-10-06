@@ -1,0 +1,97 @@
+.ipn-event {
+  position: relative;
+
+  &__back,
+  &__icon {
+    @include flex(center, center);
+
+    flex-shrink: 0;
+  }
+
+  &__header {
+    @include flex($align-items: center);
+    @include size(100%, 40px);
+
+    background-color: #232737;
+    padding: 0 15px;
+  }
+
+  &__text {
+    color: #fff;
+  }
+
+  &__teams {
+    @include flex($align-items: center);
+
+    margin-right: auto;
+    overflow: hidden;
+  }
+
+  &__team {
+    padding: 0 2px;
+    white-space: nowrap;
+    color: #fff;
+
+    &:last-child {
+      @include ellipsis;
+    }
+  }
+
+  &__icon {
+    @include size(10px, 6px);
+
+    margin-left: 10px;
+  }
+
+  &__back {
+    @include size(6px, 10px);
+
+    margin-right: 10px;
+  }
+
+  &__info {
+    @include flex($align-items: center);
+
+    flex-grow: 1;
+    margin-right: auto;
+    overflow: hidden;
+  }
+
+  &__favourite {
+    @include size(14px);
+
+    margin-left: 10px;
+
+    &--active {
+
+      svg {
+
+        path {
+          fill: $gold;
+        }
+      }
+    }
+  }
+
+  &__body {
+    @include overflow-y;
+
+    display: none;
+    background-color: #333545;
+    height: calc(100vh - 145px);
+  }
+
+  &--active {
+
+    .ipn-event {
+
+      &__body {
+        display: block;
+      }
+
+      &__icon {
+        transform: rotateZ(180deg);
+      }
+    }
+  }
+}

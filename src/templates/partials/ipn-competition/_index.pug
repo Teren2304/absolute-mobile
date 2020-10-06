@@ -1,0 +1,49 @@
+mixin ipn-competition(set, active)
+  .ipn-competition&attributes(attributes)
+    .ipn-competition__league
+      p.ipn-competition__text England, Premier League
+    .ipn-competition__match
+      .ipn-competition__time
+        p.ipn-competition__text 85:32
+      .ipn-competition__teams
+        p.ipn-competition__text.ipn-competition__text--white.ipn-competition__text--ellipsis Manchester United
+        p.ipn-competition__text.ipn-competition__text--white.ipn-competition__text--ellipsis Manchester United
+      .ipn-competition__score
+
+        if(set)
+          table
+            tr
+              td
+                p.ipn-competition__text.ipn-competition__text--white 1
+              td
+                p.ipn-competition__text.ipn-competition__text--white 1
+              td
+                p.ipn-competition__text.ipn-competition__text--white 0
+              td
+                p.ipn-competition__text.ipn-competition__text--white 0
+              td
+                p.ipn-competition__text.ipn-competition__text--white 0
+            tr
+              td
+                p.ipn-competition__text.ipn-competition__text--white 1
+              td
+                p.ipn-competition__text.ipn-competition__text--white 1
+              td
+                p.ipn-competition__text.ipn-competition__text--white 0
+              td
+                p.ipn-competition__text.ipn-competition__text--white 0
+              td
+                p.ipn-competition__text.ipn-competition__text--white 0
+        else
+          p.ipn-competition__text.ipn-competition__text--white 1
+          p.ipn-competition__text.ipn-competition__text--white 0
+
+    .ipn-competition__match(class=active && 'ipn-competition__match--active')
+      .ipn-competition__time
+        p.ipn-competition__text 85:32
+      .ipn-competition__teams
+        p.ipn-competition__text.ipn-competition__text--white.ipn-competition__text--ellipsis Manchester United
+        p.ipn-competition__text.ipn-competition__text--white.ipn-competition__text--ellipsis Manchester United
+      .ipn-competition__score
+        p.ipn-competition__text.ipn-competition__text--white 1
+        p.ipn-competition__text.ipn-competition__text--white 0

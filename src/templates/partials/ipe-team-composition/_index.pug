@@ -1,0 +1,81 @@
+mixin ipe-team-img
+  svg.tk-TeamKit_SVG(xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='100%' height='100%' viewBox='0 0 48 52')
+    title K1-9
+    defs
+      path#K1-9-path-1(d='M24 3.714C27.874 3.64 30 0 30 0l6.554.997L48 13.685l-6.6 7.588L36 17v19H12V17l-5.387 4.273L0 13.68 11.377 1.238 18 0s2.126 3.79 6 3.714z')
+      mask#K1-9-mask-2(x='0' y='0' width='48' height='36' fill='#fff')
+        use(xlink:href='#K1-9-path-1')
+      mask#K1-9-mask-3(x='0' y='0' width='48' height='36' fill='#fff')
+        use(xlink:href='#K1-9-path-1')
+      path#K1-9-path-4(d='M7 52l5-17h24l5 17H26.4L24 45.81 21.6 52z')
+      mask#K1-9-mask-5(x='0' y='0' width='34' height='17' fill='#fff')
+        use(xlink:href='#K1-9-path-4')
+      mask#K1-9-mask-6(x='0' y='0' width='34' height='17' fill='#fff')
+        use(xlink:href='#K1-9-path-4')
+    g#SVG-Team-Kits-Separated(fill='none' fill-rule='evenodd')
+      g#K1-9
+        path#color1(d='M24 3.714C27.874 3.64 30 0 30 0l6.554.997L48 13.685l-6.6 7.588L36 17v19H12V17l-5.387 4.273L0 13.68 11.377 1.238 18 0s2.126 3.79 6 3.714z' fill='#022857')
+        path#color7(fill='#022857' d='M7 52l5-16h24l5 16H26.4L24 45.81 21.6 52z')
+        path#color2(d='M28 2.211V35h-8V2.274c.99.79 2.333 1.473 4 1.44 1.667-.032 3.01-.725 4-1.503z' fill='#C40010')
+        path#color3(d='M20 2.274V36h-8V1.122L18 0s.69 1.23 2 2.274z' fill='#022857')
+        path#color4(d='M36 .913V36h-8V2.211C29.31 1.181 30 0 30 0l6 .913z' fill='#022857')
+        g#hires-detail
+          g#Outline1
+            g#Shape
+              use(stroke-opacity='.07' stroke='#FFF' mask='url(#K1-9-mask-2)' stroke-width='4' xlink:href='#K1-9-path-1')
+              use(stroke='#272727' mask='url(#K1-9-mask-3)' stroke-width='2' xlink:href='#K1-9-path-1')
+            g#Shape
+              use(stroke-opacity='.07' stroke='#FFF' mask='url(#K1-9-mask-5)' stroke-width='4' xlink:href='#K1-9-path-4')
+              use(stroke='#272727' mask='url(#K1-9-mask-6)' stroke-width='2' xlink:href='#K1-9-path-4')
+            path#shadow(d='M13 36h22v1H13v-1zm11 1h1v6h-1v-6zM34 7h1v10.818h-1V7zM13 7h1v10.818h-1V7z' fill='#000' opacity='.2')
+
+mixin ipe-team-composition
+  .ipe-team-composition&attributes(attributes)
+    .ipe-team-composition__wrap
+      .ipe-team-composition__close
+        svg(width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg')
+          path(fill-rule='evenodd' clip-rule='evenodd' d='M4.84327 11.9143L4.08566 11.1567L7.24239 7.99999L4.08566 4.84327L4.84327 4.08565L8 7.24238L11.1567 4.08565L11.9143 4.84327L8.75761 7.99999L11.9143 11.1567L11.1567 11.9143L8 8.75761L4.84327 11.9143Z' fill='#384049')
+      .ipe-team-composition__head
+        p.ipe-team-composition__title Lineups
+        .ipe-team-composition__tab
+          .ipe-team-composition__item.ipe-team-composition__item--active
+            .ipe-team-composition__img
+              +ipe-team-img
+            p.ipe-team-composition__team Manchester United
+          .ipe-team-composition__item
+            .ipe-team-composition__img
+              +ipe-team-img
+            p.ipe-team-composition__team Atletico Madrid
+      .ipe-team-composition__body
+        .ipe-team-composition__subtitle Substitutes
+        -var n = 0
+        while (n < 10)
+          .ipe-team-composition__row
+            p.ipe-team-composition__number= n++ + '1'
+            p.ipe-team-composition__name J.Bell
+            .ipe-team-composition__event
+              .ipe-team-composition__card
+                svg(width='100%' height='100%' viewBox='0 0 7 13' fill='none' xmlns='http://www.w3.org/2000/svg')
+                  rect(width='7' height='13' rx='1' fill='#F1CB62')
+              p 21ʼ
+            .ipe-team-composition__event
+              .ipe-team-composition__card
+                svg(width='100%' height='100%' viewBox='0 0 7 13' fill='none' xmlns='http://www.w3.org/2000/svg')
+                  rect(width='7' height='13' rx='1' fill='#E5142E')
+              p 20ʼ
+        .ipe-team-composition__subtitle Substitutes
+        -var n = 0
+        while (n < 10)
+          .ipe-team-composition__row
+            p.ipe-team-composition__number= n++ + '1'
+            p.ipe-team-composition__name C. Williamson
+            .ipe-team-composition__event
+              .ipe-team-composition__card
+                svg(width='100%' height='100%' viewBox='0 0 7 13' fill='none' xmlns='http://www.w3.org/2000/svg')
+                  rect(width='7' height='13' rx='1' fill='#F1CB62')
+              p 21ʼ
+            .ipe-team-composition__event
+              .ipe-team-composition__card
+                svg(width='100%' height='100%' viewBox='0 0 7 13' fill='none' xmlns='http://www.w3.org/2000/svg')
+                  rect(width='7' height='13' rx='1' fill='#E5142E')
+              p 20ʼ
