@@ -1,0 +1,66 @@
+.cs-classification-bar {
+  @include size(100%, 44px);
+
+  background-color: #232737;
+  overflow: hidden;
+
+  &__wrap {
+    @include size(100%);
+    @include flex($align-items: center);
+
+    padding: 0 10px;
+  }
+
+  &__item {
+    @include size(auto, 28px);
+    @include flex(center, center);
+
+    flex-shrink: 0;
+    margin-right: 10px;
+    border-radius: 15px;
+    background-color: #2f3346;
+    padding: 0 10px;
+    min-width: 65px;
+
+    &--active {
+      box-shadow: 0 0 6px rgba(9, 13, 18, 0.4);
+
+      .cs-classification-bar {
+
+        &__text {
+          color: $gold;
+        }
+
+        &__icon {
+
+          svg {
+            opacity: 1;
+
+            g,
+            rect,
+            path {
+              stroke: $gold;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__text {
+    transition: $default-transition;
+    color: #8c8e97;
+  }
+
+  &__icon {
+    @include size(16px);
+
+    margin-right: 5px;
+    overflow: hidden;
+
+    svg {
+      transition: $default-transition;
+      opacity: 0.5;
+    }
+  }
+}

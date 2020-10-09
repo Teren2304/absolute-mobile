@@ -1,0 +1,22 @@
+---
+title: Title
+lang: en
+hasLink: false
+---
+extends ../../../layouts/_layout
+
+include ../../../layouts/header/_index
+include ../../../partials/ip-header/_index
+include ../../../partials/cb-aside/_index
+include ../../../partials/wn-banner-slider/_index
+include ../../../partials/ip-control-bar/_index
+include ../../../partials/cs-classification-bar/_index
+include ../../../partials/cs-games/_index
+
+block content
+  +header-in
+  .main
+    +wn-banner-slider
+    +ip-control-bar
+    +cs-classification-bar
+    +cs-games

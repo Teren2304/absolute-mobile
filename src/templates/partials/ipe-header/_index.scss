@@ -1,0 +1,45 @@
+.ipe-header {
+  @include size(100%, 42px);
+
+  position: relative;
+  border-top: 1px solid rgba(#c2d3d4, 0.5);
+  border-bottom: 1px solid #c2d3d4;
+  background: #fff;
+  padding: 0 5px;
+  overflow: hidden;
+
+  &__wrap {
+    @include flex($align-items: center);
+
+    height: 100%;
+  }
+
+  &__link {
+    @include flex(center, center);
+
+    position: relative;
+    margin-right: 10px;
+    height: 100%;
+    white-space: nowrap;
+
+    &::after {
+      @include size(0, 4px);
+
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      transition: $default-transition;
+      background-color: $blue;
+      content: '';
+    }
+
+    &--active {
+      color: $blue;
+
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+}

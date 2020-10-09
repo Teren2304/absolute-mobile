@@ -1,0 +1,84 @@
+include ../cs-game/_index
+
+mixin cs-games
+  .cs-games&attributes(attributes)
+    .cs-games__block
+      .cs-games__headline
+        .cs-games__icon
+          svg(width='100%', height='100%', viewBox='0 0 16 16', fill='none', xmlns='http://www.w3.org/2000/svg')
+            path(opacity='0.5', d='M8.23267 12.1749L8 12.0526L7.76733 12.1749L3.71979 14.3028L4.4928 9.79585L4.53724 9.53677L4.349 9.35329L1.07448 6.16143L5.59976 5.50387L5.8599 5.46607L5.97623 5.23035L8 1.12977L10.0238 5.23035L10.1401 5.46607L10.4002 5.50387L14.9255 6.16143L11.651 9.35329L11.4628 9.53677L11.5072 9.79585L12.2802 14.3028L8.23267 12.1749Z', stroke='white')
+        p.cs-games__text New game
+        button.cs-games__button View all
+      .cs-games__list
+        +cs-game(0)
+        +cs-game(1)
+        +cs-game(2)
+        +cs-game
+
+    .cs-games__block
+      .cs-games__headline
+        p.cs-games__text Game categories
+        button.cs-games__button View all
+      .cs-games__list
+        +cs-game-category.cs-game--category.cs-game--roulettes
+        +cs-game-category.cs-game--category.cs-game--slots
+        +cs-game-category.cs-game--category.cs-game--bingo
+        +cs-game-category.cs-game--category.cs-game--btc-games
+
+    .cs-games__block
+      .cs-games__headline
+        p.cs-games__text The best board game
+        button.cs-games__button View all
+      .cs-games__list
+        +cs-game(0).cs-game--board
+        +cs-game(1).cs-game--board
+        +cs-game(2).cs-game--board
+        +cs-game.cs-game--board
+
+    .cs-games__block
+      .cs-games__headline
+        p.cs-games__text Games with active RTP
+        button.cs-games__button View all
+      .cs-games__list
+        .cs-games__block
+          +cs-game-info.cs-game--info
+          +cs-game-info.cs-game--info
+        .cs-games__block
+          +cs-game-info.cs-game--info
+          +cs-game-info.cs-game--info
+        .cs-games__block
+          +cs-game-info.cs-game--info
+          +cs-game-info.cs-game--info
+        .cs-games__block
+          +cs-game-info.cs-game--info
+          +cs-game-info.cs-game--info
+
+    .cs-games__block
+      .cs-games__headline
+        p.cs-games__text Category
+        button.cs-games__button View all
+      .cs-games__list
+        +cs-game-medium.cs-game--medium.cs-game--pocker
+        +cs-game-medium.cs-game--medium.cs-game--casino
+        +cs-game-medium.cs-game--medium.cs-game--pocker
+        +cs-game-medium.cs-game--medium.cs-game--casino
+
+    .cs-games__block
+      .cs-games__headline
+        p.cs-games__text Popular casino rooms
+        button.cs-games__button View all
+      .cs-games__list
+        +cs-game(0).cs-game--board
+        +cs-game(1).cs-game--board
+        +cs-game(2).cs-game--board
+        +cs-game.cs-game--board
+
+    .cs-games__block
+      .cs-games__headline
+        p.cs-games__text Game providers
+        button.cs-games__button View all
+      .cs-games__list
+        +cs-game-small.cs-game--small
+        +cs-game-small.cs-game--small
+        +cs-game-small.cs-game--small
+        +cs-game-small.cs-game--small
