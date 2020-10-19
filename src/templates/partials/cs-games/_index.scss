@@ -3,10 +3,6 @@
 
   &__block {
     margin-bottom: 35px;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
   }
 
   &__list {
@@ -15,6 +11,10 @@
     padding: 0 5px;
     overflow-x: hidden;
     white-space: nowrap;
+  }
+
+  &__slide {
+    margin-right: 5px;
   }
 
   &__headline {

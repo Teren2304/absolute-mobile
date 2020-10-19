@@ -1,0 +1,52 @@
+.cs-provider {
+  @include flex(center, center);
+
+  margin: 5px 0;
+
+  &__board {
+    border-radius: 5px;
+    background-color: #2f3346;
+    padding: 10px;
+
+    img {
+      @include size(100%);
+
+      display: block;
+      object-fit: contain;
+    }
+  }
+
+  &__wrap {
+    flex-grow: 1;
+    margin-left: 20px;
+  }
+
+  &__label {
+    margin-bottom: 4px;
+    color: #fff;
+  }
+
+  &__text {
+    color: rgba(#fff, 0.5);
+  }
+
+  &--sm {
+
+    .cs-provider {
+
+      &__board {
+        @include size(88px, 45px);
+      }
+    }
+  }
+
+  &--lg {
+
+    .cs-provider {
+
+      &__board {
+        @include size(161px, 49px);
+      }
+    }
+  }
+}

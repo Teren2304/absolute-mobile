@@ -1,0 +1,24 @@
+---
+title: Title
+lang: en
+hasLink: false
+---
+extends ../../../layouts/_layout
+
+include ../../../layouts/header/_index
+include ../../../partials/cs-game/_index
+include ../../../partials/cs-header/_index
+include ../../../partials/cs-classification-bar/_index
+
+
+block content
+  +header-in
+  .main
+    +cs-header('The best board games')(href="pages/casino/live/index.html")
+    +cs-classification-bar
+    .cs-content.cs-content--inline
+      -var n = 0
+      while (n < 10)
+        +cs-game(n++).cs-game--board.cs-game--lg
+
+

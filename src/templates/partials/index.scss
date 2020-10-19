@@ -1,3 +1,5 @@
+@import './languages/index';
+@import './settings/index';
 @import './b-accept/index';
 @import './betslip/index';
 @import './breadcrumbs/index';
@@ -31,5 +33,11 @@
 @import 'gll-slider/index';
 
 @import 'cs-game/index';
+@import 'cs-game-rtp/index';
 @import 'cs-games/index';
+@import 'cs-header/index';
+@import 'cs-content/index';
+@import 'cs-category/index';
+@import 'cs-provider/index';
 @import 'cs-classification-bar/index';
+@import 'cs-game-banner/index';

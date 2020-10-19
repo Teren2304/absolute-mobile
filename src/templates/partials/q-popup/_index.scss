@@ -7,11 +7,22 @@
   left: 0;
   z-index: 14;
   background-color: #0c1023;
-  background-image: url('../img/bg/bg.png');
-  background-position: 100% 50%;
-  background-repeat: no-repeat;
-  background-size: contain;
   overflow: hidden;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.1;
+    z-index: -1;
+    background-image: url('../img/bg/bg.png');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: '';
+  }
 
   &__newsletter,
   &__agree {

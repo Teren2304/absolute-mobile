@@ -1,0 +1,22 @@
+---
+title: Title
+lang: en
+hasLink: false
+---
+extends ../../../layouts/_layout
+
+include ../../../layouts/header/_index
+include ../../../partials/cs-header/_index
+include ../../../partials/cs-category/_index
+
+block content
+  +header-in
+  .main
+    +cs-header('Game categories')(href="pages/casino/live/index.html")
+    .cs-content
+      +cs-category('Roulettes').cs-category--roulettes
+      +cs-category('Slots').cs-category--slots
+      +cs-category('Bingo').cs-category--bingo
+      +cs-category('BTC Games').cs-category--btc
+      +cs-category('Table Games').cs-category--table
+      +cs-category('BlackJacks').cs-category--blackjacks

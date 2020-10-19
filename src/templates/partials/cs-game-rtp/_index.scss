@@ -1,0 +1,94 @@
+.cs-game-rtp {
+  @include flex(space-between, center);
+  @include size(100%, 88px);
+
+  margin: 5px 0;
+  border-radius: 5px;
+  background-color: #2f3346;
+  padding: 2px;
+  overflow: hidden;
+
+  &__content {
+    flex-grow: 1;
+    padding-left: 10px;
+    overflow: hidden;
+  }
+
+  &__title {
+    @include ellipsis;
+
+    margin-bottom: 4px;
+    color: #fff;
+  }
+
+  &__subtitle {
+    @include ellipsis;
+
+    color: rgba(#fff, 0.5);
+  }
+
+  &__img {
+    @include size(140px, 100%);
+
+    flex-shrink: 0;
+    border-radius: 5px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+
+    img {
+      @include size(100%);
+
+      display: block;
+      object-fit: cover;
+    }
+  }
+
+  &__number {
+    margin-right: 5px;
+    color: $green;
+  }
+
+  &__wrap {
+    @include flex($align-items: center);
+
+    margin-top: 10px;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  &--sm {
+    @include size(318px, 50px);
+
+    .cs-game-rtp {
+
+      &__content {
+        @include flex(space-between, center);
+
+        padding-right: 10px;
+      }
+
+      &__block {
+        flex-grow: 1;
+        flex-shrink: 0;
+        max-width: 70%;
+        overflow: hidden;
+      }
+
+      &__number {
+        margin: 0 0 5px;
+      }
+
+      &__wrap {
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top: 0;
+        max-width: 30%;
+        overflow: hidden;
+      }
+
+      &__img {
+        @include size(75px, 100%);
+      }
+    }
+  }
+}

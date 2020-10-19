@@ -39,10 +39,18 @@
 
         &__icon {
           opacity: 1;
+
+          svg {
+
+            path,
+            line {
+              stroke: $blue;
+            }
+          }
         }
 
         &__text {
-          color: #fff;
+          color: $blue;
         }
       }
     }

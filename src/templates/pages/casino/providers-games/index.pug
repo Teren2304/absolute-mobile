@@ -1,0 +1,22 @@
+---
+title: Title
+lang: en
+hasLink: false
+---
+extends ../../../layouts/_layout
+
+include ../../../layouts/header/_index
+include ../../../partials/cs-header/_index
+include ../../../partials/cs-classification-bar/_index
+include ../../../partials/cs-provider/_index
+
+
+block content
+  +header-in
+  .main
+    +cs-header('Game providers')(href="pages/casino/live/index.html")
+    +cs-classification-bar
+    .cs-content
+      -var n = 0
+      while (n < 10)
+        +cs-provider(true).cs-provider--lg(data=n++)

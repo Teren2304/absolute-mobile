@@ -1,0 +1,194 @@
+.cs-game {
+  position: relative;
+  margin: 0 2px 5px;
+  flex-shrink: 0;
+  overflow: hidden;
+
+  &__status {
+    @include flex(center, center);
+
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    z-index: 1;
+    border-radius: 2px;
+    background-color: $gold;
+    padding: 0 12px;
+    height: 17px;
+    font-size: 10px;
+
+    &--new {
+      background-color: $red;
+    }
+
+    &--top {
+      background-color: $gold;
+    }
+
+    &--popular {
+      background-color: $green;
+      color: #fff;
+    }
+  }
+
+  &__title {
+    @include ellipsis;
+
+    margin-bottom: 4px;
+    color: #fff;
+  }
+
+  &__subtitle {
+    @include ellipsis;
+
+    color: rgba(#fff, 0.5);
+  }
+
+  &__footer {
+    overflow: hidden;
+  }
+
+  &__img {
+    @include size(154px, 116px);
+
+    flex-shrink: 0;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+
+    img {
+      @include size(100%);
+
+      display: block;
+      object-fit: cover;
+    }
+  }
+
+  &__text {
+    @include ellipsis;
+
+    margin: 5px 0 2px;
+    color: rgba(#fff, 0.5);
+    font-size: 10px;
+  }
+
+  &__label {
+    position: absolute;
+    top: 18px;
+    right: 10px;
+    left: 10px;
+    white-space: normal;
+    color: #fff;
+    font-size: 16px;
+  }
+
+  &__icon {
+    @include size(30px);
+
+    margin: 0 auto;
+  }
+
+  &__number {
+    margin-bottom: 5px;
+    color: $green;
+  }
+
+  &__wrap {
+    @include flex(space-between, center);
+
+    padding: 0 5px;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  &--sm {
+    @include size(144px, 140px);
+
+    .cs-game {
+
+      &__img {
+        @include size(100%, 84px);
+      }
+    }
+  }
+
+  &--lg {
+    @include size(165px, 162px);
+
+    .cs-game {
+
+      &__img {
+        @include size(100%, 105px);
+      }
+    }
+  }
+
+  &--board {
+    border-radius: 5px;
+    background-color: #2f3346;
+    padding: 2px;
+
+    .cs-game {
+
+      &__footer {
+        padding: 0 5px 5px;
+      }
+    }
+  }
+
+  //&--medium {
+  //  @include size(300px, 90px);
+  //
+  //  border-radius: 5px;
+  //  box-shadow: inset 0 0 71px 0 rgba(0, 0, 0, 0.7);
+  //  background-color: #2f3346;
+  //
+  //  img {
+  //    object-fit: contain;
+  //    object-position: right;
+  //  }
+  //}
+  //
+  //&--info {
+  //  @include size(320px, 50px);
+  //  @include flex;
+  //
+  //  margin-bottom: 5px;
+  //  border-radius: 5px;
+  //  background-color: #2f3346;
+  //  padding: 1px;
+  //
+  //  &:last-child {
+  //    margin-bottom: 0;
+  //  }
+  //
+  //  .cs-game {
+  //
+  //    &__title,
+  //    &__number,
+  //    &__subtitle {
+  //      margin: 2px;
+  //    }
+  //
+  //    &__img {
+  //      @include size(74px, 100%);
+  //    }
+  //
+  //    &__footer {
+  //      @include flex($justify-content: center, $direction: column);
+  //
+  //      flex-grow: 1;
+  //      padding: 5px 3px;
+  //    }
+  //  }
+  //}
+  //
+  //&--pocker {
+  //  background-color: $blue;
+  //}
+  //
+  //&--casino {
+  //  background-color: $green;
+  //}
+}

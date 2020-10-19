@@ -1,5 +1,10 @@
 include ../cs-game/_index
 
+include ../cs-provider/_index
+include ../cs-category/_index
+include ../cs-game-rtp/_index
+include ../cs-game-banner/_index
+
 mixin cs-games
   .cs-games&attributes(attributes)
     .cs-games__block
@@ -10,75 +15,83 @@ mixin cs-games
         p.cs-games__text New game
         button.cs-games__button View all
       .cs-games__list
-        +cs-game(0)
-        +cs-game(1)
-        +cs-game(2)
-        +cs-game
+        -var n = 0
+        while (n < 10)
+          .cs-games__slide
+            +cs-game(n++).cs-game--lg
 
     .cs-games__block
       .cs-games__headline
         p.cs-games__text Game categories
-        button.cs-games__button View all
+        a(href="pages/casino/categories/index.html").cs-games__button View all
       .cs-games__list
-        +cs-game-category.cs-game--category.cs-game--roulettes
-        +cs-game-category.cs-game--category.cs-game--slots
-        +cs-game-category.cs-game--category.cs-game--bingo
-        +cs-game-category.cs-game--category.cs-game--btc-games
+         .cs-games__slide
+           +cs-category('Roulettes').cs-category--sm.cs-category--roulettes
+         .cs-games__slide
+           +cs-category('Slots').cs-category--sm.cs-category--slots
+         .cs-games__slide
+           +cs-category('Bingo').cs-category--sm.cs-category--bingo
+         .cs-games__slide
+           +cs-category('BTC Games').cs-category--sm.cs-category--btc
+         .cs-games__slide
+           +cs-category('Table Games').cs-category--sm.cs-category--table
+         .cs-games__slide
+           +cs-category('BlackJacks').cs-category--sm.cs-category--blackjacks
 
     .cs-games__block
       .cs-games__headline
         p.cs-games__text The best board game
-        button.cs-games__button View all
+        a(href="pages/casino/best-games/index.html").cs-games__button View all
       .cs-games__list
-        +cs-game(0).cs-game--board
-        +cs-game(1).cs-game--board
-        +cs-game(2).cs-game--board
-        +cs-game.cs-game--board
+        -var n = 0
+        while (n < 10)
+          .cs-games__slide
+            +cs-game(n++).cs-game--board.cs-game--sm
 
     .cs-games__block
       .cs-games__headline
         p.cs-games__text Games with active RTP
-        button.cs-games__button View all
+        a(href="pages/casino/rtp-games/index.html").cs-games__button View all
       .cs-games__list
-        .cs-games__block
-          +cs-game-info.cs-game--info
-          +cs-game-info.cs-game--info
-        .cs-games__block
-          +cs-game-info.cs-game--info
-          +cs-game-info.cs-game--info
-        .cs-games__block
-          +cs-game-info.cs-game--info
-          +cs-game-info.cs-game--info
-        .cs-games__block
-          +cs-game-info.cs-game--info
-          +cs-game-info.cs-game--info
+        .cs-games__slide
+          +cs-game-rtp.cs-game-rtp--sm
+          +cs-game-rtp.cs-game-rtp--sm
+        .cs-games__slide
+          +cs-game-rtp.cs-game-rtp--sm
+          +cs-game-rtp.cs-game-rtp--sm
+        .cs-games__slide
+          +cs-game-rtp.cs-game-rtp--sm
+          +cs-game-rtp.cs-game-rtp--sm
+        .cs-games__slide
+          +cs-game-rtp.cs-game-rtp--sm
+          +cs-game-rtp.cs-game-rtp--sm
 
     .cs-games__block
       .cs-games__headline
         p.cs-games__text Category
         button.cs-games__button View all
       .cs-games__list
-        +cs-game-medium.cs-game--medium.cs-game--pocker
-        +cs-game-medium.cs-game--medium.cs-game--casino
-        +cs-game-medium.cs-game--medium.cs-game--pocker
-        +cs-game-medium.cs-game--medium.cs-game--casino
+        -var n = 0
+        while (n < 10)
+          .cs-games__slide
+            +cs-game-banner('Pocker')(data=n++)
 
     .cs-games__block
       .cs-games__headline
         p.cs-games__text Popular casino rooms
         button.cs-games__button View all
       .cs-games__list
-        +cs-game(0).cs-game--board
-        +cs-game(1).cs-game--board
-        +cs-game(2).cs-game--board
-        +cs-game.cs-game--board
+        -var n = 0
+        while (n < 10)
+          .cs-games__slide
+            +cs-game(n++).cs-game--board.cs-game--sm
 
     .cs-games__block
       .cs-games__headline
         p.cs-games__text Game providers
-        button.cs-games__button View all
+        a(href="pages/casino/providers-games/index.html").cs-games__button View all
       .cs-games__list
-        +cs-game-small.cs-game--small
-        +cs-game-small.cs-game--small
-        +cs-game-small.cs-game--small
-        +cs-game-small.cs-game--small
+        -var n = 0
+        while (n < 10)
+          .cs-games__slide
+            +cs-provider.cs-provider--sm(data=n++)

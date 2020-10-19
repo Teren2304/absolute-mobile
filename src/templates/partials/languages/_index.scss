@@ -1,0 +1,75 @@
+.languages {
+  @include flex($direction: column);
+
+  padding-bottom: 5px;
+  height: 100%;
+  overflow: hidden;
+
+  &__head {
+    @include flex(space-between, center);
+    @include size(100%, 48px);
+
+    flex-shrink: 0;
+    padding: 0 16px 0 8px;
+  }
+
+  &__search {
+    flex-shrink: 0;
+    padding: 0 8px;
+  }
+
+  &__select {
+    color: #fff;
+  }
+
+  &__cancel {
+    color: rgba(#fff, 0.5);
+
+    &--active {
+      color: #fff;
+    }
+  }
+
+  &__item {
+    @include flex($align-items: center);
+    @include size(100%, 47px);
+
+    border-bottom: 1px solid rgba(#c4c4c4, 0.3);
+    padding-left: 2px;
+
+    &--active {
+
+      .languages {
+
+        &__text {
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  &__icon {
+    @include size(24px, 14px);
+
+    margin-right: 10px;
+
+    img {
+      @include size(100%);
+
+      display: block;
+      object-fit: cover;
+    }
+  }
+
+  &__text {
+    color: rgba(#fff, 0.5);
+  }
+
+  &__wrap {
+    @include overflow-y;
+
+    flex-grow: 1;
+    margin-top: 16px;
+    padding: 0 8px;
+  }
+}

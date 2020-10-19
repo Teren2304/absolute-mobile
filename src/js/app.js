@@ -22,12 +22,12 @@ $('.h-toggle').click(function() {
 $('#h-submenu-search').click(function() {
   if ($('.h-aside').hasClass('h-aside--active')) {
     $('.h-aside').removeClass('h-aside--active');
-    $('.h-show-menu').removeClass('h-toggle--active');
+    $('.h-toggle').removeClass('h-toggle--active');
     $('.h-search').removeClass('h-search--active');
   }
   else {
     $('.h-aside').addClass('h-aside--active');
-    $('.h-show-menu').addClass('h-toggle--active');
+    $('.h-toggle').addClass('h-toggle--active');
     $('.h-search').addClass('h-search--active');
   }
 });
@@ -50,5 +50,27 @@ $('.h-account').click(function(){
   else {
     $('.cb-aside').addClass('cb-aside--active');
     $(this).addClass('cb-aside--active');
+  }
+});
+
+$('#h-service-lang').click(function(){
+  if ($('.h-aside__languages').hasClass('h-aside__languages--active')) {
+    $('.h-aside__languages').removeClass('h-aside__languages--active');
+    $(this).removeClass('h-service__item--active');
+  }
+  else {
+    $('.h-aside__languages').addClass('h-aside__languages--active');
+    $(this).addClass('h-service__item--active');
+  }
+});
+
+$('#h-service-setting').click(function(){
+  if ($('.h-aside__settings').hasClass('h-aside__settings--active')) {
+    $('.h-aside__settings').removeClass('h-aside__settings--active');
+    $(this).removeClass('h-service__item--active');
+  }
+  else {
+    $('.h-aside__settings').addClass('h-aside__settings--active');
+    $(this).addClass('h-service__item--active');
   }
 });

@@ -1,0 +1,7 @@
+.cs-content {
+  padding: 10px 5px;
+
+  &--inline {
+    @include flex(center, center, $wrap: wrap);
+  }
+}

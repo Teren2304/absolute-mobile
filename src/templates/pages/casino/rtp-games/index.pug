@@ -1,0 +1,20 @@
+---
+title: Title
+lang: en
+hasLink: false
+---
+extends ../../../layouts/_layout
+
+include ../../../layouts/header/_index
+include ../../../partials/cs-header/_index
+include ../../../partials/cs-game-rtp/_index
+
+
+block content
+  +header-in
+  .main
+    +cs-header('The best board games')(href="pages/casino/live/index.html")
+    .cs-content
+      -var n = 0
+      while (n < 10)
+        +cs-game-rtp(data=n++)

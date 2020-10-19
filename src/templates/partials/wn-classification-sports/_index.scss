@@ -1,5 +1,6 @@
 .wn-classification-sports {
   position: relative;
+  background-color: #191e31;
   height: 100%;
   overflow: hidden;
 
@@ -11,7 +12,7 @@
     @include flex($align-items: center);
     @include size(100%, 50px);
 
-    background-color: #232737;
+    border-bottom: 1px solid #2f3345;
     padding: 0 10px;
   }
 

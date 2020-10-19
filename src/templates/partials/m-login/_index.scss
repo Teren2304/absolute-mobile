@@ -1,14 +1,25 @@
 .m-login {
   @include flex(center, center);
 
-  background-color: rgba(#383a4a, 0.5);
-  background-image: url('../img/bg/bg.png');
-  background-position: 100% 50%;
-  background-repeat: no-repeat;
-  background-size: contain;
   height: calc(100vh - 50px);
 
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.1;
+    z-index: -1;
+    background-image: url('../img/bg/bg.png');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: '';
+  }
+
   &__wrap {
+    opacity: 1;
     text-align: center;
   }
 

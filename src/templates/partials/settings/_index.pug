@@ -1,0 +1,83 @@
+mixin settings
+  .settings&attributes(attributes)
+    .settings__wrap
+      .settings__head
+        p.settings__select Select settings
+        p.settings__cancel Cancel
+      .settings__block.settings__block--active
+        .settings__header
+          .settings__icon
+            svg(width='100%' height='100%' viewBox='0 0 6 10' fill='none' xmlns='http://www.w3.org/2000/svg')
+              path(d='M5 9L1 5L5 1' stroke='#fff')
+          p.settings__text Coefficient
+        .settings__dropdown
+          .settings__item
+            .settings__radio
+              input(type="radio" name="view" value="1")#r-float
+              label(for="r-float").settings__text Float
+          .settings__item
+            .settings__radio
+              input(type="radio" name="view" value="2")#r-decimal
+              label(for="r-decimal").settings__text Decimal
+          .settings__item
+            .settings__radio
+              input(type="radio" name="view" value="3")#r-american
+              label(for="r-american").settings__text American
+      .settings__block
+        .settings__header
+          .settings__text Voice
+          label.settings__toggle
+            input(type="checkbox" id="stake").settings__toggle-input
+            span.settings__toggle-swipe
+            span.settings__toggle-bg
+      .settings__block.settings__block--active
+        .settings__header
+          .settings__icon
+            svg(width='100%' height='100%' viewBox='0 0 6 10' fill='none' xmlns='http://www.w3.org/2000/svg')
+              path(d='M5 9L1 5L5 1' stroke='#fff')
+          p.settings__text Time format
+        .settings__dropdown
+          .settings__item
+            .settings__radio
+              input(type="radio" name="view" value="1")#r-12
+              label(for="r-12").settings__text 12 H
+          .settings__item
+            .settings__radio
+              input(type="radio" name="view" value="2")#r-24
+              label(for="r-24").settings__text 24 H
+      .settings__block.settings__block--active
+        .settings__header
+          .settings__icon
+            svg(width='100%' height='100%' viewBox='0 0 6 10' fill='none' xmlns='http://www.w3.org/2000/svg')
+              path(d='M5 9L1 5L5 1' stroke='#fff')
+          p.settings__text View
+        .settings__dropdown
+          .settings__item
+            .settings__radio
+              input(type="radio" name="view" value="1")#r-modern
+              label(for="r-modern").settings__text Modern
+          .settings__item
+            .settings__radio
+              input(type="radio" name="view" value="2")#r-asiat
+              label(for="r-asiat").settings__text Asiat
+          .settings__item
+            .settings__radio
+              input(type="radio" name="view" value="3")#r-classic
+              label(for="r-classic").settings__text Classic
+          .settings__item
+            .settings__radio
+              input(type="radio" name="view" value="4")#r-combo
+              label(for="r-combo").settings__text Combo
+
+      .settings__block.settings__block--active
+        .settings__header
+          .settings__icon
+            svg(width='100%' height='100%' viewBox='0 0 6 10' fill='none' xmlns='http://www.w3.org/2000/svg')
+              path(d='M5 9L1 5L5 1' stroke='#fff')
+          p.settings__text Example
+        .settings__dropdown
+          .settings__item
+            p.settings__text Accept all odds changes
+            input(type="checkbox" id="bonus").settings__checkbox
+          .settings__item
+            p.settings__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam corporis culpa cum dignissimos doloremque eaque et ex expedita fuga ipsam magni necessitatibus, neque non nostrum omnis porro possimus provident quae!

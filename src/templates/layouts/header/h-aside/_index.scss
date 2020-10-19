@@ -7,7 +7,7 @@
   bottom: 0;
   left: 0;
   transform: translateX(-100%);
-  transition: 0.5s;
+  transition: all 0.3s ease-in;
   opacity: 0;
   z-index: 12;
   background-color: #1a1e30;
@@ -15,6 +15,30 @@
   @include media-min(600) {
     right: auto;
     width: 350px;
+  }
+
+  &__languages,
+  &__settings {
+    @include overflow-y;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateY(100%);
+    transition: all 0.5s ease-in;
+    opacity: 0;
+    z-index: 1;
+    box-shadow: 0 3px 14px rgba(0, 0, 0, 0.81);
+    background-color: #1a1e30;
+    padding-bottom: 60px;
+    overflow: hidden;
+
+    &--active {
+      transform: translateY(0);
+      opacity: 1;
+    }
   }
 
   &__top,
@@ -34,8 +58,11 @@
   }
 
   &__bottom {
+    position: relative;
+    z-index: 2;
     margin-top: auto;
     margin-bottom: 0;
+    background-color: #1a1e30;
     height: 50px;
   }
 
