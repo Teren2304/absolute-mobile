@@ -1,0 +1,13 @@
+mixin cb-account-popup
+  .cb-account-popup&attributes(attributes)
+    .cb-account-popup__overlay
+      .cb-account-popup__content
+        .cb-account-popup__close
+          svg(width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg')
+            path(fill-rule='evenodd' clip-rule='evenodd' d='M4.84327 11.9144L4.08566 11.1567L7.24239 8.00002L4.08566 4.8433L4.84327 4.08568L8 7.24241L11.1567 4.08568L11.9143 4.8433L8.75761 8.00002L11.9143 11.1567L11.1567 11.9144L8 8.75764L4.84327 11.9144Z' fill='#384049')
+        .cb-account-popup__body
+           p.cb-account-popup__text.cb-account-popup__text--lg.cb-account-popup__text--green Excellent!
+           p.cb-account-popup__text.cb-account-popup__text--md Your documents have been sent for review. It can take some time.
+        .cb-account-popup__footer
+          p.cb-account-popup__text.cb-account-popup__text--grey The window will close automatically through…
+          p.cb-account-popup__text.cb-account-popup__text--grey 3 sec

@@ -1,0 +1,53 @@
+mixin cb-message(status)
+  .cb-message&attributes(attributes)
+    .cb-message__head
+      p.cb-message__text My passport_page_1.JPG
+      .cb-message__wrap
+        p.cb-message__status= status
+
+
+mixin cb-message-2
+  .cb-message&attributes(attributes)
+    .cb-message__head
+      p.cb-message__status Uploading...
+      p.cb-message__text My passport_page_1.JPG
+      .cb-message__wrap
+        .cb-message__options
+          .cb-message__option
+            svg(width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg')
+              path(fill-rule='evenodd' clip-rule='evenodd' d='M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16Z' fill='#D0DDEA')
+              rect(opacity='0.5' x='6' y='5' width='1' height='6' rx='0.5' fill='#232737')
+              rect(opacity='0.5' x='9' y='5' width='1' height='6' rx='0.5' fill='#232737')
+          .cb-message__option
+            svg(width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg')
+              path(opacity='0.3' fill-rule='evenodd' clip-rule='evenodd' d='M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16Z' fill='#FC3164')
+              rect(x='9.76777' y='5.52515' width='1' height='6' rx='0.5' transform='rotate(45 9.76777 5.52515)' fill='#FC3164')
+              rect(x='10.4749' y='9.7677' width='1' height='6' rx='0.5' transform='rotate(135 10.4749 9.7677)' fill='#FC3164')
+    .cb-message__body
+      p.cb-message__text 50%
+      .cb-message__divider
+      p.cb-message__text 25 second left
+    .cb-message__scale
+      .cb-message__value(style="width: 30%")
+
+
+mixin cb-message-3
+  .cb-message&attributes(attributes)
+    .cb-message__head
+      p.cb-message__text.cb-message__text--error My passport_page_1.JPG
+      .cb-message__wrap
+        p.cb-message__status.cb-message__status--bad Failed to load...
+        .cb-message__options
+          .cb-message__option
+            svg(width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg')
+              path(d='M9.73608 0.756916C9.42848 0.802476 9.19245 1.06762 9.19245 1.38789L9.19227 2.263L9.05007 2.1564C6.95811 0.657634 4.02839 0.891498 2.20433 2.8093C0.209256 4.90689 0.292368 8.22466 2.38998 10.2197C4.48759 12.2148 7.80533 12.1317 9.80042 10.0341C10.9381 8.83794 11.4458 7.17578 11.1707 5.54811C11.1155 5.20249 10.7885 4.96548 10.4406 5.02099C10.1243 5.07144 9.89972 5.3463 9.90319 5.65724L9.91313 5.76279C10.2847 7.94993 8.81149 10.026 6.62236 10.3979C4.43323 10.7698 2.35714 9.2966 1.98526 7.10747C1.61339 4.91835 3.08657 2.84226 5.27568 2.47038L5.51341 2.43724C6.62309 2.31617 7.73024 2.66266 8.5711 3.3862L8.63227 3.442L7.30147 3.88561C7.01272 3.98169 6.83366 4.26754 6.86949 4.56639L6.89106 4.66827C6.99387 4.98123 7.27972 5.16029 7.57857 5.12446L7.68038 5.10293L10.032 4.32042C10.2925 4.23365 10.4683 3.98979 10.4682 3.71513V1.38789C10.4682 1.03559 10.1826 0.75 9.83034 0.75L9.73608 0.756916Z' fill='#31C400')
+
+mixin cb-message-4
+  .cb-message&attributes(attributes)
+    .cb-message__head
+      p.cb-message__text My passport_page_1.JPG
+      .cb-message__wrap
+        .cb-message__options
+          .cb-message__option
+            svg(width='15' height='16' viewBox='0 0 15 16' fill='none' xmlns='http://www.w3.org/2000/svg')
+              path(fill-rule='evenodd' clip-rule='evenodd' d='M3.91434 11.9141L3.15673 11.1565L6.31345 7.99978L3.15673 4.84305L3.91434 4.08544L7.07107 7.24216L10.2278 4.08544L10.9854 4.84305L7.82868 7.99978L10.9854 11.1565L10.2278 11.9141L7.07107 8.75739L3.91434 11.9141Z' fill='#384049')

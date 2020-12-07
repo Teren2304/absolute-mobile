@@ -1,0 +1,161 @@
+.cb-message {
+  @include size(100%, 30px);
+  @include flex(space-between, center);
+
+  margin: 10px 0;
+  border-radius: 2px;
+  padding: 5px 10px;
+
+  &__status,
+  &__text {
+    @include ellipsis;
+
+    color: #9a9b9f;
+    font-size: 10px;
+
+    &--bad {
+      color: #383a4a;
+    }
+
+    &--success {
+      color: $green;
+    }
+
+    &--error {
+      color: $red;
+    }
+  }
+
+  &__body,
+  &__head {
+    @include flex($align-items: center);
+
+    width: 100%;
+  }
+
+  &__head {
+    justify-content: space-between;
+  }
+
+  &__wrap {
+    @include flex($align-items: center);
+
+    margin-left: 5px;
+  }
+
+  &__options {
+    @include flex(center, center);
+
+    margin-left: 5px;
+  }
+
+  &__option {
+    @include size(16px);
+
+    margin: 0 2px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__scale {
+    @include size(100%, 2px);
+
+    position: relative;
+    margin-top: 2px;
+    border-radius: 1px;
+    background-color: rgba(#d8d8d8, 0.2);
+    overflow: hidden;
+  }
+
+  &__value {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: $blue;
+  }
+
+  &__divider {
+    @include size(3px);
+
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: rgba(#232737, 0.5);
+  }
+
+  &--success {
+    border: 1px solid #d2dcf1;
+    background-color: #f7fafd;
+
+    .cb-message {
+
+      &__status {
+        color: $green;
+      }
+    }
+  }
+
+  &--bad {
+    background-color: #e1e5ee;
+
+    .cb-message {
+
+      &__text,
+      &__status {
+        color: #383a4a;
+      }
+    }
+  }
+
+  &--warning {
+    border: 1px solid rgba(252, 49, 100, 0.5);
+    background-color: rgba(252, 49, 100, 0.08);
+
+    .cb-message {
+
+      &__text,
+      &__status {
+        color: $red;
+      }
+    }
+  }
+
+  &--default {
+    border: 1px solid #d2dcf1;
+    background-color: #f7fafd;
+  }
+
+  &--uploading {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    border: 1px solid #d2dcf1;
+    background-color: #f7fafd;
+    height: 54px;
+
+    .cb-message {
+
+      &__head {
+
+        .cb-message {
+
+          &__text {
+            margin-right: auto;
+            margin-left: 0;
+          }
+        }
+      }
+
+      &__status {
+        margin-right: 5px;
+        color: $blue;
+      }
+    }
+  }
+}

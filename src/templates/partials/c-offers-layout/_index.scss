@@ -1,0 +1,99 @@
+.c-offers-layout {
+  background-color: #fff;
+
+  &__subtitle,
+  &__text {
+    margin-bottom: 12px;
+  }
+
+  &__list {
+    @include flex($wrap: wrap);
+
+    padding: 10px 5px;
+  }
+
+  &__item {
+    flex-grow: 1;
+    margin: 0 auto 10px;
+    padding: 0 5px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__header {
+    @include size(100%, 190px);
+
+    position: relative;
+  }
+
+  &__img {
+    @include size(100%);
+
+    display: block;
+    object-fit: cover;
+  }
+
+  &__timer {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 180px;
+  }
+
+  &__title {
+    position: absolute;
+    top: 16px;
+    right: 15px;
+    left: 15px;
+    text-align: center;
+    line-height: 1.1;
+    color: #fff;
+    font-size: 34px;
+    font-weight: 700;
+  }
+
+  &__body {
+    background-color: #f1f3f7;
+    padding: 25px 10px;
+  }
+
+  &__subtitle {
+    font-size: 16px;
+  }
+
+  &__text {
+    line-height: 1.5;
+
+    &--grey {
+      color: rgba(#232737, 0.5);
+    }
+  }
+
+  &__btn {
+    @include size(100%, 36px);
+    @include reset-button;
+
+    margin: 10px 0;
+    border-radius: 2px;
+    box-shadow: 0 0 8px $gold;
+    background-color: $gold;
+
+    * {
+      font-weight: 600;
+    }
+  }
+
+  &__li {
+    @include flex;
+
+    > * {
+
+      &:first-child {
+        margin-right: 5px;
+      }
+    }
+  }
+}

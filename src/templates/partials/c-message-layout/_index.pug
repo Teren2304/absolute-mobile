@@ -1,0 +1,22 @@
+include ../c-message/_index
+include ../c-message-popup/_index
+
+mixin c-message-layout(open)
+  .c-message-layout&attributes(attributes)
+    if open
+      .c-message-layout__header
+        .c-message-layout__action
+          .c-message-layout__icon
+            svg(width='12' height='16' viewBox='0 0 12 16' fill='none' xmlns='http://www.w3.org/2000/svg')
+              path(fill-rule='evenodd' clip-rule='evenodd' d='M9 0.857143H12V2.57143H0V0.857143H3L3.85714 0H8.14286L9 0.857143ZM2.57143 15.4286C1.62857 15.4286 0.857143 14.6571 0.857143 13.7143V3.42857H11.1429V13.7143C11.1429 14.6571 10.3714 15.4286 9.42857 15.4286H2.57143Z' fill='#232737')
+          p.c-message-layout__text Delete
+    .c-message-layout__wrap
+      if open
+        .c-message-layout__block
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad at ea ipsa nihil non odit sit ut! Ad, consequatur est eum expedita fugiat ipsam laborum optio provident, repudiandae veniam vero?
+      else
+        +c-message
+        -var n = 0
+        while (n < 10)
+          +c-message(data=n++, href="pages/messages/open/index.html").c-message--old
+        +c-message-popup.c-message-popup--active

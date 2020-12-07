@@ -1,0 +1,81 @@
+.c-message-popup {
+  @include size(100%, 38px);
+
+  display: none;
+  position: fixed;
+  right: 0;
+  bottom: 55px;
+  left: 0;
+  border-radius: 2px 2px 0 0;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  background-color: #e1e5ee;
+  padding: 0 10px;
+  overflow: hidden;
+
+  &__wrap {
+    @include size(100%);
+    @include flex($align-items: center);
+  }
+
+  &__block {
+    flex-shrink: 0;
+    width: 45px;
+  }
+
+  &__count {
+    display: inline-flex;
+    border-radius: 1px;
+    background-color: $blue;
+    padding: 0 3px;
+    min-width: 12px;
+    height: 12px;
+    line-height: 1.3;
+    color: #fff;
+    font-size: 10px;
+  }
+
+  &__action {
+    @include flex(center, center);
+
+    transition: all 0.2s;
+    opacity: 0.5;
+    margin-right: 20px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &--active {
+      opacity: 1;
+    }
+  }
+
+  &__text {
+    margin-left: 10px;
+  }
+
+  &__close {
+    @include size(64px);
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+    border-radius: 50%;
+    background-color: #f6f8ff;
+
+    svg {
+      position: absolute;
+      bottom: 10px;
+      left: 12px;
+    }
+
+    &--active {
+      background-color: darken(#f6f8ff, 10%);
+    }
+  }
+
+  &--active {
+    display: block;
+  }
+}

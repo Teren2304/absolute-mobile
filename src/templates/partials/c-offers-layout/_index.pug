@@ -1,0 +1,35 @@
+include ../c-offer/_index
+
+mixin c-offers-layout(view)
+  .c-offers-layout&attributes(attributes)
+    if view
+      .c-offers-layout__list
+        -var n = 0
+        while (n < 10)
+          .c-offers-layout__item
+            if view === 1
+              +c-offer(data=n++)
+            if view === 2
+              +c-offer-active(data=n++)
+            if view === 3
+              +c-offer-archive(data=n++).c-offer--small
+    else
+      .c-offers-layout__header
+        img(src="/img/banners/1.png").c-offers-layout__img
+        p.c-offers-layout__title Shoot all the series and get $ 400
+        .c-offers-layout__timer
+          +c-timer
+      .c-offers-layout__body
+        p.c-offers-layout__subtitle Play in your favorite games on weekends, and in case of loss get a 20% cashback!
+        p.c-offers-layout__text You will receive automatically 20% of the amount of your loss for the weekend on your account.
+        p.c-offers-layout__text.c-offers-layout__text--grey For example: You lost $ 100 for Saturday (May 12) and Sunday (May 13). Then your account will be credited automatically with an amount equal to 20% of the amount of your loss - $ 20.
+
+        p.c-offers-layout__text Terms and Conditions:
+        .c-offers-layout__ul
+          -var n = 0
+          while (n < 5)
+            .c-offers-layout__li
+              p.c-offers-layout__text= n++ + "."
+              p.c-offers-layout__text.c-offers-layout__text--grey For example: You lost $ 100 for Saturday (May 12) and Sunday (May 13). Then your account will be credited automatically with an amount equal to 20% of the amount of your loss - $ 20.
+        button.c-offers-layout__btn
+          span Активировать

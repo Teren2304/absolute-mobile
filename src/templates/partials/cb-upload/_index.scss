@@ -1,0 +1,29 @@
+.cb-upload {
+
+  &__drop {
+    border: 1px dashed rgba(35, 39, 55, 0.5);
+    padding: 15px;
+    text-align: center;
+  }
+
+  &__img {
+    @include size(24px, 30px);
+
+    margin: 0 auto 10px;
+  }
+
+  &__file {
+    display: none;
+  }
+
+  &__label {
+    margin-left: 5px;
+    color: $blue;
+  }
+
+  &__text {
+    margin-top: 5px;
+    color: #9a9b9f;
+    font-size: 10px;
+  }
+}

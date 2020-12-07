@@ -1,0 +1,22 @@
+---
+title: Title
+lang: en
+hasLink: false
+---
+extends ../../../layouts/_layout
+
+include ../../../layouts/header/_index
+include ../../../partials/b-accept/_index
+include ../../../partials/betslip/_index
+include ../../../partials/cb-aside/_index
+include ../../../partials/c-nav/_index
+include ../../../partials/c-account/_index
+
+block content
+  +header-in
+  .main
+    +c-nav("Account Settings")
+    +c-account(4)
+    +betslip
+    +b-accept
+    +cb-aside

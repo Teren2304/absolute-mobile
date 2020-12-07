@@ -1,0 +1,20 @@
+---
+title: Title
+lang: en
+hasLink: false
+---
+extends ../../../layouts/_layout
+
+include ../../../layouts/header/_index
+include ../../../partials/betslip/_index
+include ../../../partials/b-accept/_index
+include ../../../partials/b-favourite/_index
+include ../../../partials/cb-aside/_index
+
+block content
+  +header-in
+  .main
+    +b-favourite
+    +betslip
+    +b-accept
+    +cb-aside

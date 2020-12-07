@@ -1,0 +1,44 @@
+include ../c-timer/_index
+include ../c-progress/_index
+
+mixin c-offer
+  .c-offer&attributes(attributes)
+    .c-offer__header
+      p.c-offer__title Отстреляй все серии и получи $400
+    .c-offer__body
+      .c-offer__timer
+        +c-timer
+    .c-offer__footer
+      button.c-offer__btn.c-offer__btn--main
+        span Активировать
+      button.c-offer__btn.c-offer__btn--outline
+        span More
+
+
+mixin c-offer-active
+  .c-offer&attributes(attributes)
+    .c-offer__header
+      p.c-offer__title Отстреляй все серии и получи $400
+    .c-offer__body
+      .c-offer__wrapper
+        p.c-offer__subtitle Until the end is left
+        .c-offer__timer.c-offer__timer--short
+          +c-timer-short.c-timer--short
+      .c-offer__wrapper
+        p.c-offer__subtitle Your progress
+        .c-offer__progress
+          +c-progress
+    .c-offer__footer
+      button.c-offer__btn.c-offer__btn--disabled-m
+        span Активировать
+      button.c-offer__btn.c-offer__btn--outline
+        span More
+
+
+mixin c-offer-archive
+  .c-offer&attributes(attributes)
+    .c-offer__header
+      p.c-offer__title Отстреляй все серии и получи $400
+    .c-offer__footer
+      button.c-offer__btn.c-offer__btn--disabled-o
+        span More

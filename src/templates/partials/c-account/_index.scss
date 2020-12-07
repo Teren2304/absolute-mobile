@@ -1,0 +1,208 @@
+.c-account {
+  position: relative;
+  background-color: #fff;
+  min-height: calc(100vh - 145px);
+
+  &__title-group {
+    padding: 0 10px;
+    text-align: center;
+
+    &--middle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__select,
+  &__field {
+    @include size(100%, 30px);
+
+    border: 0;
+    border-bottom: 1px solid #e7e7e7;
+    padding-right: 25px;
+    font-size: 13px;
+
+    &:focus {
+      outline: 0;
+
+      ~ .c-account {
+
+        &__subtitle {
+          transform: translateY(-25px);
+        }
+      }
+    }
+  }
+
+  &__wrap {
+    padding: 30px 10px;
+    min-height: inherit;
+  }
+
+  &__block {
+    @include flex(center, $direction: column);
+
+    position: relative;
+    min-height: 70px;
+
+    &--focus {
+
+      .c-account {
+
+        &__subtitle {
+          transform: translateY(-25px);
+        }
+      }
+    }
+
+    &--error {
+
+      .c-account {
+
+        &__error {
+          display: block;
+        }
+
+        &__subtitle {
+          color: #ff648b;
+        }
+
+        &__field {
+          border-bottom-color: #ff648b;
+          color: #ff648b;
+        }
+      }
+    }
+
+    &--row {
+      flex-direction: row;
+    }
+  }
+
+  &__cell {
+    @include flex($align-items: center);
+
+    flex: 1;
+    margin: 0 10px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg width='5' height='4' viewBox='0 0 5 4' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M2.5 3.99988L5 -0.00012207H0L2.5 3.99988Z' fill='%23B5B7C6'/%3E%3C/svg%3E%0A");
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
+    background-size: 6px;
+  }
+
+  &__subtitle {
+    position: absolute;
+    left: 0;
+    transition: 0.2s ease-in;
+    color: rgba(#232737, 0.5);
+  }
+
+  &__error {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #ff648b;
+    font-size: 10px;
+  }
+
+  &__show {
+    @include size(16px, 14px);
+
+    position: absolute;
+    right: 0;
+    opacity: 0.5;
+    background-image: url("data:image/svg+xml,%3Csvg width='16' height='9' viewBox='0 0 16 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M8.00002 -0.000366211C12.3026 -0.000366211 15.7377 3.74642 15.8805 3.90573C16.0398 4.08379 16.0398 4.35298 15.8805 4.53104C15.7377 4.69035 12.3025 8.43713 8.00002 8.43713C3.69752 8.43713 0.262328 4.69035 0.119484 4.53104C-0.0398281 4.35298 -0.0398281 4.08379 0.119484 3.90573C0.262328 3.74642 3.69745 -0.000366211 8.00002 -0.000366211ZM4.71877 4.21838C4.71877 6.02748 6.19092 7.49963 8.00002 7.49963C9.80911 7.49963 11.2813 6.02748 11.2813 4.21838C11.2813 2.40929 9.80911 0.937134 8.00002 0.937134C6.19092 0.937134 4.71877 2.40929 4.71877 4.21838Z' fill='%23383A4A'/%3E%3C/svg%3E%0A");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+
+    &:hover,
+    &--active {
+      background-image: url("data:image/svg+xml,%3Csvg width='16' height='14' viewBox='0 0 16 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M8.00002 2.99963C12.3026 2.99963 15.7377 6.74642 15.8805 6.90573C16.0398 7.08379 16.0398 7.35298 15.8805 7.53104C15.7377 7.69035 12.3025 11.4371 8.00002 11.4371C3.69752 11.4371 0.262328 7.69035 0.119484 7.53104C-0.0398281 7.35298 -0.0398281 7.08379 0.119484 6.90573C0.262328 6.74642 3.69745 2.99963 8.00002 2.99963ZM4.71877 7.21838C4.71877 9.02748 6.19092 10.4996 8.00002 10.4996C9.80911 10.4996 11.2813 9.02748 11.2813 7.21838C11.2813 5.40929 9.80911 3.93713 8.00002 3.93713C6.19092 3.93713 4.71877 5.40929 4.71877 7.21838Z' fill='%23383A4A'/%3E%3Crect x='12.8032' y='0.989258' width='1' height='16' rx='0.5' transform='rotate(45 12.8032 0.989258)' fill='%23383A4A'/%3E%3Cpath d='M8.46875 6.28088C8.46875 5.80932 8.70284 5.39448 9.05897 5.13932C8.73941 4.97573 8.38297 4.87463 8 4.87463C6.70772 4.87463 5.65625 5.9261 5.65625 7.21838C5.65625 8.51066 6.70772 9.56213 8 9.56213C9.157 9.56213 10.1146 8.71732 10.3038 7.61345C9.35987 7.91735 8.46875 7.20345 8.46875 6.28088Z' fill='%23383A4A'/%3E%3C/g%3E%3C/svg%3E%0A");
+    }
+  }
+
+  &__btn {
+    @include reset-button;
+    @include size(294px, 44px);
+
+    margin: 0 auto;
+    border-radius: 2px;
+    background-color: $blue;
+
+    > * {
+      color: #fff;
+    }
+
+    &--disabled {
+      opacity: 0.5;
+      box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+      pointer-events: none;
+    }
+  }
+
+  &__li {
+    position: relative;
+    margin-bottom: 15px;
+    padding-left: 10px;
+
+    &::before {
+      @include size(3px);
+
+      position: absolute;
+      top: 7px;
+      left: 0;
+      border-radius: 50%;
+      background-color: #383a4a;
+      content: '';
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__title {
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+
+  &__text {
+    margin-bottom: 4px;
+
+    &--grey {
+      opacity: 0.5;
+    }
+
+    &--green {
+      color: $green;
+    }
+
+    &--md {
+      font-size: 16px;
+    }
+
+    &--lg {
+      font-size: 20px;
+    }
+  }
+
+  &__link {
+    margin: 0 5px;
+    color: $blue;
+  }
+}

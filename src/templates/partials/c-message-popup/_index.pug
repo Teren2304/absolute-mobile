@@ -1,0 +1,18 @@
+mixin c-message-popup
+  .c-message-popup&attributes(attributes)
+    .c-message-popup__wrap
+      .c-message-popup__block
+        .c-message-popup__count 1
+      .c-message-popup__action
+        .c-message-popup__icon
+          svg(width='12' height='16' viewBox='0 0 12 16' fill='none' xmlns='http://www.w3.org/2000/svg')
+            path(fill-rule='evenodd' clip-rule='evenodd' d='M9 0.857143H12V2.57143H0V0.857143H3L3.85714 0H8.14286L9 0.857143ZM2.57143 15.4286C1.62857 15.4286 0.857143 14.6571 0.857143 13.7143V3.42857H11.1429V13.7143C11.1429 14.6571 10.3714 15.4286 9.42857 15.4286H2.57143Z' fill='#232737')
+        p.c-message-popup__text Delete
+      .c-message-popup__action.c-message-popup__action--active
+        .c-message-popup__icon
+          svg(width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg')
+            path(fill-rule='evenodd' clip-rule='evenodd' d='M8.2611 0.084075L15.7464 5.07424C15.8853 5.16684 15.9686 5.32278 15.9686 5.48944V14.4718C15.9686 15.2973 15.2971 15.9688 14.4716 15.9688H1.49707C0.671533 15.9688 0 15.2973 0 14.4718V5.48944C0 5.32278 0.0833333 5.16684 0.222233 5.07424L7.7075 0.084075C7.87513 -0.028025 8.09347 -0.028025 8.2611 0.084075ZM14.57 5.48947L7.98433 1.09917L1.39863 5.48947L7.98433 9.87977L14.57 5.48947Z' fill='#232737')
+        p.c-message-popup__text Read
+      .c-message-popup__close
+        svg(width='16' height='15' viewbox='0 0 16 15' fill='none' xmlns='http://www.w3.org/2000/svg')
+          path(fill-rule='evenodd' clip-rule='evenodd' d='M4.84327 10.9854L4.08566 10.2278L7.24239 7.07107L4.08566 3.91434L4.84327 3.15673L8 6.31345L11.1567 3.15673L11.9143 3.91434L8.75761 7.07107L11.9143 10.2278L11.1567 10.9854L8 7.82868L4.84327 10.9854Z' fill='#384049')

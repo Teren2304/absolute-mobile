@@ -1,0 +1,5 @@
+mixin c-progress
+  .c-progress&attributes(attributes)
+    -var n = 0
+    while (n < 10)
+      .c-progress__item(data=n++, class=(n < 5) ? "c-progress__item--active": "")

@@ -1,0 +1,22 @@
+---
+title: Title
+lang: en
+hasLink: false
+---
+extends ../../../layouts/_layout
+
+include ../../../layouts/header/_index
+include ../../../partials/b-accept/_index
+include ../../../partials/betslip/_index
+include ../../../partials/cb-aside/_index
+include ../../../partials/c-nav/_index
+include ../../../partials/c-offers-layout/_index
+
+block content
+  +header-in
+  .main
+    +c-nav("Shoot all the series and get $ 400")
+    +c-offers-layout
+    +betslip
+    +b-accept
+    +cb-aside

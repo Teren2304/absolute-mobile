@@ -1,0 +1,28 @@
+.b-favourite {
+  @include flex(center, center);
+
+  background-color: #fff;
+  height: calc(100vh - 100px);
+
+  &__wrap {
+    @include flex(center, center, column);
+
+    text-align: center;
+  }
+
+  &__icon {
+    @include size(54px);
+
+    margin-bottom: 10px;
+  }
+
+  &__link {
+    margin-top: 20px;
+    text-decoration: underline;
+    color: $blue;
+  }
+
+  &__text {
+    max-width: 100px;
+  }
+}

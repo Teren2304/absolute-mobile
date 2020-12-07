@@ -1,0 +1,35 @@
+mixin c-timer
+  .c-timer&attributes(attributes)
+    fieldset.c-timer__fieldset
+      legend.c-timer__legend Before the promotion
+      .c-timer__row.c-timer__row--value
+        .c-timer__cell
+          p.c-timer__text 00
+        .c-timer__cell
+          p.c-timer__text 23
+        .c-timer__cell
+          p.c-timer__text 11
+        .c-timer__cell
+          p.c-timer__text 03
+      .c-timer__row
+        .c-timer__cell
+          p.c-timer__label Day
+        .c-timer__cell
+          p.c-timer__label Hours
+        .c-timer__cell
+          p.c-timer__label Minutes
+        .c-timer__cell
+          p.c-timer__label Seconds
+
+
+mixin c-timer-short
+  .c-timer&attributes(attributes)
+     .c-timer__row.c-timer__row--value
+       .c-timer__cell
+         p.c-timer__text 00
+       .c-timer__cell
+         p.c-timer__text 23
+       .c-timer__cell
+         p.c-timer__text 11
+       .c-timer__cell
+         p.c-timer__text 03

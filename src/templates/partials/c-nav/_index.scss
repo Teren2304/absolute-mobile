@@ -1,0 +1,33 @@
+.c-nav {
+  @include flex($align-items: center);
+  @include size(100%, 40px);
+
+  background-color: #232737;
+  padding-right: 10px;
+
+  &__back {
+    @include size(36px, 100%);
+    @include flex(center, center);
+
+    position: relative;
+    flex-shrink: 0;
+
+    &::after {
+      @include size(1px, 24px);
+
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      background-color: #383a4a;
+      content: '';
+    }
+  }
+
+  &__text {
+    @include ellipsis;
+
+    margin-left: 10px;
+    color: #fff;
+  }
+}

@@ -1,0 +1,170 @@
+include ../cb-tab/_index
+include ../cb-message/_index
+include ../cb-account-popup/_index
+
+mixin c-account(view)
+  .c-account&attributes(attributes)
+    .c-account__wrap
+      if (view === 1)
+        +c-account-form-1
+      else if (view === 2)
+        +c-account-form-2
+      else if (view === 3)
+        +c-account-form-3
+      else if (view === 4)
+        +c-account-form-4
+      else if (view === 5)
+        +c-account-form-5
+      else if (view === 6)
+        +c-account-form-6
+
+mixin c-account-form-1
+    .c-account__block.c-account__block--focus.c-account__block--error
+      input(type="text").c-account__field
+      p.c-account__subtitle First name
+      p.c-account__error Name is already in use
+    .c-account__block
+      input(type="text").c-account__field
+      p.c-account__subtitle Last name*
+      p.c-account__error Name is already in use
+    .c-account__block.c-account__block--row
+      .c-account__cell
+        select.c-account__select
+          option(disabled, selected) 01
+          option 2
+          option 3
+      .c-account__cell
+        select.c-account__select
+          option(disabled, selected) 01
+          option 2
+          option 3
+      .c-account__cell
+        select.c-account__select
+          option(disabled, selected) 2010
+          option 2
+          option 3
+      p.c-account__subtitle Date of birth
+    .c-account__block.c-account__block--focus
+      select.c-account__select
+        option(disabled, selected) Ukraine
+        option 2
+        option 3
+      p.c-account__subtitle Country of Residence*
+      p.c-account__error Field is required
+    .c-account__block
+      input(type="text").c-account__field
+      p.c-account__subtitle City
+    .c-account__block
+      input(type="text").c-account__field
+      p.c-account__subtitle Address
+    .c-account__block
+      input(type="text").c-account__field
+      p.c-account__subtitle Postcode
+    .c-account__block
+      input(type="text").c-account__field
+      .c-account__show
+        svg(width='16' height='9' viewBox='0 0 16 9' fill='none' xmlns='http://www.w3.org/2000/svg')
+          path(fill-rule='evenodd' clip-rule='evenodd' d='M8.00002 0C12.3026 0 15.7377 3.74678 15.8805 3.90609C16.0398 4.08416 16.0398 4.35334 15.8805 4.53141C15.7377 4.69072 12.3025 8.4375 8.00002 8.4375C3.69752 8.4375 0.262328 4.69072 0.119484 4.53141C-0.0398281 4.35334 -0.0398281 4.08416 0.119484 3.90609C0.262328 3.74678 3.69745 0 8.00002 0ZM4.71877 4.21875C4.71877 6.02784 6.19092 7.5 8.00002 7.5C9.80911 7.5 11.2813 6.02784 11.2813 4.21875C11.2813 2.40966 9.80911 0.9375 8.00002 0.9375C6.19092 0.9375 4.71877 2.40966 4.71877 4.21875Z' fill='#232737')
+      p.c-account__subtitle Password*
+    .c-account__block
+      button.c-account__btn.c-account__btn--disabled
+        span Save
+
+mixin c-account-form-2
+    .c-account__block
+      input(type="text").c-account__field
+      p.c-account__subtitle Contact number
+    .c-account__block
+      input(type="text").c-account__field
+      p.c-account__subtitle E-mail
+    .c-account__block
+      input(type="text").c-account__field
+      .c-account__show
+      p.c-account__subtitle Password*
+    .c-account__block
+      button.c-account__btn.c-account__btn--disabled
+        span Save
+
+mixin c-account-form-3
+    .c-account__block.c-account__block--focus
+      select.c-account__select
+        option(disabled, selected) English
+        option 2
+        option 3
+      p.c-account__subtitle Language
+    .c-account__block.c-account__block--focus
+      input(type="text" readonly="true" value="GTM +2").c-account__field
+      p.c-account__subtitle Time Zone
+    .c-account__block.c-account__block--focus
+      select.c-account__select
+        option(disabled, selected) Decimal
+        option 2
+        option 3
+      p.c-account__subtitle Odds display
+    .c-account__block
+      input(type="text").c-account__field
+      p.c-account__subtitle Max inactivity time
+    .c-account__block
+      button.c-account__btn
+        span Submit
+
+mixin c-account-form-4
+    .c-account__title Password requirements
+    .c-account__ul
+      .c-account__li
+        p.c-account__text Must contain uppercase characters
+        p.c-account__text.c-account__text--grey Must contain uppercase characters
+      .c-account__li
+        p.c-account__text Must contain lowercase characters
+        p.c-account__text.c-account__text--grey The password must contain at least one uppercase character
+      .c-account__li
+        p.c-account__text Must contain numbers
+        p.c-account__text.c-account__text--grey the password must contain at least one numeric character. Numeric characters are 1 2 3 4 5 6 7 8 9 0
+      .c-account__li
+        p.c-account__text Must contain a special character
+        p.c-account__text.c-account__text--grey The password must contain at least one special character. Supported special characters:! @ # $% ^ & * () - _ = + \ | [] {}; : /? . > <
+    .c-account__block
+      input(type="text").c-account__field
+      .c-account__show
+      p.c-account__subtitle Current password*
+    .c-account__block.c-account__block--focus
+      input(type="text" value="GeO3it$LNWcX").c-account__field
+      .c-account__show.c-account__show--active
+      p.c-account__subtitle New password
+    .c-account__block
+      input(type="text").c-account__field
+      .c-account__show
+      p.c-account__subtitle Confirm new password
+    .c-account__block
+      button.c-account__btn
+        span Save
+
+
+mixin c-account-form-5
+    .c-account__title-group
+      p.c-account__text Here you can upload color photographs of documents (document scans are not allowed).
+      p.c-account__text.c-account__text--grey Document pages should be fully visible. Valid document languages ​​are Russian, English, Ukrainian. After checking the documents, your game account will have the status "verified".
+    +cb-tab
+    +cb-message("Confirmed!").cb-message--success
+    +cb-message("Bad document!").cb-message--bad
+    +cb-message("Oops...Rejected").cb-message--warning
+
+    .c-account__title-group
+      p.c-account__text Your documents are pending. It can take some time.
+      p.c-account__text.c-account__text--grey For any questions, please contact
+        a(href="#").c-account__link support
+    +cb-message("Under consideration…").cb-message--default
+    +cb-message("Under consideration…").cb-message--default
+    +cb-message("Under consideration…").cb-message--default
+    +cb-message-2.cb-message--uploading
+    +cb-message-3.cb-message--default
+    +cb-message-4.cb-message--default
+    button.c-account__btn
+      span Save
+    +cb-account-popup
+
+
+mixin c-account-form-6
+    .c-account__title-group.c-account__title-group--middle
+      p.c-account__text.c-account__text--md.c-account__text--green Congratulations.
+      p.c-account__text.c-account__text--grey You have passed verification
