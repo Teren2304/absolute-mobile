@@ -53,7 +53,7 @@ gulp.task('sass', () => gulp
   .src(`${config.src.scss  }/*.{sass,scss}`)
   .pipe(sourcemaps.init())
   .pipe(sass({
-      outputStyle: config.production ? 'compact' : 'expanded', // nested, expanded, compact, compressed
+      // outputStyle: config.production ? 'compact' : 'expanded', // nested, expanded, compact, compressed
       precision: 5
   }))
   .on('error', config.errorHandler)

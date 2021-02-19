@@ -13,6 +13,7 @@
 @import './wn-top-matches/index';
 @import './ipe-header/index';
 @import './ipe-team-composition/index';
+@import './ipe-team-scoreboard/index';
 @import './ipn-event/index';
 @import './ipn-competition/index';
 @import './ip-classification-bar/index';
@@ -26,7 +27,6 @@
 
 @import 'ip-header/index';
 @import 'ip-competition/index';
-
 @import 'ip-classification-header/index';
 
 @import 'wn-banner-slider/index';
@@ -42,7 +42,7 @@
 @import 'cs-provider/index';
 @import 'cs-classification-bar/index';
 @import 'cs-game-banner/index';
-
+@import 'cb-replenishment/index';
 
 //
 // Cabinet
@@ -60,3 +60,8 @@
 @import 'cb-upload/index';
 @import 'cb-tab/index';
 @import 'cb-account-popup/index';
+@import 'c-options/index';
+//
+// History
+//
+@import 'h-deposit/index';

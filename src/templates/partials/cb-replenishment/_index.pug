@@ -1,0 +1,31 @@
+mixin cb-replenishment
+  .cb-replenishment&attributes(attributes)
+    .cb-replenishment__wrap
+      .cb-replenishment__header
+        img(src="https://via.placeholder.com/170x24/F4F4F4").cb-replenishment__img
+
+      .cb-replenishment__body
+        .cb-replenishment__amount.cb-replenishment__amount--error
+          .cb-replenishment__block
+            p.cb-replenishment__text Amount (Min. 1.00 Bit)
+            input(type="text" value="1").cb-replenishment__field
+          .cb-replenishment__message
+            p.cb-replenishment__text.cb-replenishment__text--sm.cb-replenishment__text--red Minimum amount 10 Bin
+
+        .cb-replenishment__block
+          p.cb-replenishment__text Wallet number
+          .cb-replenishment__wallet
+            input(type="text" value="MQtb$5NVSvlH&SMJes&Q").cb-replenishment__field
+            .cb-replenishment__copy
+              svg(width='100%' height='100%' viewBox='0 0 14 18' fill='none' xmlns='http://www.w3.org/2000/svg')
+                g(opacity='0.5')
+                  rect(x='0.538462' y='0.538462' width='9.42308' height='12.9231' rx='0.538462' stroke='#232737' stroke-width='1.07692')
+                  rect(x='3.76917' y='3.76924' width='9.42308' height='12.9231' rx='0.538462' fill='white' stroke='#232737' stroke-width='1.07692')
+
+        .cb-replenishment__code
+          p.cb-replenishment__text QR Code
+          .cb-replenishment__qr
+          p.cb-replenishment__text.cb-replenishment__text--sm Copy to clipboard
+
+      .cb-replenishment__footer
+        button.cb-replenishment__button Deposit

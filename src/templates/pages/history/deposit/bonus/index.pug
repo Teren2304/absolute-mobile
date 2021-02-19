@@ -1,0 +1,23 @@
+---
+title: Title
+lang: en
+hasLink: false
+---
+extends ../../../../layouts/_layout
+
+include ../../../../layouts/header/_index
+include ../../../../partials/b-accept/_index
+include ../../../../partials/betslip/_index
+include ../../../../partials/cb-aside/_index
+include ../../../../partials/c-nav/_index
+include ../../../../partials/h-deposit/_index
+include ../../../../partials/c-options/_index
+block content
+  +header-in
+  .main
+    +c-nav("History")
+    +c-options
+    +h-deposit-3
+    +betslip
+    +b-accept
+    +cb-aside

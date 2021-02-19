@@ -1,0 +1,96 @@
+.c-options {
+  @include size(100%, 39px);
+  @include flex(space-between, center);
+
+  border-bottom: 1px solid rgba(#c2d3d4, 0.5);
+  background-color: #e1e5ee;
+  padding: 0 10px;
+
+  &__wrap {
+    @include flex(space-between, center);
+
+    flex-grow: 1;
+  }
+
+  &__dropdown {
+    @include flex($align-items: center);
+
+    position: relative;
+
+    &:hover,
+    &--active {
+
+      .c-options {
+
+        &__dropdown {
+
+          &-body {
+            display: block;
+          }
+
+          &-icon {
+            transform: rotateZ(180deg);
+          }
+        }
+      }
+    }
+
+    &--blue {
+
+      .c-options {
+
+        &__dropdown {
+
+          &-icon,
+          &-text {
+            color: $blue;
+          }
+        }
+      }
+    }
+
+    &-body {
+      display: none;
+      position: absolute;
+      top: calc(100% + 5px);
+      right: 0;
+      left: 0;
+      z-index: 1;
+      border: 1px solid rgba(#c2d3d4, 0.5);
+      background-color: #fff;
+      min-width: 130px;
+    }
+
+    &-item {
+      @include size(100%, 26px);
+      @include flex($align-items: center);
+
+      border-bottom: 1px solid rgba(#c2d3d4, 0.5);
+      padding: 0 5px;
+
+      &:last-child {
+        border-bottom: 0;
+      }
+    }
+
+    &-icon {
+      @include flex(center, center);
+      @include size(10px, 6px);
+
+      transition: $default-transition;
+      margin-left: 5px;
+      color: #383a4a;
+
+      svg {
+        stroke: currentColor;
+      }
+    }
+  }
+
+  &__divider {
+    @include size(1px, 20px);
+
+    margin: 0 20px;
+    background-color: rgba(#c2d3d4, 0.5);
+  }
+}

@@ -1,0 +1,164 @@
+.cb-replenishment {
+  display: none;
+  position: absolute;
+  right: 10px;
+  bottom: 70px;
+  left: 10px;
+  margin: 0 auto;
+  border-radius: 5px;
+  background-color: #434559;
+  max-width: 500px;
+  height: 400px;
+  overflow: hidden;
+
+  &__wrap {
+    @include flex($direction: column);
+    @include size(100%);
+  }
+
+  &__header {
+    @include flex(center, center);
+    @include size(100%, 47px);
+
+    background-color: rgba(#2d334c, 0.68);
+  }
+
+  &__body {
+    @include flex($direction: column);
+
+    flex: 1;
+    padding: 10px 16px;
+  }
+
+  &__img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  &__qr {
+    @include size(100px);
+
+    margin: 10px auto;
+    background-color: #fff;
+  }
+
+  &__text {
+    color: #fff;
+
+    &--sm {
+      font-size: 10px;
+    }
+
+    &--red {
+      color: $red;
+    }
+  }
+
+  &__code {
+    margin-top: auto;
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  &__block {
+    @include flex(space-between, center);
+  }
+
+  &__field {
+    border: 1px solid #e7e7e7;
+    border-radius: 2px;
+    background-color: #f9f9f9;
+    padding: 0 5px;
+    height: 28px;
+    text-align: center;
+  }
+
+  &__wallet {
+    position: relative;
+
+    .cb-replenishment {
+
+      &__field {
+        padding-right: 30px;
+        width: 190px;
+        color: rgba(#0c1022, 0.5);
+      }
+    }
+  }
+
+  &__copy {
+    @include size(14px, 18px);
+
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    color: #232737;
+
+    svg {
+
+      rect {
+        stroke: currentColor;
+      }
+    }
+
+    &:hover,
+    &--active {
+      color: $blue;
+    }
+  }
+
+  &__amount {
+    margin-bottom: 10px;
+
+    &--error {
+
+      .cb-replenishment {
+
+        &__text,
+        &__field {
+          color: $red;
+        }
+
+        &__message {
+          @include flex(center, center);
+        }
+      }
+    }
+  }
+
+  &__message {
+    display: none;
+    margin-top: 10px;
+    border-radius: 2px;
+    background-color: rgba(#fc3164, 0.3);
+  }
+
+  &__footer {
+    position: relative;
+    padding: 20px 16px 10px;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      right: 10px;
+      left: 10px;
+      background-color: #2c334c;
+      height: 1px;
+      content: '';
+    }
+  }
+
+  &__button {
+    @include reset-button;
+    @include size(100%, 40px);
+
+    border-radius: 2px;
+    background-color: $green;
+    color: #fff;
+  }
+
+  &--active {
+    display: block;
+  }
+}
